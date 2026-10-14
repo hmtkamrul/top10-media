@@ -17,8 +17,10 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 3. **News research** (today's date, Dhaka time). Use WebSearch/WebFetch on sources such as
    prothomalo.com / en.prothomalo.com, thedailystar.net, bdnews24.com, tbsnews.net (Bangladesh), and
    aljazeera.com, bbc.com, reuters.com, apnews.com, espncricinfo.com, goal.com (international).
-   - Bangladesh: at most 5 stories, ONLY positive/constructive ones (see the rules). No government,
-     political, negative or controversial BD news, and no BD official's photo or name-led headline.
+   - Bangladesh: at most 5 stories, ONLY positive/constructive ones (see the rules). Positive
+     development projects (railway, bridge, metro, road, port, power) ARE allowed and encouraged,
+     facts only. No political, negative or controversial BD news, and no BD official's photo or
+     name-led headline.
    - Fill the rest with the biggest international stories popular with Bangladeshi readers. Always 10 in total.
    - Verify every fact on the article page. Rewrite in your own Bangla words; never copy.
 4. **Write `days/<YYYY-MM-DD>.json`** with the same shape as `days/2026-10-14.json`:

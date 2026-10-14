@@ -14,11 +14,17 @@ ONLY include:
 - Positive, constructive, good-vibes stories: achievements, success stories, happy news.
 - Positive economy news: export growth, remittance up, new investment, jobs, records.
 - Good promises and progress: new opportunities, people helping people.
+- Positive development projects, even when the government runs them: a new railway, bridge,
+  metro, road, port or power plant approved, opened or progressing. Report only the project
+  facts (route, benefit, cost, timeline). Never praise or criticise a party or politician, and
+  never use a minister's or official's name or photo as the headline.
+- Good positive news is always encouraged.
 - Sports wins, science/tech/education achievements, culture and celebrations.
 
 NEVER include:
 - Negative BD news (crime, accidents, disasters, crises, bank troubles, price hikes, bad forecasts).
-- Government news, political news, political criticism, controversial stories.
+- Government/political news (politics, elections, party statements, policy rows), political
+  criticism, controversial stories. Exception: the positive development projects allowed above.
 - No comment or opinion on any of the above.
 - No photo of any Bangladeshi Prime Minister, President, minister or government official. No person photos for BD stories at all.
 
