@@ -75,3 +75,12 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 - Post negative, government, political or controversial Bangladesh news.
 - Post photos or AI-made faces of real people.
 - Copy article text word for word.
+
+## When Metricool can't take all posts (free plan: 20 posts per month)
+- On **2026-10-16** only: schedule just the **3 biggest** posts through Metricool (19:00, 19:12, 19:24) and do not
+  try the other 7.
+- On any day, if `createScheduledPost` returns a plan/limit error, stop calling it for the rest of the run.
+- Every post that is not scheduled goes to the user for **manual posting**: send each file (the .mp4 Reel or
+  .jpg) with SendUserFile, and in SendUserMessage give, for each one, the suggested time (keep the 12-minute
+  slots), the full caption to paste, and the first-comment text with the link. Number them so they are easy to follow.
+- Remind the user that the paid Starter plan removes the limit.
