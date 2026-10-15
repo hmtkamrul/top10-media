@@ -46,13 +46,14 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
       "title_bn": "full Bangla headline (first line of the caption)",
       "title_en": "English headline (used only as a random seed)",
       "caption_bn": "2-4 sentence Bangla summary, facts only, no opinion",
+      "question_bn": "one short, neutral question for readers that invites comments, e.g. 'এই যুদ্ধ কবে থামবে বলে মনে করেন?'",
       "source": "Prothom Alo | The Daily Star | Al Jazeera | BBC | Reuters | ...",
       "url": "article URL" } ] }
    ```
    Order: biggest story first. Alternate video, image, video, image... so the 5 biggest are videos.
    For any new source name, add its Bangla spelling to `SRC_BN` in `engine/build_day.py`.
 6. **Build:** `cd engine && python3 build_day.py ../days/<date>.json ../<date>/`
-   This writes `post_01..10` (.mp4 for videos, .jpg for images), `posts.json` and `captions.txt`.
+   This writes `post_XX_reel.mp4` (9:16 Reels) for videos and `post_XX.jpg` for images, plus `posts.json` and `captions.txt`.
    Open 2-3 of the images with Read to check that the Bangla text fits and renders correctly.
 7. **Publish media:** `git add -A && git commit -m "Posts for <date>" && git push origin HEAD:main`.
    Then `curl -s -o /dev/null -w "%{http_code}"` each raw URL. Every one must return 200 before you go on.
@@ -60,7 +61,8 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    - `blogId` "7426819"; date `<date>T19:00:00+06:00`, then +12 minutes for each following post.
    - info: `providers [{"network":"facebook"}]`, `text` = caption, `firstCommentText` = first_comment,
      `media` = [raw URL], `autoPublish` true, `draft` false,
-     `facebookData` {"type":"POST"} (for videos also add "title": the short headline),
+     `facebookData` {"type": posts.json "facebook_type"} — "REEL" for the .mp4 Reels, "POST" for images
+     (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
 9. **Report** with SendUserMessage, in Banglish: the 10 headlines with their times, and anything that went wrong.

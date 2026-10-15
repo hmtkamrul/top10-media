@@ -497,6 +497,7 @@ def caption(story):
     return (
         f"{story['title_bn']}\n\n"
         f"{story['caption_bn']}\n\n"
+        f"💬 {story.get('question_bn') or 'এই খবর নিয়ে আপনার মতামত কী?'} কমেন্টে জানান 👇\n\n"
         f"📰 সূত্র: {src} (লিংক কমেন্টে 👇)\n\n"
         f"#Top10BreakingNews #BreakingNewsBD #আজকের_খবর"
     )
