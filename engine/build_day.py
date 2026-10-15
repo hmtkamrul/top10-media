@@ -21,7 +21,7 @@ def to_reel(card):
     bg.paste(card, (0, 230))
     return bg
 
-r.SRC_BN.update({"Khaleej Times": "খালিজ টাইমস", "Reuters": "রয়টার্স", "BBC": "বিবিসি", "The Business Standard": "দ্য বিজনেস স্ট্যান্ডার্ড", "New Age": "নিউ এজ", "Outlook India": "আউটলুক ইন্ডিয়া", "The Quint": "দ্য কুইন্ট", "Dhaka Tribune": "ঢাকা ট্রিবিউন"})
+r.SRC_BN.update({"Khaleej Times": "খালিজ টাইমস", "Reuters": "রয়টার্স", "BBC": "বিবিসি", "The Business Standard": "দ্য বিজনেস স্ট্যান্ডার্ড", "New Age": "নিউ এজ", "Outlook India": "আউটলুক ইন্ডিয়া", "The Quint": "দ্য কুইন্ট", "Dhaka Tribune": "ঢাকা ট্রিবিউন", "Fox News": "ফক্স নিউজ", "Onmanorama": "অনমনোরমা", "Maritime Gateway": "মেরিটাইম গেটওয়ে"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
