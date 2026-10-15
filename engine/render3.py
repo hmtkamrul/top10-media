@@ -404,16 +404,18 @@ def place_people(img, people):
 
 def card(story, rank, total, date_bn, page_name, phase=0.0):
     from scenes import SCENE_BUILDERS
-    if story.get("scene") in SCENE_BUILDERS:
-        img = SCENE_BUILDERS[story["scene"]](phase)
-    else:
-        img = scene(story["cat"], seed=sum(map(ord, story["title_en"])), motifs=story.get("motifs", ()))
-        if phase:
-            # slow push-in so still scenes also move in videos
-            z = 1 + 0.07 * phase
-            big = img.resize((int(W * z), int(H * z)), Image.LANCZOS)
-            ox, oy = (big.width - W) // 2, (big.height - H) // 2
-            img = big.crop((ox, oy, ox + W, oy + H))
+    from scenes2 import SCENE_BUILDERS2
+    builders = {**SCENE_BUILDERS, **SCENE_BUILDERS2}
+    seed = sum(map(ord, story.get("title_en", "") or story.get("short_bn", "")))
+    name = story.get("scene")
+    if name not in builders:
+        # every card gets a themed, animated background: pick one from the category
+        name = {"sports": "football", "econ": "economy"}.get(story.get("cat"), "abstract")
+    fn = builders[name]
+    try:
+        img = fn(phase, seed)
+    except TypeError:          # older builders take only phase
+        img = fn(phase)
     img = place_people(img, story.get("people"))
     d = ImageDraw.Draw(img)
     pal = SCENES.get(story["cat"], SCENES["bd"])

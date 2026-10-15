@@ -30,8 +30,16 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    {"date_bn": "...", "stories": [ {
       "cat": "bd" | "intl" | "econ" | "sports",
       "format": "video" | "image",
-      "scene": "airport_fire" | "protest" (illustrated scenes: airport_fire for an attack/fire at an
-                                          airport or similar; protest for street protests/movements; otherwise omit),
+      "scene": EVERY story MUST get the theme that best matches it (no plain backgrounds):
+               "war"          missiles/strikes/war (Middle East, Ukraine, Russia)
+               "airport_fire" an attack or fire at an airport / facility
+               "protest"      protests, movements, marches (Delhi, Nepal, Sri Lanka)
+               "usa"          Trump, US politics, Washington
+               "world"        diplomacy, summits, deals, China / North Korea / international relations
+               "economy"      economy, trade, exports, remittance, markets, oil prices
+               "bridge"       development projects: bridge, railway, metro, road, port, power (good news)
+               "football"     football;  "cricket"  cricket
+               "abstract"     anything else (still animated, never plain)
       "quote_by": "নেহা বোরা, ভারতের ছাত্রনেত্রী" (optional: when short_bn is a quote, who said it),
       "motifs": ["smoke"] | ["plane"] | [] (optional extras for the generic scene),
       "short_bn": "card headline, max ~30 Bangla characters, so it fits 2 big lines",

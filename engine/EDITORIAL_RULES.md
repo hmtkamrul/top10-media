@@ -37,6 +37,22 @@ Pick the day's biggest stories, favouring what is popular with the Bangladeshi a
 - Middle East, Malaysia, Singapore, Japan, Korea.
 - Football and cricket.
 
+### Quote posts (very popular in Bangladesh, use them often)
+Pick 2–3 strong, newsworthy **quotes** every day from leaders and figures Bangladeshis follow, such as:
+Donald Trump, Vladimir Putin, Xi Jinping, Kim Jong Un, Iran's Supreme Leader / President / FM,
+Hamas leaders, Houthi leaders, Hezbollah, Erdoğan, Netanyahu, Rahul Gandhi, Arvind Kejriwal,
+Mamata Banerjee, Neha Bora and other Indian student/Gen-Z leaders, Pakistan's PM Shehbaz Sharif
+and army chief, Imran Khan, Zelensky, and similar.
+- Quote card: `short_bn` = the quote in ‘single quotes’ (short, 2 lines max), `quote_by` = "<name>, <role>".
+- Only use quotes that a reliable source actually reports. Translate faithfully; never invent or sharpen a quote.
+- Quotes ABOUT Bangladesh (praise, ties, deals) are especially popular, so prioritise them.
+- Bangladeshi politicians are NOT used for quote posts (Bangladesh rules above still apply).
+
+### Cockroach movement / India Gen-Z protests
+The "Cockroach Janta Party" (CJP) and the Gen-Z protests in Delhi (against CEC Gyanesh Kumar / SIR)
+are very popular. Check for new developments every day and include the biggest one when there is
+real news (detentions, marches, statements, court or Election Commission moves). Use the "protest" theme.
+
 Tone: report facts from the source only. Do not add our own opinion, insults or one-sided wording, even on political stories.
 
 ## Every post
@@ -45,4 +61,6 @@ Tone: report facts from the source only. Do not add our own opinion, insults or 
 - Caption in Bangla: headline + 2–4 lines of summary + "📰 সূত্র: <source> (লিংক কমেন্টে 👇)" + hashtags.
 - First comment: "📰 বিস্তারিত পড়ুন (<source>):" + article link.
 - Captions are always rewritten in our own words, never copied.
-- Symbolic illustrated scenes only. No AI-made faces of real people.
+- Every card has an animated, illustrated theme that matches the story (war, protest, USA, world,
+  economy, bridge, football, cricket, airport_fire, or abstract). Never a plain background.
+- Symbolic illustrated scenes only. No AI-made faces of real people, and no copyrighted news photos.
