@@ -66,6 +66,10 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
 9. **Report** with SendUserMessage, in Banglish: the 10 headlines with their times, and anything that went wrong.
+   End with a "📢 Group-e share korun" section: the 2 posts most likely to spread (big international/quote/protest
+   stories first) with their Metricool plannerUrl, and for each the kind of Facebook group to share it in
+   (e.g. international politics, Middle East/probashi, Indian politics, football/cricket, positive Bangladesh).
+   Remind: max 1–2 groups per day, share by hand.
 
 ## Never
 - Post negative, government, political or controversial Bangladesh news.
