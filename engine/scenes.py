@@ -175,4 +175,100 @@ def scene_airport_fire(phase=0.0, seed=7):
     return img
 
 
-SCENE_BUILDERS = {"airport_fire": scene_airport_fire}
+def _india_gate(d, cx, top, base, col):
+    """Simplified India Gate style memorial arch silhouette."""
+    w = 380
+    x0, x1 = cx - w / 2, cx + w / 2
+    d.rectangle([x0 * S, (top + 60) * S, x1 * S, base * S], fill=col)
+    d.rectangle([(x0 - 14) * S, (top + 40) * S, (x1 + 14) * S, (top + 70) * S], fill=col)   # cornice
+    d.rectangle([(cx - 120) * S, top * S, (cx + 120) * S, (top + 44) * S], fill=col)       # attic
+    d.rectangle([(cx - 80) * S, (top - 26) * S, (cx + 80) * S, top * S], fill=col)
+    d.ellipse([(cx - 40) * S, (top - 52) * S, (cx + 40) * S, (top - 10) * S], fill=col)    # dome cap
+    # the arch opening (glowing sky shows through)
+    aw = 150
+    d.rectangle([(cx - aw / 2) * S, (top + 260) * S, (cx + aw / 2) * S, base * S], fill=(255, 140, 40))
+    d.pieslice([(cx - aw / 2) * S, (top + 185) * S, (cx + aw / 2) * S, (top + 335) * S], 180, 360, fill=(255, 140, 40))
+
+
+def _person(d, x, base, h, col, fist=False, sign=None, flag=None, phase=0.0, k=0):
+    """Back-view protester silhouette: head, shoulders, optional raised fist / placard / flag."""
+    bob = math.sin(phase * 2 * math.pi * 2 + k) * 6
+    hw = h * 0.22
+    d.ellipse([(x - hw * 0.45) * S, (base - h) * S, (x + hw * 0.45) * S, (base - h + hw * 0.95) * S], fill=col)
+    d.rounded_rectangle([(x - hw) * S, (base - h + hw * 0.8) * S, (x + hw) * S, (base + 40) * S], radius=int(hw * 0.6 * S), fill=col)
+    if fist:
+        ax, ay = x + hw * 0.7, base - h + hw
+        fx, fy = ax + 18, ay - h * 0.42 + bob
+        d.line([(ax * S, ay * S), (fx * S, fy * S)], fill=col, width=int(hw * 0.3 * S))
+        d.ellipse([(fx - hw * 0.3) * S, (fy - hw * 0.35) * S, (fx + hw * 0.3) * S, (fy + hw * 0.25) * S], fill=col)
+    if sign:
+        sx, sy = x - hw * 0.2, base - h - h * 0.12 + bob
+        d.line([(sx * S, (sy + 40) * S), (sx * S, (base - h + hw) * S)], fill=col, width=int(5 * S))
+        sw, sh = h * 0.62, h * 0.38
+        d.rectangle([(sx - sw / 2) * S, (sy - sh / 2) * S, (sx + sw / 2) * S, (sy + sh / 2) * S], fill=sign)
+        d.rectangle([(sx - sw / 2) * S, (sy - sh / 2) * S, (sx + sw / 2) * S, (sy - sh / 2 + sh * 0.22) * S], fill=RED)
+        for j in range(2):
+            ly = sy - sh * 0.05 + j * sh * 0.24
+            d.rectangle([(sx - sw * 0.35) * S, ly * S, (sx + sw * (0.35 - 0.2 * j)) * S, (ly + sh * 0.09) * S], fill=(40, 30, 30))
+    if flag:
+        px, py = x + hw * 0.2, base - h - h * 0.35
+        d.line([(px * S, py * S), (px * S, (base - h + hw) * S)], fill=col, width=int(5 * S))
+        pts = []
+        for i in range(21):
+            t = i / 20
+            pts.append(((px + t * h * 0.75) * S, (py + math.sin(t * 5 + phase * 6.28 + k) * 10 * t) * S))
+        bot = [(xx, yy + h * 0.42 * S) for xx, yy in reversed(pts)]
+        d.polygon(pts + bot, fill=flag)
+
+
+def scene_protest(phase=0.0, seed=21):
+    """Street protest at dusk in front of a memorial arch: crowd, fists, placards, flags, smoke."""
+    rnd = random.Random(seed)
+    horizon = 1080
+    bg = _sky(horizon).resize((W, H))
+    glow = Image.new("RGB", (W, H), (0, 0, 0))
+    ImageDraw.Draw(glow).ellipse([W / 2 - 420, 300, W / 2 + 420, 1100], fill=(160, 60, 10))
+    bg = ImageChops.add(bg, glow.filter(ImageFilter.GaussianBlur(110)))
+    bg = bg.resize((W * S, H * S))
+    bg = _smoke(bg, 180, 700, phase, 4, reach=650)        # tear-gas haze drifting up
+    bg = _smoke(bg, 820, 760, phase + 0.5, 5, reach=600)
+    img = bg
+    d = ImageDraw.Draw(img)
+    # distant trees / skyline
+    x = -20
+    while x < W:
+        r = rnd.randint(30, 70)
+        d.ellipse([(x - r) * S, (horizon - 150 - r) * S, (x + r) * S, (horizon - 150 + r) * S], fill=(70, 16, 14))
+        x += r
+    d.rectangle([0, (horizon - 150) * S, W * S, horizon * S], fill=(70, 16, 14))
+    _india_gate(d, W / 2, 150, horizon, (34, 10, 12))
+    # street
+    d.rectangle([0, horizon * S, W * S, H * S], fill=(26, 10, 10))
+    # crowd: three rows, back to front
+    signs = [(255, 236, 200), (255, 214, 120), (255, 255, 255)]
+    flags = [ORANGE, (240, 240, 240), (30, 140, 70), RED]
+    k = 0
+    for row, (base, h, col, n) in enumerate([(1120, 150, (40, 12, 12), 12), (1210, 200, (24, 8, 8), 9), (1330, 270, BLACK, 6)]):
+        step = W / n
+        for i in range(n):
+            px = step * (i + 0.5) + rnd.uniform(-20, 20)
+            kind = rnd.random()
+            _person(d, px, base, h, col,
+                    fist=kind < 0.35,
+                    sign=signs[k % 3] if 0.35 <= kind < 0.6 else None,
+                    flag=flags[k % 4] if 0.6 <= kind < 0.75 else None,
+                    phase=phase, k=k)
+            k += 1
+    img = img.resize((W, H), Image.LANCZOS)
+    # floating embers / dust in the light
+    ed = ImageDraw.Draw(img)
+    er = random.Random(seed + 5)
+    for i in range(70):
+        bx, sp = er.uniform(0, W), er.uniform(0.5, 1.3)
+        y = (er.uniform(100, 1000) - phase * 300 * sp) % 1000 + 80
+        r = er.uniform(1.5, 3.2)
+        ed.ellipse([bx - r, y - r, bx + r, y + r], fill=(255, er.randint(160, 230), 90))
+    return img
+
+
+SCENE_BUILDERS = {"airport_fire": scene_airport_fire, "protest": scene_protest}

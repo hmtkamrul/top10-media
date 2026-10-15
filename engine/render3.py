@@ -462,7 +462,8 @@ def card(story, rank, total, date_bn, page_name, phase=0.0):
             break
     lh = int(size * 1.12)
     sub_size = 46
-    block = len(lines) * lh + 52 + sub_size * 1.3
+    qb = story.get("quote_by")
+    block = len(lines) * lh + 52 + sub_size * 1.3 + (sub_size * 1.25 if qb else 0)
     y = box[1] + (box[3] - box[1] - block) / 2 + 4
     for i, ln in enumerate(lines):
         lw = width(d, ln, BN_HEAD, EN_BLACK, size)
@@ -474,6 +475,11 @@ def card(story, rank, total, date_bn, page_name, phase=0.0):
     bar = hgrad(220, 8, RED, YELLOW)
     img.paste(bar, (int(W / 2 - 110), int(y)))
     y += 22
+    if qb:
+        q = f"— {qb}"
+        qw = width(d, q, BN_SUB, EN_SEMI, sub_size)
+        draw_runs(d, (W - qw) / 2, y, q, BN_SUB, EN_SEMI, sub_size, YELLOW)
+        y += sub_size * 1.25
     src = SRC_BN.get(story["source"], story["source"])
     lab, val = "সূত্র: ", src
     lw_ = width(d, lab, BN_SUB, EN_SEMI, sub_size)

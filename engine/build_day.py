@@ -6,7 +6,7 @@ Each story may set "format": "video" or "image".
 import json, os, sys, subprocess, tempfile, shutil
 import render3 as r
 
-r.SRC_BN.update({"Khaleej Times": "খালিজ টাইমস", "Reuters": "রয়টার্স", "BBC": "বিবিসি"})
+r.SRC_BN.update({"Khaleej Times": "খালিজ টাইমস", "Reuters": "রয়টার্স", "BBC": "বিবিসি", "The Business Standard": "দ্য বিজনেস স্ট্যান্ডার্ড", "New Age": "নিউ এজ", "Outlook India": "আউটলুক ইন্ডিয়া", "The Quint": "দ্য কুইন্ট"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
