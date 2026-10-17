@@ -71,7 +71,7 @@ def _load(path, sr):
     return x
 
 
-def main(src, out, speaker="male", voice=True):
+def main(src, out, speaker="male", voice=False):
     import numpy as np
     import music
     data = json.load(open(src, encoding="utf-8"))
@@ -132,12 +132,14 @@ def main(src, out, speaker="male", voice=True):
         env = np.convolve(env, np.ones(win) / win, mode="same")
         duck = 1 - 0.72 * np.clip(env / 0.08, 0, 1)
         mix = bed * (0.55 if clips else 0.9) * duck + vo
-        mix = mix / (np.max(np.abs(mix)) + 1e-9) * 0.95
-        music.write_wav(f"{tmp}/audio.wav", mix)
+        mix = mix / (np.max(np.abs(mix)) + 1e-9)
+        if not clips:                                   # music only: push it louder with a soft limiter
+            mix = np.tanh(mix * 2.2) / np.tanh(2.2)
+        music.write_wav(f"{tmp}/audio.wav", mix * 0.97)
         path = os.path.join(out, "roundup_reel.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{tmp}/f%05d.jpg",
                         "-i", f"{tmp}/audio.wav", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "23",
-                        "-c:a", "aac", "-b:a", "160k", "-shortest", path], check=True)
+                        "-af", "acompressor=threshold=-20dB:ratio=4:attack=5:release=120:makeup=6dB,loudnorm=I=-11:TP=-1:LRA=7", "-c:a", "aac", "-b:a", "192k", "-shortest", path], check=True)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     lines = "\n".join(f"{str(i).translate(BN)}. {s['title_bn']}" for i, s in enumerate(st, 1))
@@ -152,4 +154,5 @@ def main(src, out, speaker="male", voice=True):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], speaker=(sys.argv[3] if len(sys.argv) > 3 else "male"))
+    # voice-over is off by default (the Bangla TTS mispronounces too much); pass "voice" as 3rd arg to enable
+    main(sys.argv[1], sys.argv[2], voice=(len(sys.argv) > 3 and sys.argv[3] == "voice"))
