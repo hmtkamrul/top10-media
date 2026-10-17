@@ -68,7 +68,7 @@ cv = grad(W, H, BG1, BG2).convert("RGBA")
 lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
 for (x, y, r, c) in [(-60, 120, 260, LBLUE), (1700, 160, 280, ORANGE), (40, 900, 300, GREEN), (1620, 880, 260, RED), (820, -330, 380, LBLUE)]:
     ld.ellipse([x - r, y - r, x + r, y + r], fill=c + (60,))
-confetti(lay, W, H, 120, 3, keep_out=(250, 180, 1390, 760))
+confetti(lay, W, H, 120, 3, keep_out=(250, 220, 1390, 700))
 cv.alpha_composite(lay)
 lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
 briefcase(ld, 140, 470, 190, body=ORANGE + (230,), handle=NAVY + (230,), strap=(205, 90, 0, 230), lock=(255, 255, 255, 230))
@@ -77,17 +77,11 @@ cv.alpha_composite(lay); d = ImageDraw.Draw(cv)
 
 fo = f(OSW, 118); words = [("TOP", BLUE), ("JOB", ORANGE), ("ALERT", RED), ("BD", GREEN)]
 sp = 34; ws = [d.textlength(w, font=fo) for w, _ in words]; x = W/2 - (sum(ws) + sp*3)/2
-for (w, c), wd in zip(words, ws): d.text((x, 255), w, font=fo, fill=c, anchor="lm"); x += wd + sp
-ctext(d, W/2, 385, "প্রতিদিনের যাচাই করা চাকরির খবর", f(BN_B, 74), NAVY)
+for (w, c), wd in zip(words, ws): d.text((x, 300), w, font=fo, fill=c, anchor="lm"); x += wd + sp
+ctext(d, W/2, 430, "প্রতিদিনের যাচাই করা চাকরির খবর", f(BN_B, 74), NAVY)
 pf = f(BN_H, 44); pills = [("সরকারি", BLUE), ("বেসরকারি", ORANGE), ("ব্যাংক", GREEN), ("এনজিও", RED)]
 pw = [d.textlength(t, font=pf) + 70 for t, _ in pills]; gap = 26; x = W/2 - (sum(pw) + gap*3)/2
 for (t, c), w in zip(pills, pw):
-    d.rounded_rectangle([x, 455, x + w, 535], radius=40, fill=c); ctext(d, x + w/2, 494, t, pf, WHITE); x += w + gap
-tf = f(BN_H, 38); t1, t2 = "✔", None
-line = "আবেদন শুধু অফিসিয়াল লিংকে"; line2 = "আমরা কোনো টাকা নিই না"
-w1, w2 = d.textlength(line, font=tf), d.textlength(line2, font=tf); tot = w1 + w2 + 80
-d.rounded_rectangle([W/2 - tot/2 - 50, 580, W/2 + tot/2 + 50, 656], radius=38, fill=WHITE, outline=GREEN, width=5)
-x = W/2 - tot/2; d.text((x, 617), line, font=tf, fill=GREEN, anchor="lm"); x += w1 + 40
-d.ellipse([x - 8, 609, x + 8, 625], fill=RED); x += 40; d.text((x, 617), line2, font=tf, fill=RED, anchor="lm")
-ctext(d, W/2, 712, "চাকরির খবর মিস না করতে পেজটি ফলো করুন", f(BN_S, 38), (70, 90, 130))
+    d.rounded_rectangle([x, 500, x + w, 580], radius=40, fill=c); ctext(d, x + w/2, 539, t, pf, WHITE); x += w + gap
+ctext(d, W/2, 660, "চাকরির খবর মিস না করতে পেজটি ফলো করুন", f(BN_S, 38), (70, 90, 130))
 cv.convert("RGB").save(f"{OUT}/cover_photo.png")
