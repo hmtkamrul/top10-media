@@ -65,10 +65,10 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
-8b. **Daily roundup Reel ("আজকের সেরা ১০") at 21:00.** After the 10 posts are scheduled:
+8b. **Daily roundup Reel ("আজকের সেরা ১০") at 22:00.** After the 10 posts are scheduled:
    `cd engine && python3 -W ignore build_roundup.py ../days/<date>.json ../<date>/` (music only, no voice-over;
    takes ~5 minutes). Push `<date>/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
-   Metricool post at `<date>T21:00:00+06:00` using `<date>/roundup.json`: text = caption,
+   Metricool post at `<date>T22:00:00+06:00` using `<date>/roundup.json`: text = caption,
    firstCommentText = first_comment (all 10 source links, numbered 1–10 in order), facebookData
    {"type": "REEL", "title": "আজকের সেরা ১০ খবর"}. Metricool allows only one first comment, so all links go in it.
 9. **Report** with SendUserMessage, in Banglish: the 10 headlines with their times, and anything that went wrong.
@@ -87,3 +87,16 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
   Do not make the other 7 and do not hand anything over for manual posting.
 - On any day, if `createScheduledPost` returns a plan/limit error, stop scheduling and tell the user in the report
   which posts could not be scheduled and that the paid Starter plan removes the limit.
+
+## Daytime single posts (10:00, 12:00, 14:00, 16:00, 18:00)
+A separate scheduled task runs at 09:40, 11:40, 13:40, 15:40 and 17:40 (Dhaka) and posts ONE story at the next
+even hour (10:00, 12:00, 14:00, 16:00, 18:00). Each run:
+1. Clones the repo as in step 1 and reads the editorial rules.
+2. Calls getScheduledPosts for today and yesterday and skips any story already scheduled or posted.
+3. Picks the single biggest fresh story of the moment that follows the rules (breaking international news,
+   a strong quote, a Cockroach/Delhi protest update, or a good Bangladesh story).
+4. Writes `days/<date>_HHMM.json` with that one story (format "video"), builds it with build_day.py into
+   `<date>_HHMM/`, pushes, checks the raw URL returns 200, and schedules it as a REEL at that hour.
+5. If a post is already scheduled within 15 minutes of that hour (for example one the user asked for), do nothing.
+6. No report message is needed unless something failed.
+The evening run (18:18) must not reuse any story from these daytime posts.
