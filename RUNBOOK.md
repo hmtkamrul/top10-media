@@ -29,7 +29,7 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    ```
    {"date_bn": "...", "stories": [ {
       "cat": "bd" | "intl" | "econ" | "sports",
-      "format": "video" | "image",
+      "format": "video"   (ALWAYS "video": every post is a motion Reel, no still images),
       "scene": EVERY story MUST get the theme that best matches it (no plain backgrounds):
                "war"          missiles/strikes/war (Middle East, Ukraine, Russia)
                "airport_fire" an attack or fire at an airport / facility
@@ -50,18 +50,19 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
       "source": "Prothom Alo | The Daily Star | Al Jazeera | BBC | Reuters | ...",
       "url": "article URL" } ] }
    ```
-   Order: biggest story first. Alternate video, image, video, image... so the 5 biggest are videos.
+   Order: biggest story first. All 10 stories are "video" (motion Reels). Never use "image".
    For any new source name, add its Bangla spelling to `SRC_BN` in `engine/build_day.py`.
 6. **Build:** `cd engine && python3 build_day.py ../days/<date>.json ../<date>/`
-   This writes `post_XX_reel.mp4` (9:16 Reels) for videos and `post_XX.jpg` for images, plus `posts.json` and `captions.txt`.
-   Open 2-3 of the images with Read to check that the Bangla text fits and renders correctly.
+   This writes `post_XX_reel.mp4` (9:16 Reels) for every story, plus `posts.json` and `captions.txt`.
+   Grab one frame from 2-3 of the Reels (`ffmpeg -ss 1 -i post_XX_reel.mp4 -frames:v 1 frame.jpg`) and open it with Read
+   to check that the Bangla text fits and renders correctly.
 7. **Publish media:** `git add -A && git commit -m "Posts for <date>" && git push origin HEAD:main`.
    Then `curl -s -o /dev/null -w "%{http_code}"` each raw URL. Every one must return 200 before you go on.
 8. **Schedule on Metricool**, one `createScheduledPost` per post, using `posts.json`:
    - `blogId` "7426819"; date `<date>T19:00:00+06:00`, then +12 minutes for each following post.
    - info: `providers [{"network":"facebook"}]`, `text` = caption, `firstCommentText` = first_comment,
      `media` = [raw URL], `autoPublish` true, `draft` false,
-     `facebookData` {"type": posts.json "facebook_type"} — "REEL" for the .mp4 Reels, "POST" for images
+     `facebookData` {"type": posts.json "facebook_type"} — always "REEL" (every post is a Reel)
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.

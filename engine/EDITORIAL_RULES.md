@@ -7,7 +7,8 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 - Up to **5 Bangladesh** stories, and only ones that pass the Bangladesh filter below.
 - Fill every remaining slot with **international** stories, so the total is always 10.
   - 2 good BD stories → 8 international. 4 good BD stories → 6 international. 0 → 10 international.
-- **5 videos + 5 images.** The 5 biggest stories become videos (animated flames, lights, embers); the other 5 are still images. Alternate video / image.
+- **All 10 are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
+  (checked 2026-10-17), so every story uses format "video" with its animated theme.
 
 ## Bangladesh filter (strict)
 ONLY include:
