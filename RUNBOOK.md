@@ -65,6 +65,12 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
+8b. **Daily roundup Reel ("আজকের সেরা ১০") at 21:00.** After the 10 posts are scheduled:
+   `cd engine && python3 -W ignore build_roundup.py ../days/<date>.json ../<date>/` (music only, no voice-over;
+   takes ~5 minutes). Push `<date>/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
+   Metricool post at `<date>T21:00:00+06:00` using `<date>/roundup.json`: text = caption,
+   firstCommentText = first_comment (all 10 source links, numbered 1–10 in order), facebookData
+   {"type": "REEL", "title": "আজকের সেরা ১০ খবর"}. Metricool allows only one first comment, so all links go in it.
 9. **Report** with SendUserMessage, in Banglish: the 10 headlines with their times, and anything that went wrong.
    End with a "📢 Group-e share korun" section: the 2 posts most likely to spread (big international/quote/protest
    stories first) with their Metricool plannerUrl, and for each the kind of Facebook group to share it in
