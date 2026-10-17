@@ -82,11 +82,10 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 - Post photos or AI-made faces of real people.
 - Copy article text word for word.
 
-## When Metricool can't take all posts (free plan: 20 posts per month)
-- On **2026-10-16** only: pick, build and schedule just the **3 biggest** stories (19:00, 19:12, 19:24).
-  Do not make the other 7 and do not hand anything over for manual posting.
-- On any day, if `createScheduledPost` returns a plan/limit error, stop scheduling and tell the user in the report
-  which posts could not be scheduled and that the paid Starter plan removes the limit.
+## Metricool plan
+- The account is on a paid plan (upgraded 2026-10-17), so there is no 20-posts-a-month limit any more.
+- If `createScheduledPost` still returns a plan/limit error, stop scheduling and tell the user which posts
+  could not be scheduled.
 
 ## Daytime single posts (10:00, 12:00, 14:00, 16:00, 18:00)
 A separate scheduled task runs at 09:40, 11:40, 13:40, 15:40 and 17:40 (Dhaka) and posts ONE story at the next
