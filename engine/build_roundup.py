@@ -145,10 +145,10 @@ def main(src, out, speaker="male", voice=False):
     lines = "\n".join(f"{str(i).translate(BN)}. {s['title_bn']}" for i, s in enumerate(st, 1))
     caption = (f"📺 আজকের সেরা {str(n).translate(BN)} খবর, এক ভিডিওতে ({data.get('date_bn', '')})\n\n{lines}\n\n"
                f"💬 আজকের কোন খবরটা আপনার কাছে সবচেয়ে বড় মনে হলো? কমেন্টে জানান 👇\n\n"
-               f"প্রতিদিন রাতে সেরা খবর পেতে পেজটি ফলো করুন ✅\n\n#Top10BreakingNews #BreakingNewsBD #আজকের_খবর")
+               f"{r.FOLLOW_LINE}\n\n#Top10BreakingNews #BreakingNewsBD #আজকের_খবর")
     links = "\n".join(f"{str(i).translate(BN)}. {r.SRC_BN.get(s['source'], s['source'])}: {s['url']}" for i, s in enumerate(st, 1))
     json.dump({"file": "roundup_reel.mp4", "facebook_type": "REEL", "title": "আজকের সেরা ১০ খবর",
-               "caption": caption, "first_comment": "📰 সব খবরের সূত্র:\n" + links},
+               "caption": caption, "first_comment": "📰 সব খবরের সূত্র:\n" + links + "\n\n" + r.FOLLOW_LINE},
               open(os.path.join(out, "roundup.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"built roundup_reel.mp4: {n} stories, {total:.0f} s")
 

@@ -492,6 +492,9 @@ def card(story, rank, total, date_bn, page_name, phase=0.0):
     return img
 
 
+FOLLOW_LINE = "🔔 এই রকম খবর পেতে পেজটি ফলো করুন: https://www.facebook.com/122128057347025755"
+
+
 def caption(story):
     src = SRC_BN.get(story["source"], story["source"])
     return (
@@ -499,13 +502,14 @@ def caption(story):
         f"{story['caption_bn']}\n\n"
         f"💬 {story.get('question_bn') or 'এই খবর নিয়ে আপনার মতামত কী?'} কমেন্টে জানান 👇\n\n"
         f"📰 সূত্র: {src} (লিংক কমেন্টে 👇)\n\n"
+        f"{FOLLOW_LINE}\n\n"
         f"#Top10BreakingNews #BreakingNewsBD #আজকের_খবর"
     )
 
 
 def first_comment(story):
     src = SRC_BN.get(story["source"], story["source"])
-    return f"📰 বিস্তারিত পড়ুন ({src}):\n{story['url']}"
+    return f"📰 বিস্তারিত পড়ুন ({src}):\n{story['url']}\n\n{FOLLOW_LINE}"
 
 
 def main(src, out, page_name="Top 10 Breaking News"):
