@@ -492,7 +492,7 @@ def card(story, rank, total, date_bn, page_name, phase=0.0):
     return img
 
 
-FOLLOW_LINE = "🔔 এই রকম খবর পেতে পেজটি ফলো করুন: https://www.facebook.com/122128057347025755"
+FOLLOW_LINE = "🔔 এই রকম খবর পেতে পেজটি ফলো করুন: https://www.facebook.com/profile.php?id=61580772667252"
 
 
 def caption(story):
