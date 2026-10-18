@@ -11,10 +11,10 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import render3 as r
 
 W, H = 1080, 1350
-HEAD = "‘আমি আটক, আন্দোলন নয়’"
-SUB = ["থিয়েটার থেকে রাজপথে: ভারতের তরুণ", "আন্দোলনের নতুন মুখ নেহা বোরা"]
+HEAD = ["‘আটকই এখন আমার", "বিশ্রামের সময়’"]
+SUB = ["বারবার আটক হয়েও রাজপথ ছাড়েননি,", "দিল্লির তরুণ আন্দোলনের মুখ নেহা বোরা"]
 BY = "— নেহা বোরা, ভারতের ছাত্রনেত্রী"
-SRC = "সূত্র: রয়টার্স"
+SRC = "সূত্র:  দ্য  নিউজ  মিনিট"
 
 
 def watercolor_bg(seed=7):
@@ -283,7 +283,7 @@ def poster_photo(path, phase=0.0):
     tw = int(980 * s)
     th = int(p.height * tw / p.width)
     pp = p.resize((tw, th), Image.LANCZOS)
-    top = 470
+    top = 530
     pf = Image.new("L", (1, th), 0)                          # soften the very top of the hair into the red
     for y in range(th):
         pf.putpixel((0, y), int(255 * min(1, y / 40)))
@@ -305,16 +305,19 @@ def poster_photo(path, phase=0.0):
 def dress(img):
     logo_pill(img)
     d = ImageDraw.Draw(img)
-    head = HEAD.replace(" ", "  ")
-    for size in range(120, 70, -2):
-        if r.width(d, head, r.BN_HEAD, r.EN_BLACK, size) <= W - 90:
+    heads = [h.replace(" ", "  ") for h in HEAD]
+    for size in range(124, 60, -2):
+        if all(r.width(d, h, r.BN_HEAD, r.EN_BLACK, size) <= W - 140 for h in heads):
             break
-    hw = r.width(d, head, r.BN_HEAD, r.EN_BLACK, size)
-    hy = 190
-    text_shadow(img, lambda dd, f: r.draw_runs(dd, (W - hw) / 2, hy, head, r.BN_HEAD, r.EN_BLACK, size, f))
-    r.grad_text(img, ((W - hw) / 2, hy - size * 0.1), head, size, r.SNOW)
+    y = 165
+    for i, h in enumerate(heads):
+        hw = r.width(d, h, r.BN_HEAD, r.EN_BLACK, size)
+        yy = y
+        text_shadow(img, lambda dd, f: r.draw_runs(dd, (W - hw) / 2, yy, h, r.BN_HEAD, r.EN_BLACK, size, f))
+        r.grad_text(img, ((W - hw) / 2, yy - size * 0.1), h, size, r.SNOW if i == 0 else r.FIRE)
+        y += size * 1.12
     d = ImageDraw.Draw(img)
-    y = hy + size * 1.35
+    y += 18
     for ln in SUB:
         ln2 = ln.replace(" ", "  ")
         lw = r.width(d, ln2, r.BN_SUB, r.EN_SEMI, 54)
