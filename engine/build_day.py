@@ -63,7 +63,8 @@ def main(src, out):
     for i, s in enumerate(data["stories"], 1):
         if True:   # every post is a Reel with music (user's rule since 2026-10-18; "format" is ignored)
             name = f"post_{i:02d}_reel.mp4"
-            make_video(s, os.path.join(out, name))
+            import kinetic                     # 16-20 s kinetic Reel (since 2026-10-18); make_video = old 9 s loop
+            kinetic.make_kinetic(s, os.path.join(out, name))
         else:
             name = f"post_{i:02d}.jpg"
             r.card(s, i, 10, "", PAGE).save(os.path.join(out, name), quality=92)

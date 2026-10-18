@@ -3,13 +3,23 @@
 Page name: **Top 10 Breaking News**. Logo: "TOP 10" with "BREAKING NEWS BD" underneath.
 Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 
-## Daily mix (10 posts, 7:00–9:00 PM Dhaka, one every 12 minutes)
-- Up to **5 Bangladesh** stories, and only ones that pass the Bangladesh filter below.
-- Fill every remaining slot with **international** stories, so the total is always 10.
-  - 2 good BD stories → 8 international. 4 good BD stories → 6 international. 0 → 10 international.
-- **All 10 are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
+## Daily schedule (11 Reels, since 2026-10-18)
+- 10:00, 13:00, 16:00: one breaking Reel each.
+- 19:00–21:00: 7 Reels, one every 20 minutes.
+- 22:00: "আজকের সেরা ১০" roundup of the day's 10 stories (3 daytime + 7 evening).
+
+## Daily mix
+- **Bangladesh angle first.** Page data (14-17 Oct) shows the most views and watch time on stories that touch
+  Bangladesh: Neha Bora saying "Bangladesh showed us the way", Saudi flight cancellations stranding Bangladeshi
+  passengers, and the Delhi Cockroach protest. Look first for: Bangladeshi expats/probashi (Gulf, Malaysia, Italy…),
+  flights, what foreign leaders/media say about Bangladesh, Bangladeshis abroad, positive Bangladesh news.
+- Up to **3 Bangladesh** stories in the evening 7, and only ones that pass the Bangladesh filter below.
+- Fill every remaining slot with **international** stories, so the evening total is always 7.
+- **All posts are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
   (checked 2026-10-17), so every story uses format "video" with its animated theme.
-  Every Reel (all 15 a day) has original news-style background music, same style as the 22:00 roundup (added 2026-10-18).
+  Every Reel has original news-style background music, same style as the 22:00 roundup (added 2026-10-18).
+- **Reels must hold attention** (viewers were leaving after 2-5 s with the old 9 s static loop). Each story has
+  `points_bn`: 3-4 short, punchy facts that appear one by one, most surprising first, with numbers where possible.
 
 ## Bangladesh filter (strict)
 ONLY include:
