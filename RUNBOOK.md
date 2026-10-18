@@ -78,7 +78,8 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
 8b. **Daily roundup Reel ("আজকের সেরা ১০") at 22:00.** After the 7 posts are scheduled, merge the day's 10 stories
    (the 3 daytime files days/<date>_1000.json, _1300.json, _1600.json that exist, plus the 7 evening stories):
-   `cd engine && python3 merge_day.py ../days/<date>_top10.json ../days/<date>_1000.json ../days/<date>_1300.json ../days/<date>_1600.json ../days/<date>.json`
+   `cd engine && python3 merge_day.py ../days/<date>_top10.json ../days/<date>_[0-9][0-9][0-9][0-9].json ../days/<date>.json`
+   (the glob picks up every daytime file of that date, in time order)
    (missing files are skipped; biggest stories first is fine as is). Then
    `python3 -W ignore build_roundup.py ../days/<date>_top10.json ../<date>/` (music only, no voice-over;
    takes ~5 minutes). Push `<date>/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
