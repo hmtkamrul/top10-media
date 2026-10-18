@@ -9,6 +9,7 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   - 2 good BD stories → 8 international. 4 good BD stories → 6 international. 0 → 10 international.
 - **All 10 are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
   (checked 2026-10-17), so every story uses format "video" with its animated theme.
+  Every Reel (all 15 a day) has original news-style background music, same style as the 22:00 roundup (added 2026-10-18).
 
 ## Bangladesh filter (strict)
 ONLY include:

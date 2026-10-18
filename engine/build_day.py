@@ -26,6 +26,18 @@ PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
 
+AUDIO_FX = "acompressor=threshold=-20dB:ratio=4:attack=5:release=120:makeup=6dB,loudnorm=I=-11:TP=-1:LRA=7"
+
+
+def make_music(seconds, path, seed):
+    """Original news-bed music (same style as the roundup) with a stinger at the start."""
+    import numpy as np
+    import music
+    bed = music.news_bed(seconds, hits=[0.9], seed=seed)
+    mix = np.tanh(bed / (np.max(np.abs(bed)) + 1e-9) * 2.2) / np.tanh(2.2)
+    music.write_wav(path, mix * 0.97)
+
+
 def make_video(story, path):
     tmp = tempfile.mkdtemp()
     try:
@@ -34,8 +46,12 @@ def make_video(story, path):
         once = f"{tmp}/once.mp4"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{tmp}/f%03d.png",
                         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", once], check=True)
+        looped = f"{tmp}/looped.mp4"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", str(LOOPS - 1), "-i", once,
-                        "-c", "copy", path], check=True)
+                        "-c", "copy", looped], check=True)
+        make_music(FRAMES * LOOPS / FPS, f"{tmp}/music.wav", seed=sum(map(ord, story.get("title_en", ""))) % 997)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", looped, "-i", f"{tmp}/music.wav",
+                        "-c:v", "copy", "-af", AUDIO_FX, "-c:a", "aac", "-b:a", "192k", "-shortest", path], check=True)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -45,7 +61,7 @@ def main(src, out):
     os.makedirs(out, exist_ok=True)
     posts = []
     for i, s in enumerate(data["stories"], 1):
-        if s.get("format") == "video":
+        if True:   # every post is a Reel with music (user's rule since 2026-10-18; "format" is ignored)
             name = f"post_{i:02d}_reel.mp4"
             make_video(s, os.path.join(out, name))
         else:

@@ -53,7 +53,7 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    Order: biggest story first. All 10 stories are "video" (motion Reels). Never use "image".
    For any new source name, add its Bangla spelling to `SRC_BN` in `engine/build_day.py`.
 6. **Build:** `cd engine && python3 build_day.py ../days/<date>.json ../<date>/`
-   This writes `post_XX_reel.mp4` (9:16 Reels) for every story, plus `posts.json` and `captions.txt`.
+   This writes `post_XX_reel.mp4` (9:16 Reels, 9 s, with original news-style background music like the roundup) for every story, plus `posts.json` and `captions.txt`.
    Grab one frame from 2-3 of the Reels (`ffmpeg -ss 1 -i post_XX_reel.mp4 -frames:v 1 frame.jpg`) and open it with Read
    to check that the Bangla text fits and renders correctly.
 7. **Publish media:** `git add -A && git commit -m "Posts for <date>" && git push origin HEAD:main`.
