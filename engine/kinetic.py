@@ -31,7 +31,25 @@ def back(t):
 
 
 # ---------- background ----------
+def photo_loop(story):
+    """Static photo background with a slow push-in, for stories with "bg_image" (1080x1920)."""
+    base = Image.open(story["bg_image"]).convert("RGB").resize((RW, RH))
+    yy = np.arange(RH)[:, None, None] / RH                  # darken the text area, keep the face bright
+    shade = 0.5 + 0.5 * np.clip((yy - 0.52) / 0.12, 0, 1)
+    base = Image.fromarray(np.uint8(np.asarray(base, np.float32) * shade))
+    out = []
+    for i in range(LOOP):
+        z = 1.0 + 0.015 * (0.5 - 0.5 * math.cos(2 * math.pi * i / LOOP))
+        w, h = int(RW * z), int(RH * z)
+        im = base.resize((w, h), Image.BICUBIC)
+        ox, oy = (w - RW) // 2, (h - RH)
+        out.append(im.crop((ox, oy, ox + RW, oy + RH)))
+    return out
+
+
 def scene_loop(story):
+    if story.get("bg_image"):
+        return photo_loop(story)
     from scenes import SCENE_BUILDERS
     from scenes2 import SCENE_BUILDERS2
     builders = {**SCENE_BUILDERS, **SCENE_BUILDERS2}
@@ -186,7 +204,7 @@ def render(story, out_dir):
     """Write frames to out_dir as JPEGs; return (n_frames, duration_s, hit_times)."""
     loop = scene_loop(story)
     lines, hsize = headline_lines(story)
-    head = text_sprite(lines, r.BN_HEAD, r.EN_BLACK, hsize, stops=r.FIRE)
+    head = text_sprite(lines, r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW if story.get("bg_image") else r.FIRE)
     head_first = text_sprite(lines[:1], r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW) if len(lines) > 1 else None
     qb = story.get("quote_by")
     by = text_sprite([_sp("— " + qb)], r.BN_SUB, r.EN_SEMI, 46, fill=r.YELLOW + (255,)) if qb else None
@@ -231,13 +249,21 @@ def render(story, out_dir):
                   alpha=ease((t - 1.0) / 0.4) * (1 - 0.0 * mv))
             # points stack
             y = 360 + head.height * 0.72 + (110 if by is not None else 70)
+            photo = bool(story.get("bg_image"))
             for i, sp in enumerate(pts):
                 t0 = HOOK + PER_POINT * i
                 if t < t0:
                     break
                 k = ease((t - t0) / 0.45)
-                paste(img, sp, 70 - 260 * (1 - k), y, alpha=k)
-                y += sp.height + (26 if len(pts) < 4 else 18)
+                if photo:                              # one fact at a time; the previous one slides out
+                    nxt = HOOK + PER_POINT * (i + 1)
+                    if i < len(pts) - 1 and t >= nxt:
+                        continue
+                    out_k = ease((t - (nxt - 0.35)) / 0.35) if i < len(pts) - 1 else 0
+                    paste(img, sp, 70 - 260 * (1 - k) + 300 * out_k, y, alpha=k * (1 - out_k))
+                else:
+                    paste(img, sp, 70 - 260 * (1 - k), y, alpha=k)
+                    y += sp.height + (26 if len(pts) < 4 else 18)
         else:                                          # outro / follow card
             k = ease((t - t_out) / 0.4)
             dim = Image.new("RGBA", (RW, RH), (0, 0, 0, int(150 * k)))

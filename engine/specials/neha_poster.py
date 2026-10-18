@@ -265,7 +265,7 @@ def painted_person(path):
     return p
 
 
-def poster_photo(path, phase=0.0):
+def poster_photo(path, phase=0.0, dressed=True):
     bg = watercolor_bg()
     sc = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sc.alpha_composite(crowd(phase))
@@ -299,7 +299,7 @@ def poster_photo(path, phase=0.0):
     for y in range(H):
         grad.putpixel((0, y), int(215 * min(1, max(0, (y - 1150) / 120))))
     img.paste((10, 6, 8), (0, 0), grad.resize((W, H)))
-    return dress(img)
+    return dress(img) if dressed else img
 
 
 def dress(img):
@@ -333,3 +333,17 @@ def dress(img):
     sw = r.width(d, SRC, r.BN_SUB, r.EN_SEMI, 34)
     r.draw_runs(d, (W - sw) / 2, 1288, SRC, r.BN_SUB, r.EN_SEMI, 34, (255, 255, 255))
     return img
+
+
+def reel_background(path, out):
+    """1080x1920 background for a kinetic photo Reel: red watercolour on top, painted person in the lower half."""
+    scene = poster_photo(path, 0.0, dressed=False)
+    canvas = watercolor_bg(11).resize((1080, 1920), Image.LANCZOS)
+    a = np.asarray(painterly(canvas), np.float32) * np.asarray(paper(5).repeat(1, 0), np.float32).mean() 
+    canvas = Image.fromarray(np.uint8(np.clip(a, 0, 255)))
+    m = Image.new("L", (1, H), 0)
+    for y in range(H):
+        m.putpixel((0, y), int(255 * min(1, max(0, (y - 380) / 260))))
+    canvas.paste(scene, (0, 570), m.resize((W, H)))
+    canvas.save(out, quality=92)
+    return out
