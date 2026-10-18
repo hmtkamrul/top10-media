@@ -24,6 +24,7 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      facts only. No political, negative or controversial BD news, and no BD official's photo or
      name-led headline.
    - Fill the rest with the biggest international stories popular with Bangladeshi readers. Always 10 in total.
+   - Each story needs its OWN article URL (no live-blog page reused for several stories); if two stories share one page, find a dedicated article or drop one.
    - Verify every fact on the article page. Rewrite in your own Bangla words; never copy.
 5. **Write `days/<YYYY-MM-DD>.json`** with the same shape as `days/2026-10-14.json`:
    ```
