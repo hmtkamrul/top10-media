@@ -1,6 +1,7 @@
 """Kinetic news Reel (1080x1920, ~16-20 s): built to keep people watching.
 
-0.0 s   white flash + "ব্রেকিং নিউজ" ribbon slams in, headline pops in word by word
+frame 0 = cover (ribbon + full headline, Facebook uses it as the thumbnail);
+0.04 s  "ব্রেকিং নিউজ" ribbon slams in, headline pops in word by word
 2.4 s   headline moves up; 3-4 key facts ("points_bn") slide in one by one, ~3.4 s each
 end     follow card: "পুরো খবর কমেন্টে" + "ফলো করুন"
 Background: the story's animated themed scene (same builders as the cards), darkened.
@@ -221,7 +222,7 @@ def render(story, out_dir):
     hits = [0.05] + [HOOK + PER_POINT * i for i in range(len(pts))]
     t_out = dur - OUTRO
     for f in range(n):
-        t = f / FPS
+        t = f / FPS if f > 0 else HOOK - 0.35     # frame 0 is the cover: everything in place
         img = loop[(f // 2) % LOOP].convert("RGBA")
         d = ImageDraw.Draw(img)
         # progress bar (top) + logo
@@ -272,8 +273,6 @@ def render(story, out_dir):
             pulse = 1.0 + 0.05 * math.sin(2 * math.pi * (t - t_out) * 1.6)
             paste(img, oc, (RW - oc.width) / 2, 820, alpha=k)
             paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k, scale=pulse)
-        if t < 0.12:                                   # white flash on the first frames
-            img.alpha_composite(Image.new("RGBA", (RW, RH), (255, 255, 255, int(200 * (1 - t / 0.12)))))
         img.convert("RGB").save(f"{out_dir}/f{f:05d}.jpg", quality=88)
     return n, dur, hits
 

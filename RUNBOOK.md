@@ -64,7 +64,8 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    This writes `post_XX_reel.mp4` for every story: a 16-20 s kinetic Reel (engine/kinetic.py) with a white flash +
    "ব্রেকিং নিউজ" hook, the headline, the points_bn facts sliding in one by one, a "ফলো করুন" end card, and original
    news-style music. ~45 s per Reel. Also writes `posts.json` and `captions.txt`.
-   Grab frames at 1.8 s and ~12 s from 2-3 of the Reels (`ffmpeg -ss 12 -i post_XX_reel.mp4 -frames:v 1 frame.jpg`)
+   Frame 0 is the Reel's cover/thumbnail on Facebook (headline + ribbon, never a blank or white frame).
+   Grab frames at 0 s and ~12 s from 2-3 of the Reels (`ffmpeg -ss 12 -i post_XX_reel.mp4 -frames:v 1 frame.jpg`)
    and open them with Read to check that the Bangla text fits and renders correctly.
 7. **Publish media:** `git add -A && git commit -m "Posts for <date>" && git push origin HEAD:main`.
    Then `curl -s -o /dev/null -w "%{http_code}"` each raw URL. Every one must return 200 before you go on.
