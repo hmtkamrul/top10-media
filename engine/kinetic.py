@@ -107,9 +107,8 @@ def ribbon_sprite():
     return im
 
 
-def point_sprite(text, n):
+def point_sprite(text, n, size=54):
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    size = 54
     lines = [_sp(l) for l in r.wrap_balanced(d, text.strip().rstrip("।") + "।", r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
     while len(lines) > 3 and size > 40:
         size -= 4
@@ -194,7 +193,8 @@ def render(story, out_dir):
     src = text_sprite([_sp("সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
     rib, logo = ribbon_sprite(), logo_sprite()
-    pts = [point_sprite(p, i + 1) for i, p in enumerate(points_of(story))]
+    plist = points_of(story)
+    pts = [point_sprite(p, i + 1, 54 if len(plist) < 4 else 48) for i, p in enumerate(plist)]
     oa, ob, oc = outro_sprites(story)
     words = [w for l in lines for w in l.split("  ")]
 
@@ -237,7 +237,7 @@ def render(story, out_dir):
                     break
                 k = ease((t - t0) / 0.45)
                 paste(img, sp, 70 - 260 * (1 - k), y, alpha=k)
-                y += sp.height + 26
+                y += sp.height + (26 if len(pts) < 4 else 18)
         else:                                          # outro / follow card
             k = ease((t - t_out) / 0.4)
             dim = Image.new("RGBA", (RW, RH), (0, 0, 0, int(150 * k)))
