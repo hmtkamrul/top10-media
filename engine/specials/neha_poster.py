@@ -241,12 +241,17 @@ if __name__ == "__main__":
 _CUT = {}
 
 
+CROP_LEFT, PERSON_DX, UPSCALE = 150, 70, 1.0
+
+
 def painted_person(path):
     if path in _CUT:
         return _CUT[path]
     import cv2, tempfile
     src = Image.open(path).convert("RGB")
-    src = src.crop((150, 0, src.width, src.height))        # drop the camera at the left edge
+    src = src.crop((CROP_LEFT, 0, src.width, src.height))  # drop the camera at the left edge (Neha photo)
+    if UPSCALE != 1.0:
+        src = src.resize((int(src.width * UPSCALE), int(src.height * UPSCALE)), Image.LANCZOS)
     tmp = tempfile.mktemp(suffix=".png")
     src.save(tmp)
     cut = r.cutout(tmp)
@@ -292,7 +297,7 @@ def poster_photo(path, phase=0.0, dressed=True):
         hf.putpixel((x, 0), int(255 * min(1, x / 90, (tw - 1 - x) / 90)))
     m = ImageChops.multiply(pp.split()[3], pf.resize((tw, th)))
     pp.putalpha(ImageChops.multiply(m, hf.resize((tw, th))))
-    img.alpha_composite(pp, ((W - tw) // 2 + 70, top))
+    img.alpha_composite(pp, ((W - tw) // 2 + PERSON_DX, top))
     a = np.asarray(img.convert("RGB"), np.float32) * (0.75 + 0.25 * paper(9)[..., None])
     img = Image.fromarray(np.uint8(np.clip(a * 1.04, 0, 255)))
     grad = Image.new("L", (1, H), 0)
