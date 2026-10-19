@@ -121,6 +121,7 @@ def main(src, out, speaker="male", voice=False):
             t += int(dur[key] * FPS) / FPS
         SR = music.SR
         bed = music.news_bed(total, hits=[starts[f"s{i}"] for i in range(1, n + 1)])
+        bed = music.with_jingle(bed)                     # signature jingle at the start (since 2026-10-19)
         vo = np.zeros_like(bed)
         for key, path in clips.items():
             x = _load(path, SR)

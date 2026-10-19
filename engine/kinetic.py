@@ -283,7 +283,7 @@ def make_kinetic(story, path):
     tmp = tempfile.mkdtemp()
     try:
         n, dur, hits = render(story, tmp)
-        bed = music.news_bed(dur, hits=hits, seed=sum(map(ord, story.get("title_en", ""))) % 997)
+        bed = music.reel_track(dur, story, hits=hits, seed=sum(map(ord, story.get("title_en", ""))) % 997)  # jingle + mood bed
         mix = np.tanh(bed / (np.max(np.abs(bed)) + 1e-9) * 2.2) / np.tanh(2.2)
         music.write_wav(f"{tmp}/m.wav", mix * 0.97)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"{tmp}/f%05d.jpg",

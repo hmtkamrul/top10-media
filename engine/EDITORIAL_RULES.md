@@ -18,6 +18,10 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 - **All posts are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
   (checked 2026-10-17), so every story uses format "video" with its animated theme.
   Every Reel has original news-style background music, same style as the 22:00 roundup (added 2026-10-18).
+- **Music (since 2026-10-19):** every Reel and the roundup start with the same ~1.6 s "Top 10" signature jingle
+  (brand sound). The bed underneath follows the story's mood (engine/music.py mood_of): tense = war/attacks,
+  hopeful = good Bangladesh/economy/development news, protest = protests/US politics, sports = football/cricket,
+  calm = quote posts and diplomacy. A story can force one with "mood": "tense|hopeful|protest|sports|calm".
 - **Reels must hold attention** (viewers were leaving after 2-5 s with the old 9 s static loop). Each story has
   `points_bn`: 3-4 short, punchy facts that appear one by one, most surprising first, with numbers where possible.
 
