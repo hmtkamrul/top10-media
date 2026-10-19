@@ -242,6 +242,7 @@ _CUT = {}
 
 
 CROP_LEFT, PERSON_DX, UPSCALE = 150, 70, 1.0
+PERSON_W, SCENE_Y = 980, 570
 
 
 def painted_person(path):
@@ -285,7 +286,7 @@ def poster_photo(path, phase=0.0, dressed=True):
     img = Image.fromarray(np.uint8(np.clip(a, 0, 255))).convert("RGBA")
     p = painted_person(path)
     s = 1.0 + 0.012 * math.sin(2 * math.pi * phase)        # gentle "breathing" zoom for the Reel
-    tw = int(980 * s)
+    tw = int(PERSON_W * s)
     th = int(p.height * tw / p.width)
     pp = p.resize((tw, th), Image.LANCZOS)
     top = 530
@@ -349,6 +350,6 @@ def reel_background(path, out):
     m = Image.new("L", (1, H), 0)
     for y in range(H):
         m.putpixel((0, y), int(255 * min(1, max(0, (y - 380) / 260))))
-    canvas.paste(scene, (0, 570), m.resize((W, H)))
+    canvas.paste(scene, (0, SCENE_Y), m.resize((W, H)))
     canvas.save(out, quality=92)
     return out
