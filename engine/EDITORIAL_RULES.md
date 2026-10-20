@@ -3,10 +3,26 @@
 Page name: **Top 10 Breaking News**. Logo: "TOP 10" with "BREAKING NEWS BD" underneath.
 Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 
-## Daily schedule (11 Reels, since 2026-10-18)
-- 10:00, 13:00, 16:00: one breaking Reel each.
-- 19:00–21:00: 7 Reels, one every 20 minutes.
-- 22:00: "আজকের সেরা ১০" roundup of the day's 10 stories (3 daytime + 7 evening).
+## Daily schedule (11 Reels, since 2026-10-21)
+- One Reel every hour from **12:00 to 21:00** (10 Reels). Nothing in the morning (page data: ~20 views).
+- 22:00: "আজকের সেরা ১০" roundup of the day's 10 stories (the user wants to keep it).
+
+## Daily content plan (user's instructions, 2026-10-20; data 17-20 Oct: 12:00-20:00 posts got 150-577 views)
+- **2-3 war stories every day, in prime time 14:00-19:00:** the Iran war, the US/Israel-Palestine war, Hormuz,
+  the Houthi-Saudi war. Facts from reliable outlets.
+- **At least ONE every day:** an analysis/opinion piece from a well-known outlet (Foreign Affairs, Al Jazeera,
+  The Guardian, Middle East Eye, Responsible Statecraft, Prothom Alo's translated columns, etc.) or by a named
+  diplomat/analyst that argues Iran is holding its own or winning, or is critical of the US/Israel war; OR real
+  news that is bad for the US in this war (losses, costs, allies pulling back, failed goals). Rules: the piece
+  must really exist and say that; attribute it ("বিশ্লেষণ: <name>") and label opinion as opinion in the caption;
+  never invent claims or quotes. Use the Iran leaders painting as the background:
+  `"bg_image": "assets/bg_iran_leaders.jpg"`.
+- **Trump stories:** `"bg_image": "assets/bg_trump.jpg"` (painted Trump).
+- **Delhi Cockroach / Gen-Z protest stories:** `"bg_image": "assets/bg_neha.jpg"` (painted Neha Bora).
+- Fill the other slots with what works: Saudi/Gulf + probashi news (best performer), Bangladesh big breaking news
+  (per the user's instructions), Delhi protest. Skip analysis pieces with no Bangladesh or war angle.
+- The user will send more photos to paint; when one arrives, use it (painted with specials/neha_poster.py
+  reel_background, as done for Neha, Ishraque, Trump and the Iran leaders).
 
 ## Daily mix
 - **Bangladesh angle first.** Page data (14-17 Oct) shows the most views and watch time on stories that touch

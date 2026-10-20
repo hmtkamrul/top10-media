@@ -1,9 +1,10 @@
 # Daily run — Top 10 Breaking News (Facebook)
 
-Schedule since 2026-10-18 (11 Reels a day):
-- Daytime singles at **10:00, 13:00, 16:00** (separate task, see "Daytime single posts").
-- Evening run at 18:18: **7 posts, one every 20 minutes from 19:00 to 21:00**.
-- **22:00 roundup** "আজকের সেরা ১০" of the day's 10 stories (3 daytime + 7 evening).
+Schedule since 2026-10-21 (11 Reels a day, one per hour):
+- **One Reel every hour from 12:00 to 21:00** (10 Reels), made one at a time by the hourly task (see
+  "Single posts through the day"). Nothing before 12:00: morning Reels got ~20 views.
+- **22:00 roundup** "আজকের সেরা ১০" of the day's 10 stories (separate task at 21:10).
+- The old "evening run of 7 posts" no longer exists. Steps 1-9 below still describe how to build and schedule.
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 
 ## Fixed settings
@@ -103,16 +104,16 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 - If `createScheduledPost` still returns a plan/limit error, stop scheduling and tell the user which posts
   could not be scheduled.
 
-## Daytime single posts (10:00, 13:00, 16:00)
-A separate scheduled task runs at 09:40, 12:40 and 15:40 (Dhaka) and posts ONE story at 10:00, 13:00 or 16:00.
+## Single posts through the day (12:00-21:00, every hour)
+One scheduled task runs at :40 from 11:40 to 20:40 (Dhaka) and posts ONE story at the next full hour.
 Each run:
-1. Clones the repo as in step 1 and reads the editorial rules.
-2. Calls getScheduledPosts for today and yesterday and skips any story already scheduled or posted.
-3. Picks the single biggest fresh story of the moment that follows the rules, Bangladesh angle first (probashi,
-   flights, Bangladesh in foreign news, good Bangladesh story), then a strong quote, a Cockroach/Delhi protest
-   update, or breaking international news.
-4. Writes `days/<date>_HHMM.json` with that one story (format "video", with points_bn), builds it with build_day.py into
-   `<date>_HHMM/`, pushes, checks the raw URL returns 200, and schedules it as a REEL at that hour.
-5. If a post is already scheduled within 15 minutes of that hour (for example one the user asked for), do nothing.
-6. No report message is needed unless something failed.
-The evening run (18:18) must not reuse any story from these daytime posts.
+1. Clones the repo as in step 1 and reads the editorial rules (especially "Daily content plan").
+2. Calls getScheduledPosts for today and yesterday; skips any story already scheduled or posted, and does nothing
+   if a post is already scheduled within 30 minutes of the target hour (for example one the user asked for).
+3. Decides what this slot needs from the "Daily content plan" (war stories in 14:00-19:00, the daily pro-Iran /
+   anti-US-war analysis, probashi, etc.) by looking at what is already scheduled today, then picks the biggest
+   fresh story of that kind.
+4. Writes `days/<date>_HHMM.json` with that one story (format "video", with points_bn; add "bg_image" from
+   engine/assets when the plan says so), builds it with build_day.py into `<date>_HHMM/`, pushes, checks the raw
+   URL returns 200, and schedules it as a REEL at that hour.
+5. No report message is needed unless something failed.
