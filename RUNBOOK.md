@@ -80,11 +80,17 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
-8b. **Daily roundup Reel ("আজকের সেরা ১০") at 22:00.** After the 7 posts are scheduled, merge the day's 10 stories
-   (the 3 daytime files days/<date>_1000.json, _1300.json, _1600.json that exist, plus the 7 evening stories):
-   `cd engine && python3 merge_day.py ../days/<date>_top10.json ../days/<date>_[0-9][0-9][0-9][0-9].json ../days/<date>.json`
-   (the glob picks up every daytime file of that date, in time order)
-   (missing files are skipped; biggest stories first is fine as is). Then
+8b. **Daily roundup Reel ("আজকের সেরা ১০") at 22:00.** Built in the 19:30 run, after the 20h and 21h Reels are scheduled.
+   **Order = best performers first (user's rule, 2026-10-21):** the Reels already published today (12:00-19:00)
+   go first, sorted by **views per hour since publishing** (not raw views, so the 12:00 Reel's longer head start
+   doesn't win by default). The 20:00 and 21:00 Reels are not out yet, so they go last, at 9 and 10.
+   - Get each published Reel's views from Metricool (`getAnalyticsDataByMetrics`, Facebook reels metrics;
+     find the IDs with `getAnalyticsAvailableMetrics` network "facebook", connector "reels"), match each to its
+     story by the article link in its first comment / caption, and divide views by hours since its publish time.
+   - Write the matched article URLs, best first, one per line, to `days/<date>_order.txt` (leave out 20h/21h).
+   - If view data can't be read, skip `--order` (time order) and say so in the report.
+   `cd engine && python3 merge_day.py --order ../days/<date>_order.txt ../days/<date>_top10.json ../days/<date>_[0-9][0-9][0-9][0-9].json`
+   (the glob picks up every file of that date; stories not in the order file keep their time order after the ranked ones). Then
    `python3 -W ignore build_roundup.py ../days/<date>_top10.json ../<date>/` (music only, no voice-over;
    takes ~5 minutes). Push `<date>/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
    Metricool post at `<date>T22:00:00+06:00` using `<date>/roundup.json`: text = caption,

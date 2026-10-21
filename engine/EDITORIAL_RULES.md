@@ -6,6 +6,8 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 ## Daily schedule (11 Reels, since 2026-10-21)
 - One Reel every hour from **12:00 to 21:00** (10 Reels). Nothing in the morning (page data: ~20 views).
 - 22:00: "আজকের সেরা ১০" roundup of the day's 10 stories (the user wants to keep it).
+  Order (user, 2026-10-21): today's best-performing Reels first (views per hour), the 20:00 and 21:00 Reels last
+  at 9 and 10. See RUNBOOK step 8b.
 
 ## Daily content plan (user's instructions, 2026-10-20; data 17-20 Oct: 12:00-20:00 posts got 150-577 views)
 - **2-3 war stories every day, in prime time 14:00-19:00:** the Iran war, the US/Israel-Palestine war, Hormuz,
