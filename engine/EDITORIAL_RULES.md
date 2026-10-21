@@ -17,8 +17,26 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   must really exist and say that; attribute it ("বিশ্লেষণ: <name>") and label opinion as opinion in the caption;
   never invent claims or quotes. Use the Iran leaders painting as the background:
   `"bg_image": "assets/bg_iran_leaders.jpg"`.
-- **Trump stories:** `"bg_image": "assets/bg_trump.jpg"` (painted Trump).
-- **Delhi Cockroach / Gen-Z protest stories:** `"bg_image": "assets/bg_neha.jpg"` (painted Neha Bora).
+- **Painted photo backgrounds (engine/assets, from the user's photos, 2026-10-21).** When a story is mainly
+  about one of these people or places, ALWAYS set `"bg_image"` to one of their files (rotate the variants so
+  back-to-back Reels don't look the same; check today's posts):
+  | Story about | bg_image files |
+  |---|---|
+  | Donald Trump | assets/bg_trump.jpg, bg_trump_2.jpg, bg_trump_3.jpg, bg_trump_4.jpg |
+  | Vladimir Putin | assets/bg_putin_1.jpg, bg_putin_2.jpg |
+  | Kim Jong Un | assets/bg_kim.jpg |
+  | Xi Jinping | assets/bg_xi.jpg |
+  | Narendra Modi | assets/bg_modi_1.jpg, bg_modi_2.jpg |
+  | Neha Bora / Delhi Gen-Z protest | assets/bg_neha.jpg, bg_neha_2.jpg, bg_neha_3.jpg |
+  | Abhijeet Dipke / Cockroach Janta Party | assets/bg_abhijit_1.jpg, bg_abhijit_2.jpg |
+  | Mojtaba Khamenei (Iran's Supreme Leader) | assets/bg_mojtaba_1.jpg, bg_mojtaba_2.jpg |
+  | Masoud Pezeshkian (Iran's President) | assets/bg_pezeshkian.jpg |
+  | Abbas Araghchi (Iran's FM) | assets/bg_araghchi.jpg |
+  | Pro-Iran analysis / Iran leadership in general | assets/bg_iran_leaders.jpg |
+  | Bangladesh (country-level good news, Bangladesh abroad) | assets/bg_bangladesh.jpg |
+  | Dhaka (city news) | assets/bg_dhaka.jpg |
+  If several people fit, use the one the headline is about. New photos from the user: paint them with
+  specials/neha_poster.py (`reel_background`, see /tmp batch script pattern in git history) and add a row here.
 - Fill the other slots with what works: Saudi/Gulf + probashi news (best performer), Bangladesh big breaking news
   (per the user's instructions), Delhi protest. Skip analysis pieces with no Bangladesh or war angle.
 - The user will send more photos to paint; when one arrives, use it (painted with specials/neha_poster.py
