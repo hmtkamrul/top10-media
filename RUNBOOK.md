@@ -1,9 +1,11 @@
 # Daily run — Top 10 Breaking News (Facebook)
 
 Schedule since 2026-10-21 (11 Reels a day, one per hour):
-- **One Reel every hour from 12:00 to 21:00** (10 Reels), made one at a time by the hourly task (see
-  "Single posts through the day"). Nothing before 12:00: morning Reels got ~20 views.
-- **22:00 roundup** "আজকের সেরা ১০" of the day's 10 stories (separate task at 21:10).
+- **One Reel every hour from 12:00 to 21:00** (10 Reels). Nothing before 12:00: morning Reels got ~20 views.
+- **22:00 roundup** "আজকের সেরা ১০" of the day's 10 stories.
+- Since 2026-10-21 (to save usage) ONE batch task makes them, 3 runs a day on Sonnet: 11:30 → 12-15h,
+  15:30 → 16-19h, 19:30 → 20h, 21h + the 22:00 roundup. Each run writes one days/<date>_<first HHMM>.json with
+  its stories in slot order. (The "Single posts" section below still describes how each story is chosen.)
 - The old "evening run of 7 posts" no longer exists. Steps 1-9 below still describe how to build and schedule.
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 
