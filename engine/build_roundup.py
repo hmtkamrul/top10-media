@@ -1,4 +1,4 @@
-"""Build the daily "২৪ ঘণ্টার সেরা ১০" roundup Reel (posted at 14:00 since 2026-10-23, covers the previous day) (1080x1920) from a day's stories JSON.
+"""Build the daily "২৪ ঘণ্টার সেরা ১০" roundup Reel (posted at 16:00 since 2026-10-24, covers the previous day) (1080x1920) from a day's stories JSON.
 
 Usage: python3 build_roundup.py ../days/<yesterday>_top10.json ../<today>_roundup/
 Writes roundup_reel.mp4 and roundup.json (caption + first comment) into the output folder.
@@ -110,7 +110,7 @@ def main(src, out, speaker="male", voice=False):
             nf = int(dur[f"s{si}"] * FPS)
             for i in range(nf):
                 save(overlay(loop[i % LOOP].copy(), si, n, i / nf))
-        outro = [title_card(i / LOOP, ["প্রতিদিন দুপুর ২টায়", "সেরা ১০ খবর"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
+        outro = [title_card(i / LOOP, ["প্রতিদিন বিকেল ৪টায়", "সেরা ১০ খবর"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
         for i in range(int(dur["outro"] * FPS)):
             save(outro[i % LOOP])
         total = k / FPS

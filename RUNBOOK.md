@@ -1,13 +1,13 @@
 # Daily run — Top 10 Breaking News (Facebook)
 
-Schedule since 2026-10-22 (user's rule; 11 Reels a day, one per hour, 12:00-22:00):
-- **14:00 = roundup** "২৪ ঘণ্টার সেরা ১০": the 10 best Reels of the PREVIOUS day (12:00-22:00), best first.
-  14:00 is prime time (13:00-18:00 Reels get 200-550 views; the 22:00 roundup got 2-10 views on 20-21 Oct).
-- **Normal news Reels at 12, 13, 15, 16, 17, 18, 19, 20, 21, 22** (10 Reels). Nothing before 12:00. No night roundup.
-- ONE batch task makes them, 3 runs a day on Sonnet: 11:30 → 12h, 13h, 15h + the 14:00 roundup;
-  15:30 → 16-19h; 19:30 → 20h, 21h, 22h. Each run writes one days/<date>_<first HHMM>.json with
-  its news stories in slot order. (The "Single posts" section below still describes how each story is chosen.)
-- 2026-10-22 is the switch day: no roundup that night; the first 14:00 roundup is on 2026-10-23 (covers 22 Oct).
+Schedule since 2026-10-24 (user's rule, 2026-10-23; data 19-22 Oct: 13:00-18:00 Reels get 170-990 views,
+12:00 and 19:00-22:00 Reels mostly under 50). 11 Reels a day, all between 12:30 and 18:30:
+- **News Reels at 12:30, 13:00, 14:00, 15:00, 17:00, 17:20, 17:40, 18:00, 18:15, 18:30** (10 a day).
+- **16:00 = roundup** "২৪ ঘণ্টার সেরা ১০": the 10 best news Reels of the PREVIOUS day, best first by views.
+- Nothing before 12:30 and nothing after 18:30.
+- ONE batch task makes them, 2 runs a day on Sonnet: 11:30 → 12:30, 13:00, 14:00, 15:00 + the 16:00 roundup;
+  15:30 → 17:00, 17:20, 17:40, 18:00, 18:15, 18:30 (+ the daily report). Each run writes one
+  days/<date>_<first HHMM>.json with its news stories in slot order.
 - The old "evening run of 7 posts" no longer exists. Steps 1-9 below still describe how to build and schedule.
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 
@@ -82,10 +82,10 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
-8b. **Roundup Reel ("২৪ ঘণ্টার সেরা ১০") at 14:00** (since 2026-10-23). Built in the 11:30 run, together with
-   the 12h, 13h and 15h news Reels. It covers YESTERDAY's news Reels (12:00-22:00; never a roundup itself).
+8b. **Roundup Reel ("২৪ ঘণ্টার সেরা ১০") at 16:00** (since 2026-10-24; was 14:00 on 23 Oct). Built in the 11:30 run,
+   after the 12:30-15:00 news Reels. It covers YESTERDAY's news Reels (never a roundup itself).
    **Pick and order = best performers first (user's rule):** yesterday's Reels sorted by **total views**, top 10 only
-   (yesterday has 11 news Reels on a normal day, so the weakest one drops out).
+   (if yesterday had more than 10 news Reels, the weakest drop out).
    - Get views from Metricool (`getAnalyticsDataByMetrics` with FBRE02 date+time (UTC), FBRE03 reel id,
      FBRE10 views; from/to = yesterday in Asia/Dhaka). Map each reel id to its story with `getScheduledPosts`
      for yesterday (providers[0].id = reel id; the article link is in firstCommentText).
@@ -95,7 +95,7 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    (the glob picks up every story file of that date; with --order only the listed stories matter, max 10). Then
    `python3 -W ignore build_roundup.py ../days/<yesterday>_top10.json ../<today>_roundup/` (music only, ~4 minutes).
    Check one frame, push `<today>_roundup/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
-   Metricool post at `<today>T14:00:00+06:00` using `<today>_roundup/roundup.json`: text = caption,
+   Metricool post at `<today>T16:00:00+06:00` using `<today>_roundup/roundup.json`: text = caption,
    firstCommentText = first_comment (all 10 source links, numbered 1–10 in order), facebookData
    {"type": "REEL", "title": "২৪ ঘণ্টার সেরা ১০ খবর"}. Metricool allows only one first comment, so all links go in it.
 9. **Report** with SendUserMessage, in Banglish: the 7 evening headlines with their times, and anything that went wrong.
@@ -119,8 +119,8 @@ One scheduled task runs at :40 from 11:40 to 20:40 (Dhaka) and posts ONE story a
 Each run:
 1. Clones the repo as in step 1 and reads the editorial rules (especially "Daily content plan").
 2. Calls getScheduledPosts for today and yesterday; skips any story already scheduled or posted, and does nothing
-   if a post is already scheduled within 30 minutes of the target hour (for example one the user asked for).
-3. Decides what this slot needs from the "Daily content plan" (war stories in 15:00-19:00, the daily pro-Iran /
+   if a post is already scheduled within 10 minutes of the target slot (for example one the user asked for).
+3. Decides what this slot needs from the "Daily content plan" (war stories in 14:00-18:30, the daily pro-Iran /
    anti-US-war analysis, probashi, etc.) by looking at what is already scheduled today, then picks the biggest
    fresh story of that kind.
 4. Writes `days/<date>_HHMM.json` with that one story (format "video", with points_bn; add "bg_image" from
