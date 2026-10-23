@@ -25,6 +25,8 @@ getScheduledPosts before choosing):
 Fill the rest with fresh, varied, good stories (aim for at least 4 different topics a day):
 - **Ukraine war** news (front line, Zelensky, peace talks, Russia).
 - **Europe**: wars, security and big conflicts in Europe (NATO, Russia-Europe tensions, Balkans, etc.).
+- **France protests** (cost-of-living protests, riots, curfews, strikes; user's request 2026-10-24). Scene "protest".
+  Max 1 a day, facts only.
 - **Football**: big match results/updates from the UEFA Champions League, Premier League (EPL) and La Liga
   (Real Madrid, Barcelona, Man City, Liverpool, Arsenal, Man United, etc.). Use scene "football", mood "sports".
   Matches end at night Dhaka time, so the 11:30 batch is the place for last night's results.
