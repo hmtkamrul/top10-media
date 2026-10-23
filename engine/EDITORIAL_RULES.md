@@ -10,22 +10,41 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 - Nothing before 12:30 or after 18:30 (data 19-22 Oct: 12:00 and 19:00-22:00 Reels mostly got under 50 views,
   13:00-18:00 Reels got 170-990).
 
-## Daily content plan (user's instructions, 2026-10-20; data 17-20 Oct: 12:00-20:00 posts got 150-577 views)
+## Daily content plan (user's rule, 2026-10-23: "news are getting monotonous, keep it fresh")
+The 10 news Reels of a day must feel VARIED. Topic limits (check today's AND the last 7 days' posts in Metricool
+getScheduledPosts before choosing):
+| Topic | Limit |
+|---|---|
+| Iran war news (Iran, Hormuz, tankers, US/Israel strikes on Iran, Houthi attacks) | **max 1 a day** |
+| Iran-US analysis where it is clear the USA is losing / failing | **exactly 1 a day** (see below) |
+| Delhi news (Cockroach Janta Party, Neha Bora, Gen-Z protest, Modi/Delhi) | **max 1 a day** |
+| Saudi Arabia news (incl. Saudi airports, Saudi flights, Houthi attacks on Saudi) | **max 1 every 2 days** |
+| Remittance (Bangladesh Bank figures) | **max 1 a week** |
+| Same story/follow-up as a Reel of the last 2 days | not allowed unless there is a big new development |
+
+Fill the rest with fresh, varied, good stories (aim for at least 4 different topics a day):
+- **Ukraine war** news (front line, Zelensky, peace talks, Russia).
+- **Europe**: wars, security and big conflicts in Europe (NATO, Russia-Europe tensions, Balkans, etc.).
+- **Football**: big match results/updates from the UEFA Champions League, Premier League (EPL) and La Liga
+  (Real Madrid, Barcelona, Man City, Liverpool, Arsenal, Man United, etc.). Use scene "football", mood "sports".
+  Matches end at night Dhaka time, so the 11:30 batch is the place for last night's results.
+- **Bangladesh cricket**: match updates and results (scene "cricket", mood "sports"). Report the facts even when
+  Bangladesh loses, in a neutral tone, never mocking players.
+- **Bangladesh good news** and other good world news (science, tech, records, achievements, people helping people).
 - **Bangladesh: at least 3, at most 5 good Bangladesh-related news Reels every day** (user's rule, 2026-10-23),
-  out of the 10 news Reels. Counts: positive Bangladesh news (economy, remittance, exports, development projects,
-  sports wins, achievements), probashi/expat news (jobs abroad, flights to and from Bangladesh, Bangladeshis in the
-  Gulf/Malaysia/Europe), and what foreign leaders/media say about Bangladesh. All of them must pass the Bangladesh
-  filter below (good news only, no politics). Aim for 1-2 in the 11:30 batch; the 15:30 batch tops up to at least 3
-  and never goes above 5 for the day. Spread them out, never two Bangladesh Reels back to back.
-- **2-3 war stories every day, in prime time 14:00-18:30 (16:00 is the roundup):** the Iran war, the US/Israel-Palestine war, Hormuz,
-  the Houthi-Saudi war. Facts from reliable outlets.
-- **At least ONE every day:** an analysis/opinion piece from a well-known outlet (Foreign Affairs, Al Jazeera,
-  The Guardian, Middle East Eye, Responsible Statecraft, Prothom Alo's translated columns, etc.) or by a named
-  diplomat/analyst that argues Iran is holding its own or winning, or is critical of the US/Israel war; OR real
-  news that is bad for the US in this war (losses, costs, allies pulling back, failed goals). Rules: the piece
-  must really exist and say that; attribute it ("বিশ্লেষণ: <name>") and label opinion as opinion in the caption;
-  never invent claims or quotes. Use the Iran leaders painting as the background:
-  `"bg_image": "assets/bg_iran_leaders.jpg"`.
+  out of the 10. Counts: positive Bangladesh news (economy, exports, development projects, achievements),
+  Bangladesh cricket and other sports updates, probashi/expat news (jobs abroad, flights, Bangladeshis abroad;
+  Saudi-related ones still follow the Saudi limit), and what foreign leaders/media say about Bangladesh. All must
+  pass the Bangladesh filter below (no politics, no negative news). Aim for 1-2 in the 11:30 batch; the 15:30
+  batch tops up to at least 3 and never goes above 5. Never two Bangladesh Reels back to back.
+- **Exactly ONE Iran-US analysis a day** from a well-known outlet (Foreign Affairs, Al Jazeera, The Guardian,
+  Middle East Eye, Responsible Statecraft, Prothom Alo's translated columns, etc.) or a named diplomat/analyst,
+  in which it is CLEAR the USA is losing, failing or paying a heavy price in the Iran war (failed goals, losses,
+  costs, allies pulling away, a stalemate the US can't win). The piece must really exist and say that; attribute
+  it ("বিশ্লেষণ: <name>") and label opinion as opinion in the caption; never invent claims or quotes.
+  Background: rotate assets/bg_iran_leaders.jpg and assets/bg_iran_hormuz_war.jpg. Put it in 14:00-18:30.
+- Never put two Reels on the same topic back to back.
+
 - **Painted photo backgrounds (engine/assets, from the user's photos, 2026-10-21).** When a story is mainly
   about one of these people or places, ALWAYS set `"bg_image"` to one of their files (rotate the variants so
   back-to-back Reels don't look the same; check today's posts):
@@ -47,8 +66,6 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   | Dhaka (city news) | assets/bg_dhaka.jpg |
   If several people fit, use the one the headline is about. For Iran-war/Hormuz stories with no single main person, rotate bg_iran_hormuz_war.jpg and bg_iran_leaders.jpg. Wide scene photos (not one person) are painted with specials/paint_wide.py. New photos from the user: paint them with
   specials/neha_poster.py (`reel_background`, see /tmp batch script pattern in git history) and add a row here.
-- Fill the other slots with what works: Saudi/Gulf + probashi news (best performer), Bangladesh big breaking news
-  (per the user's instructions), Delhi protest. Skip analysis pieces with no Bangladesh or war angle.
 - The user will send more photos to paint; when one arrives, use it (painted with specials/neha_poster.py
   reel_background, as done for Neha, Ishraque, Trump and the Iran leaders).
 
@@ -112,6 +129,7 @@ and army chief, Imran Khan, Zelensky, and similar.
 The "Cockroach Janta Party" (CJP) and the Gen-Z protests in Delhi (against CEC Gyanesh Kumar / SIR)
 are very popular. Check for new developments every day and include the biggest one when there is
 real news (detentions, marches, statements, court or Election Commission moves). Use the "protest" theme.
+Limit: max ONE Delhi Reel a day (see "Daily content plan").
 
 Tone: report facts from the source only. Do not add our own opinion, insults or one-sided wording, even on political stories.
 
