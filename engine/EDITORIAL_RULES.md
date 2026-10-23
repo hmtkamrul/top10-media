@@ -35,9 +35,10 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   | Masoud Pezeshkian (Iran's President) | assets/bg_pezeshkian.jpg |
   | Abbas Araghchi (Iran's FM) | assets/bg_araghchi.jpg |
   | Pro-Iran analysis / Iran leadership in general | assets/bg_iran_leaders.jpg |
+  | Iran war / Hormuz / Iran vs US-Israel (art poster: Iran leader, Xi, Putin, Trump, Netanyahu, Hormuz; user's image 2026-10-23) | assets/bg_iran_hormuz_war.jpg |
   | Bangladesh (country-level good news, Bangladesh abroad) | assets/bg_bangladesh.jpg |
   | Dhaka (city news) | assets/bg_dhaka.jpg |
-  If several people fit, use the one the headline is about. New photos from the user: paint them with
+  If several people fit, use the one the headline is about. For Iran-war/Hormuz stories with no single main person, rotate bg_iran_hormuz_war.jpg and bg_iran_leaders.jpg. Wide scene photos (not one person) are painted with specials/paint_wide.py. New photos from the user: paint them with
   specials/neha_poster.py (`reel_background`, see /tmp batch script pattern in git history) and add a row here.
 - Fill the other slots with what works: Saudi/Gulf + probashi news (best performer), Bangladesh big breaking news
   (per the user's instructions), Delhi protest. Skip analysis pieces with no Bangladesh or war angle.
