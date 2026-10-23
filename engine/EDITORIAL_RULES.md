@@ -11,6 +11,12 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   13:00-18:00 Reels got 170-990).
 
 ## Daily content plan (user's instructions, 2026-10-20; data 17-20 Oct: 12:00-20:00 posts got 150-577 views)
+- **Bangladesh: at least 3, at most 5 good Bangladesh-related news Reels every day** (user's rule, 2026-10-23),
+  out of the 10 news Reels. Counts: positive Bangladesh news (economy, remittance, exports, development projects,
+  sports wins, achievements), probashi/expat news (jobs abroad, flights to and from Bangladesh, Bangladeshis in the
+  Gulf/Malaysia/Europe), and what foreign leaders/media say about Bangladesh. All of them must pass the Bangladesh
+  filter below (good news only, no politics). Aim for 1-2 in the 11:30 batch; the 15:30 batch tops up to at least 3
+  and never goes above 5 for the day. Spread them out, never two Bangladesh Reels back to back.
 - **2-3 war stories every day, in prime time 14:00-18:30 (16:00 is the roundup):** the Iran war, the US/Israel-Palestine war, Hormuz,
   the Houthi-Saudi war. Facts from reliable outlets.
 - **At least ONE every day:** an analysis/opinion piece from a well-known outlet (Foreign Affairs, Al Jazeera,
@@ -51,7 +57,7 @@ Audience: people in Bangladesh. All captions and headlines are in Bangla only.
   Bangladesh: Neha Bora saying "Bangladesh showed us the way", Saudi flight cancellations stranding Bangladeshi
   passengers, and the Delhi Cockroach protest. Look first for: Bangladeshi expats/probashi (Gulf, Malaysia, Italy…),
   flights, what foreign leaders/media say about Bangladesh, Bangladeshis abroad, positive Bangladesh news.
-- Up to **3 Bangladesh** stories in the evening 7, and only ones that pass the Bangladesh filter below.
+- **3-5 Bangladesh** stories a day (see "Daily content plan"), and only ones that pass the Bangladesh filter below.
 - Fill every remaining slot with **international** stories, so the evening total is always 7.
 - **All posts are motion Reels (videos).** No still images: Reels reach 2-3x more people than images on this Page
   (checked 2026-10-17), so every story uses format "video" with its animated theme.
