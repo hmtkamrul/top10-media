@@ -222,6 +222,10 @@ def render(story, out_dir):
     one = bool(story.get("bg_image")) or story.get("one_at_a_time", False)
     pts = [point_sprite(p, i + 1, story.get("point_size", 54 if len(plist) < 4 else 48)) for i, p in enumerate(plist)]
     oa, ob, oc = outro_sprites(story)
+    note = None
+    if story.get("outro_note"):
+        note = text_sprite([_sp(l) for l in story["outro_note"].split("\n")], r.BN_HEAD, r.EN_BLACK, 52,
+                           fill=r.YELLOW + (255,))
     words = [w for l in lines for w in l.split("  ")]
 
     dur = HOOK + PER_POINT * len(pts) + OUTRO
@@ -281,8 +285,10 @@ def render(story, out_dir):
             pulse = 1.0 + 0.05 * math.sin(2 * math.pi * (t - t_out) * 1.6)
             paste(img, oc, (RW - oc.width) / 2, 820, alpha=k)
             paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k, scale=pulse)
+            if note is not None:
+                paste(img, note, (RW - note.width) / 2, 1120, alpha=ease((t - t_out - 0.6) / 0.5))
             if story.get("source_at_end"):
-                paste(img, src, (RW - src.width) / 2, 1150, alpha=k)
+                paste(img, src, (RW - src.width) / 2, 1150 if note is None else 1120 + note.height + 30, alpha=k)
         img.convert("RGB").save(f"{out_dir}/f{f:05d}.jpg", quality=88)
     return n, dur, hits
 

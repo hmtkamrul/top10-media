@@ -14,10 +14,10 @@
    "point_size": 58,
    "hook_s": 3.0,
    "per_point_s": 5.0,
-   "outro_s": 4.5,
-   "outro_top": "পুরো গাইড ফ্রি পেতে কমেন্টে লিখুন",
+   "outro_s": 6.0,
+   "outro_top": "পেজটি ফলো করে কমেন্টে লিখুন",
    "outro_pill": "GUIDE",
-   "outro_sub": "এমন আরও লাইফ হ্যাক পেতে পেজটি ফলো করুন",
+   "outro_sub": "বিস্তারিত গাইড বুক পেতে",
    "points_bn": [
     "মাসের শুরুতেই আয়ের ২০% আলাদা করুন, বাকি ৮০% দিয়ে সংসার চালান",
     "বাজারে যাওয়ার আগে লিস্ট করুন, লিস্টের বাইরে কিছু নয়",
@@ -37,7 +37,8 @@
    "source": "Prothom Alo",
    "url": "https://www.prothomalo.com/business/personal-finance/tzldzppltv",
    "source_at_end": true,
-   "source_line_bn": "সূত্র: বিভিন্ন অনলাইন প্রতিবেদন"
+   "source_line_bn": "সূত্র: বিভিন্ন অনলাইন প্রতিবেদন",
+   "outro_note": "এমন জরুরি লাইফ হ্যাকের জন্য\nপেজে একটি ফলো দিয়ে সাথে থাকুন"
   }
  ]
 }
