@@ -4,6 +4,10 @@ Page name: **Top 10 Breaking News**. Logo: "TOP 10" with "BREAKING NEWS BD" unde
 Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 
 ## Daily schedule (11 Reels, since 2026-10-24, user's rule)
+- **ONE-DAY TEST on 2026-10-25 ONLY (user, 2026-10-24):** slots every 30 minutes from 13:00 to 18:00:
+  news at 13:00, 13:30, 14:00, 14:30, 15:00, 15:30, 16:30, 17:00, 17:30, 18:00 and the roundup at 16:00.
+  11:30 run → 13:00-15:30 (6 news) + 16:00 roundup; 15:30 run → 16:30-18:00 (4 news). On 2026-10-26 go back to
+  the normal schedule below. In the 2026-10-26 reports, compare the test day's views per slot with 24 Oct.
 - **News Reels at 12:30, 13:00, 14:00, 15:00, 17:00, 17:20, 17:40, 18:00, 18:15, 18:30** (10 a day).
 - **16:00: "২৪ ঘণ্টার সেরা ১০" roundup** of the PREVIOUS day's 10 best news Reels by views, best first.
   See RUNBOOK step 8b.
