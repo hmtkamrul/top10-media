@@ -13,7 +13,7 @@
 - Branding: ribbon "লাইফ স্কিল সিরিজ · পর্ব N" (N = episode number), teaser at the start
   "শেষ পর্যন্ত দেখুন, সবচেয়ে কাজের উপায়টা শেষে"; the most useful, unusual tip goes LAST.
 - Prefer unusual, practical hacks over generic advice ("make a list", "eat out less" are too common).
-- End card: "ফ্রি গাইড বুক পেতে পেজটি ফলো করুন / তারপর কমেন্টে লিখুন GUIDE / এমন জরুরি লাইফ স্কিলের জন্য
+- End card: "ফ্রি গাইড বুক পেতে পেজটি ফলো করুন / তারপর কমেন্টে লিখুন GUIDE / আপনার মেসেজে বিস্তারিত গাইড বুকটি চলে যাবে / এমন জরুরি লাইফ স্কিলের জন্য
   পেজে একটি ফলো দিয়ে সাথে থাকুন / সূত্র: ইন্টারনেট থেকে সংকলিত".
 - Guide book: no named outlets or experts in the body ("বিশেষজ্ঞদের মতে"); sources only in the appendix
   ("পরিশিষ্ট: তথ্যসূত্র", introduced as compiled from the internet). Cover keeps the red design.

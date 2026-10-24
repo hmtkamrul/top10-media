@@ -234,9 +234,12 @@ def render(story, out_dir):
     if story.get("teaser_bn"):                       # "watch till the end" line under the hook (life-skill Reels)
         teaser = text_sprite([_sp(l) for l in story["teaser_bn"].split("\n")], r.BN_HEAD, r.EN_BLACK, 50,
                              fill=(255, 255, 255, 255))
+    after = None
+    if story.get("outro_after_pill"):               # small white line right under the pill
+        after = text_sprite([_sp(story["outro_after_pill"])], r.BN_SUB, r.EN_SEMI, 44, fill=(255, 255, 255, 255))
     note = None
     if story.get("outro_note"):
-        note = text_sprite([_sp(l) for l in story["outro_note"].split("\n")], r.BN_HEAD, r.EN_BLACK, 52,
+        note = text_sprite([_sp(l) for l in story["outro_note"].split("\n")], r.BN_HEAD, r.EN_BLACK, story.get("outro_note_size", 52),
                            fill=r.YELLOW + (255,))
     words = [w for l in lines for w in l.split("  ")]
 
@@ -298,14 +301,40 @@ def render(story, out_dir):
             k = ease((t - t_out) / 0.4)
             dim = Image.new("RGBA", (RW, RH), (0, 0, 0, int(150 * k)))
             img.alpha_composite(dim)
-            paste(img, oa, (RW - oa.width) / 2, 790 - oa.height, alpha=k)
             pulse = 1.0 + 0.05 * math.sin(2 * math.pi * (t - t_out) * 1.6)
+            split = story.get("outro_split")             # two end cards: GUIDE card, then follow card
+            if split:
+                rel = t - t_out
+                if rel < split:
+                    k1 = k * (1 - ease((rel - (split - 0.3)) / 0.3))
+                    paste(img, oa, (RW - oa.width) / 2, 790 - oa.height, alpha=k1)
+                    paste(img, oc, (RW - oc.width) / 2, 820, alpha=k1)
+                    paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k1, scale=pulse)
+                    if after is not None:
+                        paste(img, after, (RW - after.width) / 2, 1110, alpha=k1 * ease((rel - 0.4) / 0.4))
+                else:
+                    k2 = ease((rel - split) / 0.4)
+                    if note is not None:
+                        paste(img, note, (RW - note.width * pulse) / 2, 820 - note.height / 2 + 30 * (1 - k2),
+                              alpha=k2, scale=pulse)
+                        sy = 820 + note.height / 2 + 60
+                    else:
+                        sy = 900
+                    if story.get("source_at_end"):
+                        paste(img, src, (RW - src.width) / 2, sy, alpha=k2)
+                img.convert("RGB").save(f"{out_dir}/f{f:05d}.jpg", quality=88)
+                continue
+            paste(img, oa, (RW - oa.width) / 2, 790 - oa.height, alpha=k)
             paste(img, oc, (RW - oc.width) / 2, 820, alpha=k)
             paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k, scale=pulse)
+            ny = 1120
+            if after is not None:
+                paste(img, after, (RW - after.width) / 2, 1100, alpha=ease((t - t_out - 0.4) / 0.4))
+                ny = 1100 + after.height + 45
             if note is not None:
-                paste(img, note, (RW - note.width) / 2, 1120, alpha=ease((t - t_out - 0.6) / 0.5))
+                paste(img, note, (RW - note.width) / 2, ny, alpha=ease((t - t_out - 0.8) / 0.5))
             if story.get("source_at_end"):
-                paste(img, src, (RW - src.width) / 2, 1150 if note is None else 1120 + note.height + 30, alpha=k)
+                paste(img, src, (RW - src.width) / 2, 1150 if note is None else ny + note.height + 30, alpha=k)
         img.convert("RGB").save(f"{out_dir}/f{f:05d}.jpg", quality=88)
     return n, dur, hits
 
