@@ -142,8 +142,9 @@ def point_sprite(text, n, size=54):
     # number badge
     dd.ellipse([30, 22, 94, 86], fill=r.RED + (255,))
     num = str(n).translate(r.BN_DIGITS)
-    nw = r.width(dd, num, r.BN_HEAD, r.EN_BLACK, 44)
-    r.draw_runs(dd, 62 - nw / 2, 24, num, r.BN_HEAD, r.EN_BLACK, 44, (255, 255, 255, 255))
+    ns = 44 if len(num) == 1 else 34                      # two digits (১০) need a smaller size
+    nw = r.width(dd, num, r.BN_HEAD, r.EN_BLACK, ns)
+    r.draw_runs(dd, 62 - nw / 2, 24 + (44 - ns) * 0.6, num, r.BN_HEAD, r.EN_BLACK, ns, (255, 255, 255, 255))
     y = 20
     for l in lines:
         r.draw_runs(dd, 118, y, l, r.BN_SUB, r.EN_SEMI, size, (255, 255, 255, 255))
@@ -214,7 +215,7 @@ def render(story, out_dir):
     by = text_sprite([_sp("— " + qb)], r.BN_SUB, r.EN_SEMI, 46, fill=r.YELLOW + (255,)) if qb else None
     if story.get("kicker_bn"):                       # sub-headline under the hook (life-hack Reels)
         by = text_sprite([_sp(story["kicker_bn"])], r.BN_HEAD, r.EN_BLACK, story.get("kicker_size", 50), fill=r.YELLOW + (255,))
-    src = text_sprite([_sp("সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
+    src = text_sprite([_sp(story.get("source_line_bn") or "সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
     rib, logo = ribbon_sprite(story.get("ribbon_bn", "ব্রেকিং  নিউজ")), logo_sprite()
     plist = points_of(story)
@@ -252,8 +253,9 @@ def render(story, out_dir):
                 paste(img, head, hx, hy, scale=sc)
             if by is not None:
                 paste(img, by, (RW - by.width) / 2, hy + head.height * sc - 10, alpha=ease((t - 0.8) / 0.4))
-            paste(img, src, (RW - src.width) / 2, hy + head.height * sc + (by.height - 20 if by is not None else 0) - 8,
-                  alpha=ease((t - 1.0) / 0.4) * (1 - 0.0 * mv))
+            if not story.get("source_at_end"):
+                paste(img, src, (RW - src.width) / 2, hy + head.height * sc + (by.height - 20 if by is not None else 0) - 8,
+                      alpha=ease((t - 1.0) / 0.4) * (1 - 0.0 * mv))
             # points stack
             y = 360 + head.height * 0.72 + (by.height + 40 if by is not None else 70)
             photo = one
@@ -279,6 +281,8 @@ def render(story, out_dir):
             pulse = 1.0 + 0.05 * math.sin(2 * math.pi * (t - t_out) * 1.6)
             paste(img, oc, (RW - oc.width) / 2, 820, alpha=k)
             paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k, scale=pulse)
+            if story.get("source_at_end"):
+                paste(img, src, (RW - src.width) / 2, 1150, alpha=k)
         img.convert("RGB").save(f"{out_dir}/f{f:05d}.jpg", quality=88)
     return n, dur, hits
 
