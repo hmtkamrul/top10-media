@@ -128,10 +128,10 @@ def ribbon_sprite(text="ব্রেকিং  নিউজ"):
 
 def point_sprite(text, n, size=54):
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
+    lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 190)]
     while len(lines) > 3 and size > 40:
         size -= 4
-        lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
+        lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 190)]
     lh = size * 1.32
     h = int(lh * len(lines) + 46)
     w = MAXW
