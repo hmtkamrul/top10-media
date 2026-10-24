@@ -1,4 +1,4 @@
-# Life Skill Series ("লাইফ স্কিল সিরিজ · দিন N"; was "life-hack") (separate from the news Reels; user's request 2026-10-24)
+# Life Skill Series ("লাইফ স্কিল সিরিজ · পর্ব N"; was "life-hack") (separate from the news Reels; user's request 2026-10-24)
 
 - 40-60 s Reel, 10 tips shown one by one, festive look and music (engine/lifehack_reel.py), NOT the news style.
 - Hook headline + kicker at the start, no source at the start; at the end: "পেজটি ফলো করে কমেন্টে লিখুন GUIDE",
@@ -10,7 +10,7 @@
 - Tips must come from real published articles/experts; write in our own words.
 
 ## Rules from the user (2026-10-25)
-- Branding: ribbon "লাইফ স্কিল সিরিজ · দিন N" (N = day number), teaser at the start
+- Branding: ribbon "লাইফ স্কিল সিরিজ · পর্ব N" (N = episode number), teaser at the start
   "শেষ পর্যন্ত দেখুন, সবচেয়ে কাজের উপায়টা শেষে"; the most useful, unusual tip goes LAST.
 - Prefer unusual, practical hacks over generic advice ("make a list", "eat out less" are too common).
 - End card: "ফ্রি গাইড বুক পেতে পেজটি ফলো করুন / তারপর কমেন্টে লিখুন GUIDE / এমন জরুরি লাইফ স্কিলের জন্য
