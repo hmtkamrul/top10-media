@@ -113,8 +113,8 @@ def headline_lines(story):
     return lines, size
 
 
-def ribbon_sprite():
-    t = "ব্রেকিং  নিউজ"
+def ribbon_sprite(text="ব্রেকিং  নিউজ"):
+    t = text
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
     tw = r.width(d, t, r.BN_HEAD, r.EN_BLACK, 56)
     w, h = int(tw + 110), 96
@@ -173,7 +173,7 @@ def points_of(story):
     pts = story.get("points_bn")
     if not pts:
         pts = [s.strip() for s in story.get("caption_bn", "").split("।") if len(s.strip()) > 8][:4]
-    return pts[:4]
+    return pts[:story.get("max_points", 4)]
 
 
 def paste(base, sp, x, y, alpha=1.0, scale=1.0):
@@ -188,15 +188,15 @@ def paste(base, sp, x, y, alpha=1.0, scale=1.0):
 
 
 def outro_sprites(story):
-    a = text_sprite([_sp("পুরো খবরের লিংক কমেন্টে")], r.BN_SUB, r.EN_SEMI, 58, fill=(255, 255, 255, 255))
+    a = text_sprite([_sp(story.get("outro_top", "পুরো খবরের লিংক কমেন্টে"))], r.BN_SUB, r.EN_SEMI, 58, fill=(255, 255, 255, 255))
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    t = _sp("ফলো করুন")
+    t = _sp(story.get("outro_pill", "ফলো করুন"))
     tw = r.width(d, t, r.BN_HEAD, r.EN_BLACK, 92)
     b = Image.new("RGBA", (int(tw + 120), 150), (0, 0, 0, 0))
     bd = ImageDraw.Draw(b)
     bd.rounded_rectangle([0, 0, b.width - 1, 149], radius=75, fill=r.ORANGE + (255,))
     r.draw_runs(bd, 60, 14, t, r.BN_HEAD, r.EN_BLACK, 92, (12, 10, 12, 255))
-    c = text_sprite([_sp("প্রতিদিনের সেরা খবর পেতে")], r.BN_SUB, r.EN_SEMI, 50, fill=(255, 210, 120, 255))
+    c = text_sprite([_sp(story.get("outro_sub", "প্রতিদিনের সেরা খবর পেতে"))], r.BN_SUB, r.EN_SEMI, 50, fill=(255, 210, 120, 255))
     return a, b, c
 
 
@@ -207,13 +207,19 @@ def render(story, out_dir):
     lines, hsize = headline_lines(story)
     head = text_sprite(lines, r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW if story.get("bg_image") else r.FIRE)
     head_first = text_sprite(lines[:1], r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW) if len(lines) > 1 else None
+    HOOK = story.get("hook_s", globals()["HOOK"])
+    PER_POINT = story.get("per_point_s", globals()["PER_POINT"])
+    OUTRO = story.get("outro_s", globals()["OUTRO"])
     qb = story.get("quote_by")
     by = text_sprite([_sp("— " + qb)], r.BN_SUB, r.EN_SEMI, 46, fill=r.YELLOW + (255,)) if qb else None
+    if story.get("kicker_bn"):                       # sub-headline under the hook (life-hack Reels)
+        by = text_sprite([_sp(story["kicker_bn"])], r.BN_HEAD, r.EN_BLACK, story.get("kicker_size", 50), fill=r.YELLOW + (255,))
     src = text_sprite([_sp("সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
-    rib, logo = ribbon_sprite(), logo_sprite()
+    rib, logo = ribbon_sprite(story.get("ribbon_bn", "ব্রেকিং  নিউজ")), logo_sprite()
     plist = points_of(story)
-    pts = [point_sprite(p, i + 1, 54 if len(plist) < 4 else 48) for i, p in enumerate(plist)]
+    one = bool(story.get("bg_image")) or story.get("one_at_a_time", False)
+    pts = [point_sprite(p, i + 1, story.get("point_size", 54 if len(plist) < 4 else 48)) for i, p in enumerate(plist)]
     oa, ob, oc = outro_sprites(story)
     words = [w for l in lines for w in l.split("  ")]
 
@@ -246,11 +252,11 @@ def render(story, out_dir):
                 paste(img, head, hx, hy, scale=sc)
             if by is not None:
                 paste(img, by, (RW - by.width) / 2, hy + head.height * sc - 10, alpha=ease((t - 0.8) / 0.4))
-            paste(img, src, (RW - src.width) / 2, hy + head.height * sc + (50 if by is not None else 0) - 8,
+            paste(img, src, (RW - src.width) / 2, hy + head.height * sc + (by.height - 20 if by is not None else 0) - 8,
                   alpha=ease((t - 1.0) / 0.4) * (1 - 0.0 * mv))
             # points stack
-            y = 360 + head.height * 0.72 + (110 if by is not None else 70)
-            photo = bool(story.get("bg_image"))
+            y = 360 + head.height * 0.72 + (by.height + 40 if by is not None else 70)
+            photo = one
             for i, sp in enumerate(pts):
                 t0 = HOOK + PER_POINT * i
                 if t < t0:

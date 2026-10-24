@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<title>দুর্মূল্যের বাজারে সংসার চালানোর ৭ কৌশল</title>
+<style>
+@font-face{font-family:Hind;src:url(../fonts/hind-siliguri-bengali-400-normal.woff2);font-weight:400}
+@font-face{font-family:Hind;src:url(../fonts/hind-siliguri-bengali-500-normal.woff2);font-weight:500}
+@font-face{font-family:Hind;src:url(../fonts/hind-siliguri-bengali-600-normal.ttf);font-weight:600}
+@font-face{font-family:Hind;src:url(../fonts/hind-siliguri-bengali-700-normal.ttf);font-weight:700}
+@font-face{font-family:Baloo;src:url(../fonts/baloo-da-2-bengali-800-normal.ttf);font-weight:800}
+@font-face{font-family:Oswald;src:url(../fonts/oswald-latin-700-normal.ttf);font-weight:700}
+@font-face{font-family:Inter;src:url(../fonts/inter-latin-600-normal.ttf);font-weight:600}
+@page{size:A4;margin:0}
+:root{--red:#c8102e;--deep:#7a0a1c;--orange:#f28c28;--ink:#1d1a1a;--muted:#5d5555;--cream:#fff6ec;--line:#ecdccd}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:Hind,Inter,sans-serif;font-size:12.6pt;line-height:1.62}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:20mm 18mm 22mm;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.foot{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:9.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:3mm}
+.logo{display:inline-flex;align-items:center;gap:6px;font-family:Oswald;font-weight:700;letter-spacing:.5px}
+.logo .t{background:#fff;color:var(--ink);padding:1px 7px;border-radius:6px}
+.logo .n{background:var(--orange);color:#111;padding:1px 6px;border-radius:5px}
+h1,h2,h3{font-family:Baloo,Hind;font-weight:800;line-height:1.25;margin:0}
+h2{font-size:22pt;color:var(--deep);margin-bottom:4mm}
+h3{font-size:16pt;color:var(--ink)}
+p{margin:0 0 3mm}
+/* cover */
+.cover{background:linear-gradient(160deg,#9b0d22 0%,#c8102e 45%,#e3532a 100%);color:#fff;padding:22mm 20mm}
+.cover .logo{font-size:22pt}
+.cover .logo .t{font-size:22pt}
+.cover .sub{font-family:Inter;font-weight:600;font-size:9pt;letter-spacing:2px;margin-top:2mm;opacity:.9}
+.tag{display:inline-block;margin-top:34mm;background:#fff;color:var(--red);font-family:Baloo;font-weight:800;font-size:14pt;padding:2mm 6mm;border-radius:30px}
+.cover h1{font-size:44pt;margin-top:8mm}
+.cover .k{font-family:Baloo;font-weight:800;font-size:22pt;color:#ffd27a;margin-top:5mm;line-height:1.35}
+.cover .lead{font-size:13.5pt;margin-top:10mm;max-width:150mm;opacity:.95}
+.cover .list{margin-top:12mm;display:grid;grid-template-columns:1fr 1fr;gap:3mm 8mm;font-size:12.5pt}
+.cover .list div{display:flex;gap:3mm;align-items:baseline}
+.cover .list b{font-family:Baloo;color:#ffd27a;font-size:15pt}
+.cover .bottom{position:absolute;left:20mm;right:20mm;bottom:16mm;font-size:10pt;opacity:.9;display:flex;justify-content:space-between}
+/* boxes */
+.intro{background:var(--cream);border-left:5px solid var(--orange);padding:5mm 6mm;border-radius:4px;margin:4mm 0 6mm}
+.stat{display:flex;gap:5mm;margin:5mm 0}
+.stat div{flex:1;background:#fff;border:1px solid var(--line);border-radius:8px;padding:4mm 5mm}
+.stat b{display:block;font-family:Baloo;font-size:17pt;color:var(--red);line-height:1.1}
+.stat span{font-size:10.5pt;color:var(--muted)}
+.tip{margin-bottom:7mm;break-inside:avoid}
+.tip .head{display:flex;align-items:center;gap:4mm;margin-bottom:2.5mm}
+.num{flex:0 0 13mm;height:13mm;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Baloo;font-weight:800;font-size:18pt}
+.tip ul{margin:1mm 0 2mm 0;padding-left:6mm}
+.tip li{margin-bottom:1mm}
+.ex{background:var(--cream);border-radius:6px;padding:3mm 4.5mm;font-size:11.5pt}
+.ex b{color:var(--deep)}
+table{width:100%;border-collapse:collapse;margin:3mm 0 6mm;font-size:11.5pt}
+th{background:var(--red);color:#fff;font-weight:600;text-align:left;padding:2.5mm 3mm}
+td{border-bottom:1px solid var(--line);padding:2.4mm 3mm}
+td.r,th.r{text-align:right}
+tr.total td{font-weight:700;background:var(--cream)}
+.blank td{height:9.5mm}
+.check{list-style:none;padding:0;margin:0;columns:1}
+.check li{display:flex;gap:4mm;align-items:flex-start;padding:1.6mm 0;border-bottom:1px dashed var(--line)}
+.box{flex:0 0 5.5mm;height:5.5mm;border:2px solid var(--red);border-radius:3px;margin-top:1mm}
+.week{font-family:Baloo;color:var(--deep);font-size:13pt;margin:4mm 0 1mm}
+.src li{margin-bottom:3mm;font-size:11pt}
+.src a{color:var(--red);word-break:break-all}
+.note{font-size:10.5pt;color:var(--muted);background:#f6f2ef;border-radius:6px;padding:4mm 5mm;margin-top:6mm}
+.cta{margin-top:5mm;background:linear-gradient(135deg,#c8102e,#e3532a);color:#fff;border-radius:10px;padding:7mm 8mm}
+.cta h3{color:#fff;font-size:18pt}
+</style>
+</head>
+<body>
+
+<!-- 1. cover -->
+<section class="page cover">
+  <div class="logo"><span class="t">TOP</span><span class="n">10</span></div>
+  <div class="sub">BREAKING NEWS BD · লাইফ হ্যাক গাইড ০১</div>
+  <div class="tag">ফ্রি গাইড</div>
+  <h1>মাসের শেষে<br>পকেট ফাঁকা?</h1>
+  <div class="k">দুর্মূল্যের বাজারে সংসার চালানোর ৭ কৌশল</div>
+  <p class="lead">প্রথম আলোর প্রতিবেদন ও ঢাকা বিশ্ববিদ্যালয়ের অর্থনীতি বিভাগের অধ্যাপক সায়মা হকের পরামর্শ থেকে বাছাই করা সহজ, কাজে লাগানোর মতো কৌশল। সঙ্গে আছে মাসিক বাজেটের ছক আর ৩০ দিনের চেকলিস্ট।</p>
+  <div class="list">
+    <div><b>১</b>আগে সঞ্চয়, পরে খরচ</div>
+    <div><b>২</b>লিস্ট ছাড়া বাজার নয়</div>
+    <div><b>৩</b>নিত্যপণ্য বড় প্যাকে</div>
+    <div><b>৪</b>মৌসুমি খাবার, কম দামের মাছ</div>
+    <div><b>৫</b>বাইরে খাওয়া কমান</div>
+    <div><b>৬</b>ডিজিটাল খরচের হিসাব</div>
+    <div><b>৭</b>জরুরি তহবিল, ধার নয়</div>
+    <div><b>+</b>বোনাস: আরও ৫টি ছোট টিপস</div>
+  </div>
+  <div class="bottom"><span>Top 10 Breaking News · ফেসবুক পেজ</span><span>অক্টোবর ২০২৬</span></div>
+</section>
+
+<!-- 2. intro + tips 1-2 -->
+<section class="page">
+  <h2>শুরুর কথা</h2>
+  <div class="intro">
+    প্রথম আলোর ১২ অক্টোবর ২০২৬-এর প্রতিবেদন বলছে, দেশে চার বছরের বেশি সময় ধরে গড় মূল্যস্ফীতি ৮ শতাংশের ওপরে। অনেক পরিবারের খরচ বেড়েছে, কিন্তু আয় সেভাবে বাড়েনি। নিচের কৌশলগুলো সব সমস্যার সমাধান নয়, তবে নিয়ম করে মানলে মাস শেষে কিছুটা স্বস্তি পাওয়া যায়।
+  </div>
+  <div class="stat">
+    <div><b>৫০ → ৭০ হাজার</b><span>প্রতিবেদনের এক চাকরিজীবীর মাসিক সংসার খরচ, ২০২১ থেকে এখন</span></div>
+    <div><b>২.৪ লাখ টাকা</b><span>বছরে তাঁর বাড়তি খরচ</span></div>
+    <div><b>৮%+</b><span>চার বছরের বেশি সময়ের গড় মূল্যস্ফীতি</span></div>
+  </div>
+
+  <div class="tip">
+    <div class="head"><div class="num">১</div><h3>আগে সঞ্চয়, পরে খরচ</h3></div>
+    <p>মাস শেষে যা বাঁচে তা সঞ্চয় করার চিন্তা করলে সাধারণত কিছুই বাঁচে না। তাই বেতন হাতে পেয়েই একটা অংশ আলাদা করে ফেলুন।</p>
+    <ul>
+      <li><b>৮০/২০ নিয়ম:</b> আয়ের ২০% শুরুতেই সঞ্চয়ে, বাকি ৮০% দিয়ে সংসার।</li>
+      <li><b>৫০/৩০/২০ নিয়ম:</b> ৫০% জরুরি খরচ (ভাড়া, বাজার, বিল, পড়াশোনা), ৩০% নিজের পছন্দের খরচ, ২০% সঞ্চয় ও ঋণ শোধ।</li>
+      <li>আয় কম হলে হার কমিয়ে নিন। মাসে ৫০০ বা ১০০০ টাকা দিয়ে শুরু করাও ভালো, নিয়মিত হওয়াটাই আসল।</li>
+    </ul>
+    <div class="ex"><b>উদাহরণ:</b> মাসিক আয় ৪০ হাজার টাকা হলে ৮০/২০ নিয়মে বেতনের দিনই ৮ হাজার টাকা আলাদা ব্যাংক হিসাবে বা সঞ্চয়পত্রে রাখুন, সংসার চালান ৩২ হাজারে।</div>
+  </div>
+
+  <div class="tip">
+    <div class="head"><div class="num">২</div><h3>লিস্ট ছাড়া বাজারে নয়</h3></div>
+    <p>লিস্ট ছাড়া বাজারে গেলে চোখে যা পড়ে তা-ই কেনা হয়। প্রয়োজন আর ইচ্ছা আলাদা করুন।</p>
+    <ul>
+      <li>বাজারে যাওয়ার আগে ঘরে কী আছে দেখে লিস্ট করুন।</li>
+      <li>লিস্টের বাইরে কিছু কেনার আগে নিজেকে প্রশ্ন করুন: এটা কি দরকার, নাকি শুধু ইচ্ছা?</li>
+      <li>অনলাইন কেনাকাটায়ও একই নিয়ম: কার্টে রেখে এক দিন অপেক্ষা করুন।</li>
+    </ul>
+  </div>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ২</span></div>
+</section>
+
+<!-- 3. tips 3-5 -->
+<section class="page">
+  <div class="tip">
+    <div class="head"><div class="num">৩</div><h3>নিত্যপণ্য কিনুন বড় প্যাকে, মাসে একবার</h3></div>
+    <p>চাল, ডাল, তেল, চিনি, লবণ, সাবানের মতো জিনিস বড় প্যাকে কিনলে প্রতি কেজি বা প্রতি লিটারের দাম সাধারণত কম পড়ে।</p>
+    <ul>
+      <li>মাসের শুরুতে একবারে পুরো মাসের শুকনা বাজার করুন, বারবার বাজারে গেলে বাড়তি কেনা হয়।</li>
+      <li>দাম তুলনা করুন প্রতি কেজি বা লিটারের হিসাবে, প্যাকেটের মোট দামে নয়।</li>
+      <li>প্রতিবেশী বা আত্মীয়ের সঙ্গে মিলে বড় প্যাক কিনে ভাগ করে নিতে পারেন।</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <div class="head"><div class="num">৪</div><h3>মৌসুমি খাবার আর কম দামের মাছ</h3></div>
+    <p>অসময়ের সবজি-ফল আর আমদানি করা খাবারের দাম বেশি। মৌসুমি দেশি খাবারে খরচও কম, পুষ্টিও ভালো।</p>
+    <ul>
+      <li>বাজারে যে সবজির দাম সবচেয়ে কম, সেটা দিয়েই রান্নার পরিকল্পনা করুন।</li>
+      <li>অধ্যাপক সায়মা হকের পরামর্শ: আমদানি করা মাল্টার বদলে দেশি আমড়ার মতো ফল কিনুন।</li>
+      <li>দামি মাছের বদলে কম দামের মাছ কিনুন; তাঁর মতে পুষ্টিতে তেমন পার্থক্য হয় না।</li>
+      <li>সুযোগ থাকলে বারান্দা বা ছাদে মরিচ, টমেটো, ধনেপাতা লাগান।</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <div class="head"><div class="num">৫</div><h3>বাইরে খাওয়া কমান, টিফিন নিন</h3></div>
+    <p>রেস্তোরাঁ আর ফাস্ট ফুডের খরচ চোখের আড়ালে মাসে অনেক টাকা নিয়ে যায়।</p>
+    <ul>
+      <li>প্রতি সপ্তাহের বদলে মাসে এক-দুবার বাইরে খান।</li>
+      <li>অফিস বা স্কুলে বাসার টিফিন নিন; এতে মাসে কয়েক হাজার টাকা বাঁচতে পারে।</li>
+      <li>সঙ্গে পানির বোতল রাখুন, বাইরে পানি-কোমল পানীয় কেনা কমবে।</li>
+    </ul>
+    <div class="ex"><b>হিসাব করে দেখুন:</b> দুপুরে বাইরে খেতে দিনে ১৫০ টাকা লাগলে ২২ কর্মদিবসে খরচ ৩,৩০০ টাকা। বাসার টিফিনে এর বড় অংশ বাঁচে।</div>
+  </div>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ৩</span></div>
+</section>
+
+<!-- 4. tips 6-7 + bonus -->
+<section class="page">
+  <div class="tip">
+    <div class="head"><div class="num">৬</div><h3>বিকাশ-নগদ-কার্ডের খরচের হিসাব রাখুন</h3></div>
+    <p>ডিজিটাল লেনদেনে টাকা খরচ হচ্ছে বলে টেরই পাওয়া যায় না। ছোট ছোট খরচ মিলে বড় অঙ্ক হয়।</p>
+    <ul>
+      <li>সপ্তাহে একদিন বিকাশ, নগদ, কার্ড আর শপিং অ্যাপের লেনদেন দেখে খাতায় বা ফোনের নোটে লিখুন।</li>
+      <li>খরচগুলো তিন ভাগে সাজান: জরুরি (ভাড়া, খাবার, বিল, যাতায়াত, পড়াশোনা), প্রয়োজনীয় (চিকিৎসা, কাপড়), আর ইচ্ছামতো (বাইরে খাওয়া, বিনোদন, হঠাৎ কেনাকাটা)।</li>
+      <li>মাসের শুরুতে যা খরচ হবে ভেবেছিলেন, মাস শেষে আসল খরচের সঙ্গে মিলিয়ে দেখুন কোথায় বেশি গেল।</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <div class="head"><div class="num">৭</div><h3>জরুরি তহবিল গড়ুন, খরচের জন্য ধার নয়</h3></div>
+    <p>হঠাৎ অসুখ, চাকরি হারানো বা আয় কমে গেলে জরুরি তহবিলই ভরসা।</p>
+    <ul>
+      <li>লক্ষ্য রাখুন সংসারের ৩ থেকে ৬ মাসের জরুরি খরচের সমান টাকা আলাদা রাখার। আয় অনিয়মিত হলে বা পরিবারে নির্ভরশীল বেশি হলে আরও বেশি।</li>
+      <li>দৈনন্দিন খরচ চালাতে ধার করবেন না, পুরোনো ঋণ বেশি দিন টানবেন না।</li>
+      <li>নতুন ঋণ বা কিস্তিতে কেনার আগে হিসাব করুন: কিস্তি দেওয়ার সামর্থ্য আছে কি না, মোট সুদ কত দাঁড়াবে।</li>
+      <li>ক্রেডিট কার্ডের বকেয়া আর উচ্চ সুদের ঋণ থেকে সাবধান।</li>
+    </ul>
+  </div>
+
+  <h3 style="color:var(--deep);margin:2mm 0 2mm">বোনাস: আরও ৫টি ছোট টিপস</h3>
+  <ul style="padding-left:6mm;margin:0">
+    <li>দরকার না হলে ফ্যান, লাইট, টিভি, ওয়াইফাই বন্ধ রাখুন; বিদ্যুৎসাশ্রয়ী বাল্বে বিল আনুমানিক ১০-১৫% কমে।</li>
+    <li>দূরের পথে ট্রেন, কাছের পথে বাস; প্রতিদিন রাইড শেয়ার বা সিএনজি নয়। কাছে হলে হেঁটে যান।</li>
+    <li>সপ্তাহে একদিন “খরচহীন দিন” রাখুন, সেদিন একটি টাকাও খরচ না করার চেষ্টা করুন।</li>
+    <li>বোতলের পানির বদলে বাসায় ফিল্টার ব্যবহার করুন; জিনিস নষ্ট হলে আগে মেরামতের চেষ্টা করুন।</li>
+    <li>সরকারি হাসপাতাল, স্কুল-কলেজ আর বিনা মূল্যের অনলাইন কোর্সের সুবিধা নিন।</li>
+  </ul>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ৪</span></div>
+</section>
+
+<!-- 5. budget table -->
+<section class="page">
+  <h2>মাসিক বাজেটের ছক</h2>
+  <p><b>উদাহরণ:</b> মাসিক আয় ৪০,০০০ টাকা, ৫০/৩০/২০ নিয়মে।</p>
+  <table>
+    <tr><th>খাত</th><th>কী কী</th><th class="r">টাকা</th></tr>
+    <tr><td>জরুরি খরচ (৫০%)</td><td>ভাড়া, বাজার, বিদ্যুৎ-গ্যাস-পানি, যাতায়াত, পড়াশোনা</td><td class="r">২০,০০০</td></tr>
+    <tr><td>নিজের পছন্দের খরচ (৩০%)</td><td>চিকিৎসা, কাপড়, বেড়ানো, বাইরে খাওয়া</td><td class="r">১২,০০০</td></tr>
+    <tr><td>সঞ্চয় ও ঋণ শোধ (২০%)</td><td>জরুরি তহবিল, সঞ্চয়পত্র/ব্যাংক, কিস্তি</td><td class="r">৮,০০০</td></tr>
+    <tr class="total"><td>মোট</td><td></td><td class="r">৪০,০০০</td></tr>
+  </table>
+  <p style="font-size:11pt;color:var(--muted)">আয় কম বা খরচ বেশি হলে ৬০/২০/২০ (জরুরি ৬০%, পছন্দের ২০%, সঞ্চয় ২০%) বা নিজের সামর্থ্য অনুযায়ী হার ঠিক করুন।</p>
+
+  <h3 style="color:var(--deep);margin-top:6mm">আপনার নিজের বাজেট</h3>
+  <p style="font-size:11pt;color:var(--muted)">মাসিক আয়: ______________ টাকা</p>
+  <table class="blank">
+    <tr><th>খাত</th><th class="r">পরিকল্পনা</th><th class="r">আসল খরচ</th><th class="r">পার্থক্য</th></tr>
+    <tr><td>বাসা ভাড়া</td><td></td><td></td><td></td></tr>
+    <tr><td>বাজার (চাল, ডাল, তেল, সবজি, মাছ)</td><td></td><td></td><td></td></tr>
+    <tr><td>বিদ্যুৎ, গ্যাস, পানি, ইন্টারনেট</td><td></td><td></td><td></td></tr>
+    <tr><td>যাতায়াত</td><td></td><td></td><td></td></tr>
+    <tr><td>সন্তানের পড়াশোনা</td><td></td><td></td><td></td></tr>
+    <tr><td>চিকিৎসা</td><td></td><td></td><td></td></tr>
+    <tr><td>বাইরে খাওয়া ও বিনোদন</td><td></td><td></td><td></td></tr>
+    <tr><td>অন্যান্য</td><td></td><td></td><td></td></tr>
+    <tr><td><b>সঞ্চয় / জরুরি তহবিল</b></td><td></td><td></td><td></td></tr>
+    <tr class="total"><td>মোট</td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ৫</span></div>
+</section>
+
+<!-- 6. 30-day checklist -->
+<section class="page">
+  <h2>৩০ দিনের চেকলিস্ট</h2>
+  <p style="color:var(--muted)">প্রতিটি কাজ শেষ হলে টিক দিন। এক মাস পর আগের মাসের খরচের সঙ্গে তুলনা করুন।</p>
+  <div class="week">প্রথম সপ্তাহ</div>
+  <ul class="check">
+    <li><span class="box"></span>বেতন পেয়েই সঞ্চয়ের টাকা আলাদা করেছি</li>
+    <li><span class="box"></span>মাসের বাজেট ছক পূরণ করেছি</li>
+    <li><span class="box"></span>লিস্ট করে পুরো মাসের শুকনা বাজার একবারে করেছি</li>
+  </ul>
+  <div class="week">দ্বিতীয় সপ্তাহ</div>
+  <ul class="check">
+    <li><span class="box"></span>বিকাশ, নগদ, কার্ডের খরচ খাতায় তুলেছি</li>
+    <li><span class="box"></span>এ সপ্তাহে অফিস/স্কুলে অন্তত ৪ দিন বাসার টিফিন নিয়েছি</li>
+    <li><span class="box"></span>একটি “খরচহীন দিন” পালন করেছি</li>
+  </ul>
+  <div class="week">তৃতীয় সপ্তাহ</div>
+  <ul class="check">
+    <li><span class="box"></span>মৌসুমি সবজি আর কম দামের মাছ দিয়ে সপ্তাহের রান্না সাজিয়েছি</li>
+    <li><span class="box"></span>বিদ্যুৎ-গ্যাসের অপচয় কমিয়েছি (ফ্যান-লাইট বন্ধ, চুলা নিভিয়ে রাখা)</li>
+    <li><span class="box"></span>আবার ডিজিটাল খরচের হিসাব মিলিয়েছি</li>
+  </ul>
+  <div class="week">চতুর্থ সপ্তাহ</div>
+  <ul class="check">
+    <li><span class="box"></span>পরিকল্পনা আর আসল খরচ মিলিয়ে দেখেছি কোথায় বেশি গেছে</li>
+    <li><span class="box"></span>জরুরি তহবিলে এ মাসে কিছু টাকা যোগ করেছি</li>
+    <li><span class="box"></span>পরের মাসের জন্য একটি খরচ কমানোর লক্ষ্য ঠিক করেছি</li>
+  </ul>
+  <div class="cta">
+    <h3>এমন আরও লাইফ হ্যাক পেতে</h3>
+    <p style="margin:2mm 0 0">ফেসবুকে <b>Top 10 Breaking News</b> পেজটি ফলো করুন। প্রতিটি লাইফ হ্যাক রিলের কমেন্টে <b>GUIDE</b> লিখলে পাবেন এমন ফ্রি গাইড।</p>
+  </div>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ৬</span></div>
+</section>
+
+<!-- 7. sources -->
+<section class="page">
+  <h2>তথ্যসূত্র</h2>
+  <p>এই গাইডের কৌশলগুলো নিচের প্রতিবেদন থেকে নেওয়া, আমাদের নিজের ভাষায় সাজানো।</p>
+  <ol class="src">
+    <li>প্রতীক বর্ধন, “আয়-ব্যয়ের হিসাব রেখে, সঞ্চয়ের নিয়ম মেনে, জরুরি তহবিল গঠন করে ও অপ্রয়োজনীয় ঋণ এড়িয়ে যেভাবে গড়ে তুলবেন আর্থিক নিরাপত্তা”, প্রথম আলো, ১২ অক্টোবর ২০২৬ (অধ্যাপক সায়মা হক, অর্থনীতি বিভাগ, ঢাকা বিশ্ববিদ্যালয়)।<br><a href="https://www.prothomalo.com/business/personal-finance/tzldzppltv">prothomalo.com/business/personal-finance/tzldzppltv</a></li>
+    <li>“মূল্যস্ফীতির সময়ে সংসারের খরচ বাঁচানোর ১০টি উপায়”, প্রথম আলো, ৭ অক্টোবর ২০২৫।<br><a href="https://www.prothomalo.com/business/personal-finance/l45qz0qlde">prothomalo.com/business/personal-finance/l45qz0qlde</a></li>
+    <li>“দুর্মূল্যের এই বাজারে খরচ কমানোর ২৭ উপায়”, প্রথম আলো জীবনযাপন ডেস্ক, ২৩ অক্টোবর ২০২৩।<br><a href="https://www.prothomalo.com/lifestyle/kdww97zlvz">prothomalo.com/lifestyle/kdww97zlvz</a></li>
+  </ol>
+  <div class="note">এই গাইড সাধারণ তথ্য ও সচেতনতার জন্য। এটি কোনো আর্থিক পরামর্শ নয়। সঞ্চয় বা বিনিয়োগের বড় সিদ্ধান্তের আগে নিজের অবস্থা বুঝে ব্যাংক বা যোগ্য পরামর্শকের সঙ্গে কথা বলুন। প্রতিবেদনেই বলা হয়েছে, শুধু ব্যক্তিগত শৃঙ্খলা দিয়ে সব সমাধান হয় না; আয় বৃদ্ধি, চাকরির স্থিতি আর জীবনযাত্রার খরচও বড় ভূমিকা রাখে।</div>
+  <div class="foot"><span class="logo"><span class="t" style="border:1px solid #ddd">TOP</span><span class="n">10</span></span><span>লাইফ হ্যাক গাইড ০১ · পৃষ্ঠা ৭</span></div>
+</section>
+</body>
+</html>
