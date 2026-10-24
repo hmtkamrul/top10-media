@@ -128,10 +128,10 @@ def ribbon_sprite(text="ব্রেকিং  নিউজ"):
 
 def point_sprite(text, n, size=54):
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    lines = [_sp(l) for l in r.wrap_balanced(d, text.strip().rstrip("।") + "।", r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
+    lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
     while len(lines) > 3 and size > 40:
         size -= 4
-        lines = [_sp(l) for l in r.wrap_balanced(d, text.strip().rstrip("।") + "।", r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
+        lines = [_sp(l) for l in r.wrap_balanced(d, (text.strip().rstrip("।") + ("" if text.strip()[-1:] in "!?" else "।")), r.BN_SUB, r.EN_SEMI, size, MAXW - 150)]
     lh = size * 1.32
     h = int(lh * len(lines) + 46)
     w = MAXW
@@ -230,6 +230,10 @@ def render(story, out_dir):
     one = bool(story.get("bg_image")) or story.get("one_at_a_time", False)
     pts = [point_sprite(p, i + 1, story.get("point_size", 54 if len(plist) < 4 else 48)) for i, p in enumerate(plist)]
     oa, ob, oc = outro_sprites(story)
+    teaser = None
+    if story.get("teaser_bn"):                       # "watch till the end" line under the hook (life-skill Reels)
+        teaser = text_sprite([_sp(l) for l in story["teaser_bn"].split("\n")], r.BN_HEAD, r.EN_BLACK, 50,
+                             fill=(255, 255, 255, 255))
     note = None
     if story.get("outro_note"):
         note = text_sprite([_sp(l) for l in story["outro_note"].split("\n")], r.BN_HEAD, r.EN_BLACK, 52,
@@ -268,6 +272,11 @@ def render(story, out_dir):
             if not story.get("source_at_end"):
                 paste(img, src, (RW - src.width) / 2, hy + head.height * sc + (by.height - 20 if by is not None else 0) - 8,
                       alpha=ease((t - 1.0) / 0.4) * (1 - 0.0 * mv))
+            if teaser is not None and t < HOOK:
+                ty = hy + head.height * sc + (by.height if by is not None else 0) + 40
+                ta = ease((t - 0.5) / 0.4) * (1 - ease((t - (HOOK - 0.3)) / 0.25))
+                pulse_t = 1.0 + 0.03 * math.sin(2 * math.pi * t * 1.5)
+                paste(img, teaser, (RW - teaser.width * pulse_t) / 2, ty, alpha=ta, scale=pulse_t)
             # points stack
             y = 360 + head.height * 0.72 + (by.height + 40 if by is not None else 70)
             photo = one
