@@ -20,6 +20,7 @@ getScheduledPosts before choosing):
 | Delhi news (Cockroach Janta Party, Neha Bora, Gen-Z protest, Modi/Delhi) | **max 1 a day** |
 | Saudi Arabia news (incl. Saudi airports, Saudi flights, Houthi attacks on Saudi) | **max 1 every 2 days** |
 | Remittance (Bangladesh Bank figures) | **max 1 a week** |
+| Sports (football: UCL/EPL/La Liga, Bangladesh cricket, any other sport) | **exactly 1 a day** (user, 2026-10-24); on a Bangladesh match day prefer the Bangladesh cricket update |
 | Same story/follow-up as a Reel of the last 2 days | not allowed unless there is a big new development |
 
 Fill the rest with fresh, varied, good stories (aim for at least 4 different topics a day):
