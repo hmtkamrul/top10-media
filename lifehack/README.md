@@ -22,3 +22,17 @@
   others, second-hand shopping as a must, or anything that sounds like charity.
 - Each Reel gets a ready caption in caption.txt (Day N line, hook, teaser, follow + GUIDE steps, a genuine
   question, source line, hashtags).
+
+## Comment keyword + Messenger automation (user's rule, 2026-10-25)
+- Each episode has its OWN topic keyword and its own Meta Business Suite automation (Inbox → Automations →
+  "Comment to message"), named "Comment to message - Life Skill <KEYWORD> book". Porbo 1 = GUIDE
+  (keywords guide, GUIDE, Guide, গাইড; links Top10_LifeSkill_Day1_Guide.pdf). Planned: SALES, PROGRESS, WALK, food topic.
+- Pick keywords that are NOT short words hidden inside other words (Facebook matches "contains": "eat" would
+  fire on great/beat/heat → use FOOD/DIET) and NOT common comment words (good, nice, help). Add case variants
+  + the Bangla spelling (SALES/সেলস, PROGRESS/প্রগ্রেস, WALK/হাঁটা). Suggest the keyword when the script is
+  finalised; set the automation only after the user OKs it. The Reel end-card pill and caption use that keyword.
+- Automations apply to every post on the Page, so a keyword must never clash with an earlier episode's.
+- Comment reply: "ধন্যবাদ! 📩 গাইড বুকটি আপনার মেসেজে পাঠিয়ে দিয়েছি।" Message: thanks + episode name + PDF raw
+  link + one-line book summary + follow line.
+- Workflow: the user reviews each week's guide books by hand ("human touch"). Record every correction the user
+  makes in this file so later episodes need fewer changes.
