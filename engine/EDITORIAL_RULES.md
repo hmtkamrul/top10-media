@@ -140,6 +140,25 @@ Limit: max ONE Delhi Reel a day (see "Daily content plan").
 
 Tone: report facts from the source only. Do not add our own opinion, insults or one-sided wording, even on political stories.
 
+## Hook: the first 5 seconds (user's rule, 2026-10-24; data: average watch time is only 2-5 s)
+Facebook decides how far a Reel spreads from how many people keep watching in the first seconds. So:
+- `short_bn` (headline, 2 lines max) leads with the most surprising part: a big number, a conflict, a
+  direct quote, or what it means for Bangladeshis. No slow openers ("জানা গেছে", "সম্প্রতি", place/date first).
+  Good: "১৩৫ ফ্লাইট বন্ধ, আটকা ২০ হাজার যাত্রী". Weak: "সৌদি-বাংলাদেশ রুটে ফ্লাইট নিয়ে নতুন তথ্য".
+- ALWAYS add `kicker_bn` (one line, max ~40 characters) for news Reels without `quote_by`: the single most
+  shocking fact or number that makes people stay, shown in yellow under the headline from second 1.
+  E.g. "নেতানিয়াহু: ‘১৯৬৭ সালের পর এমন অভিযান হয়নি’", "এক দিনেই ১১ কোটি ৭০ লাখ ডলার!".
+  Quote posts keep `quote_by` instead (kicker would replace the attribution).
+- `points_bn[0]` must be the strongest fact (not background). Never repeat the headline in point 1.
+- Frame 0 is the cover: headline + kicker must be readable there.
+
+## Likes, comments, shares (user's request, 2026-10-24)
+- The Reel's end card now says "আপনার মত কী? কমেন্টে জানান / পুরো খবরের লিংকও কমেন্টে".
+- `question_bn` must be a genuine, easy, opinion question that anyone can answer in one line
+  (e.g. "এই যুদ্ধ কবে থামবে বলে মনে করেন?", "আপনার এলাকায় চালের দাম কত?"). A/B choices work well.
+- NEVER engagement bait: no "লাইক দিন যদি...", "শেয়ার করুন", "ট্যাগ করুন", "YES লিখুন" — Facebook
+  demotes posts that ask for likes/shares/tags/votes. Genuine questions are fine.
+
 ## Every post
 - Image/video headline: short and punchy, 2 lines max, in large type in the centre of the card.
 - Card shows the source name ("সূত্র: …"). No category/rank tag.

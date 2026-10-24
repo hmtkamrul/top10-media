@@ -189,7 +189,8 @@ def paste(base, sp, x, y, alpha=1.0, scale=1.0):
 
 
 def outro_sprites(story):
-    a = text_sprite([_sp(story.get("outro_top", "পুরো খবরের লিংক কমেন্টে"))], r.BN_SUB, r.EN_SEMI, 58, fill=(255, 255, 255, 255))
+    top = story.get("outro_top", "আপনার মত কী? কমেন্টে জানান\nপুরো খবরের লিংকও কমেন্টে")
+    a = text_sprite([_sp(l) for l in top.split("\n")], r.BN_SUB, r.EN_SEMI, 58, fill=(255, 255, 255, 255))
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
     t = _sp(story.get("outro_pill", "ফলো করুন"))
     tw = r.width(d, t, r.BN_HEAD, r.EN_BLACK, 92)
@@ -214,7 +215,14 @@ def render(story, out_dir):
     qb = story.get("quote_by")
     by = text_sprite([_sp("— " + qb)], r.BN_SUB, r.EN_SEMI, 46, fill=r.YELLOW + (255,)) if qb else None
     if story.get("kicker_bn"):                       # sub-headline under the hook (life-hack Reels)
-        by = text_sprite([_sp(story["kicker_bn"])], r.BN_HEAD, r.EN_BLACK, story.get("kicker_size", 50), fill=r.YELLOW + (255,))
+        dk = ImageDraw.Draw(Image.new("RGB", (8, 8)))
+        ks = story.get("kicker_size", 50)
+        while ks > 40 and r.width(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks) > MAXW - 20:
+            ks -= 2
+        klines = [story["kicker_bn"]]
+        if r.width(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks) > MAXW - 20:     # still too wide: 2 lines
+            klines = r.wrap_balanced(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks, MAXW - 40)[:2]
+        by = text_sprite([_sp(l) for l in klines], r.BN_HEAD, r.EN_BLACK, ks, fill=r.YELLOW + (255,))
     src = text_sprite([_sp(story.get("source_line_bn") or "সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
     rib, logo = ribbon_sprite(story.get("ribbon_bn", "ব্রেকিং  নিউজ")), logo_sprite()
@@ -281,7 +289,7 @@ def render(story, out_dir):
             k = ease((t - t_out) / 0.4)
             dim = Image.new("RGBA", (RW, RH), (0, 0, 0, int(150 * k)))
             img.alpha_composite(dim)
-            paste(img, oa, (RW - oa.width) / 2, 640, alpha=k)
+            paste(img, oa, (RW - oa.width) / 2, 790 - oa.height, alpha=k)
             pulse = 1.0 + 0.05 * math.sin(2 * math.pi * (t - t_out) * 1.6)
             paste(img, oc, (RW - oc.width) / 2, 820, alpha=k)
             paste(img, ob, (RW - ob.width * pulse) / 2, 920 + 20 * (1 - k), alpha=k, scale=pulse)
