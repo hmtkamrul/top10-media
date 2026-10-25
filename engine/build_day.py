@@ -26,6 +26,7 @@ r.SRC_BN.update({"Responsible Statecraft": "রেসপনসিবল স্�
 r.SRC_BN.update({"ESPNcricinfo": "ইএসপিএনক্রিকইনফো", "ESPN": "ইএসপিএন", "Cricbuzz": "ক্রিকবাজ", "Goal": "গোল ডটকম", "BBC Sport": "বিবিসি স্পোর্ট", "Sky Sports": "স্কাই স্পোর্টস", "The Athletic": "দ্য অ্যাথলেটিক", "Kyiv Independent": "কিয়েভ ইনডিপেনডেন্ট", "The Guardian": "দ্য গার্ডিয়ান", "Politico Europe": "পলিটিকো ইউরোপ", "DW": "ডয়চে ভেলে", "France 24": "ফ্রান্স টোয়েন্টিফোর", "UEFA": "উয়েফা", "Premier League": "প্রিমিয়ার লিগ"})
 r.SRC_BN.update({"Türkiye Today": "তুরস্ক টুডে", "Manchester City FC": "ম্যানচেস্টার সিটি এফসি", "ScienceDaily": "সায়েন্সডেইলি"})
 r.SRC_BN.update({"The Star": "দ্য স্টার", "SBS News": "এসবিএস নিউজ", "BSS": "বিএসএস"})
+r.SRC_BN.update({"Insurance Journal": "ইনস্যুরেন্স জার্নাল", "Council on Foreign Relations": "কাউন্সিল অন ফরেন রিলেশনস"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
