@@ -32,9 +32,10 @@ SCENES = {
 
 NAVY = (12, 10, 12)          # box background is now near-black
 BLACK = (12, 10, 12)
-RED = (232, 30, 40)
-ORANGE = (255, 112, 0)
-YELLOW = (255, 200, 30)
+# "Foodi" palette (user's pick, 2026-10-26): dark warm brown/black + warm bokeh, white, bright yellow, bold red
+RED = (228, 22, 30)
+ORANGE = (255, 222, 26)       # accents that were orange are now the bright yellow
+YELLOW = (255, 226, 30)
 GOLD_LIGHT, GOLD_MID, GOLD_DARK = YELLOW, ORANGE, RED
 WHITE = (255, 255, 255)
 
@@ -309,8 +310,8 @@ def grad_text(base, xy, text, size, stops, shadow=True, vertical=True):
     base.paste(Image.fromarray(grad.astype("uint8")), (int(x), int(y)), mask)
 
 
-FIRE = [(0.0, YELLOW), (0.55, ORANGE), (1.0, RED)]
-SNOW = [(0.0, WHITE), (1.0, (255, 226, 210))]
+FIRE = [(0.0, (255, 238, 70)), (1.0, (255, 212, 0))]      # headline accent line: bright yellow (was yellow->red)
+SNOW = [(0.0, WHITE), (1.0, (248, 244, 238))]
 
 
 def hgrad(w, h, c0, c1):
@@ -402,6 +403,40 @@ def place_people(img, people):
     return canvas.convert("RGB")
 
 
+# ---------- "Foodi" warm grade for the animated scenes (since 2026-10-26) ----------
+_BOKEH = {}
+
+
+def bokeh_layer(w, h, seed=11):
+    """Soft warm out-of-focus lights like a restaurant background, mostly in the upper half."""
+    if (w, h, seed) not in _BOKEH:
+        rnd = random.Random(seed)
+        lay = Image.new("RGB", (w // 4, h // 4), (0, 0, 0))
+        d = ImageDraw.Draw(lay)
+        for _ in range(30):
+            x, y = rnd.uniform(0, w / 4), rnd.uniform(0, h / 4 * 0.62)
+            rr = rnd.uniform(w * 0.018, w * 0.05)
+            c = rnd.choice([(255, 190, 110), (255, 160, 70), (230, 200, 160), (255, 214, 140)])
+            k = rnd.uniform(0.35, 0.8)
+            d.ellipse([x - rr, y - rr, x + rr, y + rr], fill=tuple(int(v * k) for v in c))
+        lay = lay.filter(ImageFilter.GaussianBlur(w * 0.006)).resize((w, h), Image.BICUBIC)
+        _BOKEH[(w, h, seed)] = np.asarray(lay, np.float32)
+    return _BOKEH[(w, h, seed)]
+
+
+def warm_grade(img, strength=0.82):
+    """Map any scene to the dark warm-brown look (shadows near black, mids brown, highlights amber) + bokeh."""
+    a = np.asarray(img.convert("RGB"), np.float32) / 255.0
+    lum = (0.3 * a[..., 0] + 0.59 * a[..., 1] + 0.11 * a[..., 2])[..., None]
+    lo, mid, hi = np.array([10, 7, 5.0]), np.array([92, 52, 24.0]), np.array([255, 196, 120.0])
+    t = np.clip(lum, 0, 1)
+    graded = np.where(t < 0.5, lo + (mid - lo) * (t / 0.5), mid + (hi - mid) * ((t - 0.5) / 0.5))
+    out = graded * strength + a * 255.0 * (1 - strength) * 0.7
+    h, w = out.shape[:2]
+    out = 255 - (255 - out) * (1 - bokeh_layer(w, h) / 255.0)          # screen-blend the bokeh lights
+    return Image.fromarray(np.uint8(np.clip(out, 0, 255)))
+
+
 def card(story, rank, total, date_bn, page_name, phase=0.0):
     from scenes import SCENE_BUILDERS
     from scenes2 import SCENE_BUILDERS2
@@ -416,6 +451,7 @@ def card(story, rank, total, date_bn, page_name, phase=0.0):
         img = fn(phase, seed)
     except TypeError:          # older builders take only phase
         img = fn(phase)
+    img = warm_grade(img)
     img = place_people(img, story.get("people"))
     d = ImageDraw.Draw(img)
     pal = SCENES.get(story["cat"], SCENES["bd"])

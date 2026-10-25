@@ -1,4 +1,4 @@
-"""Build the daily "২৪ ঘণ্টার সেরা ১০" roundup Reel (posted at 16:00 since 2026-10-24, covers the previous day) (1080x1920) from a day's stories JSON.
+"""Build the "আজকের সেরা ১০" topline roundup Reels (14:00 "noon" and 18:00 "evening" editions since 2026-10-26; set "edition" in the JSON) (was the daily "২৪ ঘণ্টার সেরা ১০" roundup Reel (posted at 16:00 since 2026-10-24, covers the previous day) (1080x1920) from a day's stories JSON.
 
 Usage: python3 build_roundup.py ../days/<yesterday>_top10.json ../<today>_roundup/
 Writes roundup_reel.mp4 and roundup.json (caption + first comment) into the output folder.
@@ -22,9 +22,24 @@ def band_text(img, text, y, size, fill, font=None):
     r.draw_runs(d, (RW - w) / 2, y, text, f, r.EN_BLACK, size, fill)
 
 
+# Editions (since 2026-10-26, user's rule): two topline roundups a day, headlines only (no detail videos).
+#   "noon"    = 14:00 Reel, top 10 news up to ~11:30 (incl. the 12:00 and 13:00 news Reels)
+#   "evening" = 18:00 Reel, the 15:00/16:00/17:00 news Reels + 7 more toplines
+#   "24h"     = old previous-day roundup (kept for reference)
+ED = {
+    "noon":    dict(band="আজকের সেরা ১০", intro=["আজকের", "সেরা ১০ খবর"], when="দুপুর পর্যন্ত",
+                    title="আজকের সেরা ১০ খবর (দুপুর)", head="আজ দুপুর পর্যন্ত সেরা"),
+    "evening": dict(band="আজকের সেরা ১০", intro=["আজকের", "সেরা ১০ খবর"], when="সন্ধ্যা পর্যন্ত",
+                    title="আজকের সেরা ১০ খবর (সন্ধ্যা)", head="আজ সন্ধ্যা পর্যন্ত সেরা"),
+    "24h":     dict(band="২৪ ঘণ্টার সেরা ১০", intro=["গত ২৪ ঘণ্টার", "সেরা ১০ খবর"], when="",
+                    title="২৪ ঘণ্টার সেরা ১০ খবর", head="গত ২৪ ঘণ্টার সেরা"),
+}
+E = ED["24h"]
+
+
 def overlay(frame, k, n, t):
     """Top band: title + counter. Bottom band: progress bar across all stories."""
-    band_text(frame, "২৪ ঘণ্টার সেরা ১০", 70, 64, r.WHITE)
+    band_text(frame, E["band"], 70, 64, r.WHITE)
     cnt = f"{k:02d} / {n:02d}".translate(BN)
     d = ImageDraw.Draw(frame)
     cw = r.width(d, cnt, r.BN_HEAD, r.EN_BLACK, 50) + 60
@@ -72,9 +87,11 @@ def _load(path, sr):
 
 
 def main(src, out, speaker="male", voice=False):
+    global E
     import numpy as np
     import music
     data = json.load(open(src, encoding="utf-8"))
+    E = ED[data.get("edition", "24h")]
     st = data["stories"]
     n = len(st)
     os.makedirs(out, exist_ok=True)
@@ -82,7 +99,7 @@ def main(src, out, speaker="male", voice=False):
     try:
         # 1) voice-over script and clips
         ORD = ["", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ"]
-        script = [("intro", "গত চব্বিশ ঘণ্টার সেরা দশ খবর। চলুন দেখে নিই।")]
+        script = [("intro", "আজকের সেরা দশ খবর। চলুন দেখে নিই।")]
         for i, s in enumerate(st, 1):
             first = s.get("caption_bn", "").split("।")[0]
             script.append((f"s{i}", f"{ORD[i] if i < len(ORD) else i} নম্বর খবর। {s['title_bn']}। {first}।"))
@@ -102,7 +119,7 @@ def main(src, out, speaker="male", voice=False):
             img.save(f"{tmp}/f{k:05d}.jpg", quality=90)
             k += 1
         LOOP = 36   # animation loop length in frames; render each loop once and reuse it
-        intro = [title_card(i / LOOP, ["গত ২৪ ঘণ্টার", "সেরা ১০ খবর"], data.get("date_bn", "")) for i in range(LOOP)]
+        intro = [title_card(i / LOOP, E["intro"], " ".join(x for x in (data.get("date_bn", ""), E["when"]) if x)) for i in range(LOOP)]
         for i in range(int(dur["intro"] * FPS)):
             save(intro[i % LOOP])
         for si, s in enumerate(st, 1):
@@ -110,7 +127,7 @@ def main(src, out, speaker="male", voice=False):
             nf = int(dur[f"s{si}"] * FPS)
             for i in range(nf):
                 save(overlay(loop[i % LOOP].copy(), si, n, i / nf))
-        outro = [title_card(i / LOOP, ["প্রতিদিন বিকেল ৪টায়", "সেরা ১০ খবর"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
+        outro = [title_card(i / LOOP, ["প্রতিদিন দুপুর ২টা ও", "সন্ধ্যা ৬টায় সেরা ১০"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
         for i in range(int(dur["outro"] * FPS)):
             save(outro[i % LOOP])
         total = k / FPS
@@ -144,11 +161,11 @@ def main(src, out, speaker="male", voice=False):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     lines = "\n".join(f"{str(i).translate(BN)}. {s['title_bn']}" for i, s in enumerate(st, 1))
-    caption = (f"📺 গত ২৪ ঘণ্টার সেরা {str(n).translate(BN)} খবর, এক ভিডিওতে ({data.get('date_bn', '')})\n\n{lines}\n\n"
+    caption = (f"📺 {E['head']} {str(n).translate(BN)} খবর, এক ভিডিওতে ({data.get('date_bn', '')})\n\n{lines}\n\n"
                f"💬 এর মধ্যে কোন খবরটা আপনার কাছে সবচেয়ে বড় মনে হলো? কমেন্টে জানান 👇\n\n"
                f"{r.FOLLOW_LINE}\n\n#Top10BreakingNews #BreakingNewsBD #আজকের_খবর")
     links = "\n".join(f"{str(i).translate(BN)}. {r.SRC_BN.get(s['source'], s['source'])}: {s['url']}" for i, s in enumerate(st, 1))
-    json.dump({"file": "roundup_reel.mp4", "facebook_type": "REEL", "title": "২৪ ঘণ্টার সেরা ১০ খবর",
+    json.dump({"file": "roundup_reel.mp4", "facebook_type": "REEL", "title": E["title"],
                "caption": caption, "first_comment": "📰 সব খবরের সূত্র:\n" + links + "\n\n" + r.FOLLOW_LINE},
               open(os.path.join(out, "roundup.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"built roundup_reel.mp4: {n} stories, {total:.0f} s")

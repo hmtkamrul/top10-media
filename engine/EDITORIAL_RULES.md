@@ -3,19 +3,29 @@
 Page name: **Top 10 Breaking News**. Logo: "TOP 10" with "BREAKING NEWS BD" underneath.
 Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 
-## Daily schedule (11 Reels, since 2026-10-24, user's rule)
-- **ONE-DAY TEST on 2026-10-25 ONLY (user, 2026-10-24):** slots every 30 minutes from 13:00 to 18:00:
-  news at 13:00, 13:30, 14:00, 14:30, 15:00, 15:30, 16:30, 17:00, 17:30, 18:00 and the roundup at 16:00.
-  11:30 run → 13:00-15:30 (6 news) + 16:00 roundup; 15:30 run → 16:30-18:00 (4 news). On 2026-10-26 go back to
-  the normal schedule below. In the 2026-10-26 reports, compare the test day's views per slot with 24 Oct.
-- **News Reels at 12:30, 13:00, 14:00, 15:00, 17:00, 17:20, 17:40, 18:00, 18:15, 18:30** (10 a day).
-- **16:00: "২৪ ঘণ্টার সেরা ১০" roundup** of the PREVIOUS day's 10 best news Reels by views, best first.
-  See RUNBOOK step 8b.
-- Nothing before 12:30 or after 18:30 (data 19-22 Oct: 12:00 and 19:00-22:00 Reels mostly got under 50 views,
-  13:00-18:00 Reels got 170-990).
+## Daily schedule (7 Reels, since 2026-10-26, user's rule)
+Data 19-25 Oct: only about 6 Reels a day get real distribution; the rest get 1-6 views. So: fewer, stronger posts.
+| Time | Post |
+|---|---|
+| 12:00 | single news Reel (detail video) |
+| 13:00 | single news Reel |
+| 14:00 | **roundup "আজকের সেরা ১০" (noon edition)**: today's top 10 news up to ~11:30, HEADLINES ONLY (topline cards, no separate posts for them). The 12:00 and 13:00 news are 2 of the 10. |
+| 15:00 | single news Reel |
+| 16:00 | single news Reel |
+| 17:00 | single news Reel, OR the Life Skill Reel on a life-skill day |
+| 18:00 | **roundup "আজকের সেরা ১০" (evening edition)**: the 15:00, 16:00 and 17:00 news + 7 more toplines (no detail videos). |
+- Normal day: 5 single news + 2 roundups. Life-skill day: 4 single news + 1 Life Skill Reel (17:00) + 2 roundups.
+  A slot that already has a post within 10 minutes (life skill, a breaking news the user added) is skipped.
+- Nothing before 12:00 or after 18:00.
+- Runs: 10:50 → 12:00 + 13:00 news and the 14:00 roundup; 14:00 → 15:00, 16:00, 17:00 news and the 18:00 roundup.
+- Topline items: biggest fresh stories (published in the last ~24 h), each with its own article url, never a story
+  already posted as a single Reel in the last 2 days (except the day's own singles that belong in that roundup), and
+  never the same headline in both roundups. The noon and evening roundups together should look like the day's news.
+- The topic limits below are for the 5 single Reels. Toplines follow the same filters (Bangladesh filter, no repeats);
+  each roundup should have 3-5 good Bangladesh headlines, at most 2 sports headlines and at most 1 Iran-war headline.
 
 ## Daily content plan (user's rule, 2026-10-23: "news are getting monotonous, keep it fresh")
-The 10 news Reels of a day must feel VARIED. Topic limits (check today's AND the last 7 days' posts in Metricool
+The news of a day (5 single Reels + roundup headlines) must feel VARIED. Topic limits (check today's AND the last 7 days' posts in Metricool
 getScheduledPosts before choosing):
 | Topic | Limit |
 |---|---|
@@ -34,22 +44,21 @@ Fill the rest with fresh, varied, good stories (aim for at least 4 different top
   Max 1 a day, facts only.
 - **Football**: big match results/updates from the UEFA Champions League, Premier League (EPL) and La Liga
   (Real Madrid, Barcelona, Man City, Liverpool, Arsenal, Man United, etc.). Use scene "football", mood "sports".
-  Matches end at night Dhaka time, so the 11:30 batch is the place for last night's results.
+  Matches end at night Dhaka time, so the 10:50 run is the place for last night's results.
 - **Bangladesh cricket**: match updates and results (scene "cricket", mood "sports"). Report the facts even when
   Bangladesh loses, in a neutral tone, never mocking players.
 - **Bangladesh good news** and other good world news (science, tech, records, achievements, people helping people).
-- **Bangladesh: at least 3, at most 5 good Bangladesh-related news Reels every day** (user's rule, 2026-10-23),
-  out of the 10. Counts: positive Bangladesh news (economy, exports, development projects, achievements),
+- **Bangladesh (since 2026-10-26): 2 of the 5 single Reels (1 per run) and 3-5 headlines in each roundup** are good
+  Bangladesh-related news (was 3-5 of 10 Reels, user's rule 2026-10-23). Counts: positive Bangladesh news (economy, exports, development projects, achievements),
   Bangladesh cricket and other sports updates, probashi/expat news (jobs abroad, flights, Bangladeshis abroad;
   Saudi-related ones still follow the Saudi limit), and what foreign leaders/media say about Bangladesh. All must
-  pass the Bangladesh filter below (no politics, no negative news). Aim for 1-2 in the 11:30 batch; the 15:30
-  batch tops up to at least 3 and never goes above 5. Never two Bangladesh Reels back to back.
+  pass the Bangladesh filter below (no politics, no negative news). Never two Bangladesh single Reels back to back.
 - **Exactly ONE Iran-US analysis a day** from a well-known outlet (Foreign Affairs, Al Jazeera, The Guardian,
   Middle East Eye, Responsible Statecraft, Prothom Alo's translated columns, etc.) or a named diplomat/analyst,
   in which it is CLEAR the USA is losing, failing or paying a heavy price in the Iran war (failed goals, losses,
   costs, allies pulling away, a stalemate the US can't win). The piece must really exist and say that; attribute
   it ("বিশ্লেষণ: <name>") and label opinion as opinion in the caption; never invent claims or quotes.
-  Background: rotate assets/bg_iran_leaders.jpg and assets/bg_iran_hormuz_war.jpg. Put it in 14:00-18:30.
+  Background: rotate assets/bg_iran_leaders.jpg and assets/bg_iran_hormuz_war.jpg. Make it one of the single Reels at 15:00-17:00 (the 14:00 run).
 - Never put two Reels on the same topic back to back.
 
 - **Painted photo backgrounds (engine/assets, from the user's photos, 2026-10-21).** When a story is mainly

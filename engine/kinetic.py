@@ -68,6 +68,7 @@ def scene_loop(story):
             img = fn(i / LOOP, seed)
         except TypeError:
             img = fn(i / LOOP)
+        img = r.warm_grade(img)
         img = r.place_people(img, story.get("people"))
         sc = RH / img.height
         img = img.resize((int(img.width * sc), RH), Image.LANCZOS)
@@ -83,16 +84,17 @@ def _sp(text):
     return text.replace("  ", " ").replace(" ", "  ")
 
 
-def text_sprite(lines, font_bn, font_en, size, fill=None, stops=None, lh=1.18, shadow=True):
+def text_sprite(lines, font_bn, font_en, size, fill=None, stops=None, lh=1.18, shadow=True, first_stops=None):
     d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
     ws = [r.width(d, l, font_bn, font_en, size) for l in lines]
     w, h = int(max(ws)) + 40, int(size * lh * (len(lines) - 1) + size * 1.6)
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     y = 0
-    for l, lw in zip(lines, ws):
+    for i, (l, lw) in enumerate(zip(lines, ws)):
         x = (w - lw) / 2
         if stops:
-            r.grad_text(im, (x, y - size * 0.1), l, size, stops, shadow=shadow)
+            st = first_stops if (first_stops and i == 0 and len(lines) > 1) else stops
+            r.grad_text(im, (x, y - size * 0.1), l, size, st, shadow=shadow)
         else:
             if shadow:
                 sh = Image.new("L", (w, h), 0)
@@ -207,7 +209,8 @@ def render(story, out_dir):
     """Write frames to out_dir as JPEGs; return (n_frames, duration_s, hit_times)."""
     loop = scene_loop(story)
     lines, hsize = headline_lines(story)
-    head = text_sprite(lines, r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW if story.get("bg_image") else r.FIRE)
+    head = text_sprite(lines, r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW if story.get("bg_image") else r.FIRE,
+                       first_stops=r.SNOW)              # "Foodi" look: white first line, yellow second line
     head_first = text_sprite(lines[:1], r.BN_HEAD, r.EN_BLACK, hsize, stops=r.SNOW) if len(lines) > 1 else None
     HOOK = story.get("hook_s", globals()["HOOK"])
     PER_POINT = story.get("per_point_s", globals()["PER_POINT"])
@@ -222,7 +225,8 @@ def render(story, out_dir):
         klines = [story["kicker_bn"]]
         if r.width(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks) > MAXW - 20:     # still too wide: 2 lines
             klines = r.wrap_balanced(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks, MAXW - 40)[:2]
-        by = text_sprite([_sp(l) for l in klines], r.BN_HEAD, r.EN_BLACK, ks, fill=r.YELLOW + (255,))
+        kc = story.get("kicker_color", r.RED if not story.get("teaser_bn") else r.YELLOW)   # news: bold red line
+        by = text_sprite([_sp(l) for l in klines], r.BN_HEAD, r.EN_BLACK, ks, fill=tuple(kc) + (255,))
     src = text_sprite([_sp(story.get("source_line_bn") or "সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
     rib, logo = ribbon_sprite(story.get("ribbon_bn", "ব্রেকিং  নিউজ")), logo_sprite()

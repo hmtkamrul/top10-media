@@ -1,14 +1,16 @@
 # Daily run — Top 10 Breaking News (Facebook)
 
-Schedule since 2026-10-24 (user's rule, 2026-10-23; data 19-22 Oct: 13:00-18:00 Reels get 170-990 views,
-12:00 and 19:00-22:00 Reels mostly under 50). 11 Reels a day, all between 12:30 and 18:30:
-- **News Reels at 12:30, 13:00, 14:00, 15:00, 17:00, 17:20, 17:40, 18:00, 18:15, 18:30** (10 a day).
-- **16:00 = roundup** "২৪ ঘণ্টার সেরা ১০": the 10 best news Reels of the PREVIOUS day, best first by views.
-- Nothing before 12:30 and nothing after 18:30.
-- ONE batch task makes them, 2 runs a day on Sonnet: 11:30 → 12:30, 13:00, 14:00, 15:00 + the 16:00 roundup;
-  15:30 → 17:00, 17:20, 17:40, 18:00, 18:15, 18:30 (+ the daily report). Each run writes one
-  days/<date>_<first HHMM>.json with its news stories in slot order.
-- The old "evening run of 7 posts" no longer exists. Steps 1-9 below still describe how to build and schedule.
+Schedule since 2026-10-26 (user's rule; data 19-25 Oct: only ~6 Reels a day get real distribution). 7 Reels a day:
+- **12:00, 13:00, 15:00, 16:00, 17:00 = single news Reels** (detail videos, built with build_day.py).
+- **14:00 = roundup "আজকের সেরা ১০" (noon)**: today's top 10 news up to ~11:30 as HEADLINE cards only (the 12:00 and
+  13:00 news are 2 of them; the other 8 get no post of their own).
+- **18:00 = roundup "আজকের সেরা ১০" (evening)**: the 15:00, 16:00, 17:00 news + 7 more headlines.
+- Life-skill day: the 17:00 slot is the Life Skill Reel (scheduled by hand), so that day has 4 single news.
+- Nothing before 12:00 or after 18:00. ONE batch task, 2 runs a day: 10:50 → 12:00, 13:00 + 14:00 roundup;
+  14:00 → 15:00, 16:00, 17:00 + 18:00 roundup + the daily report. Each run writes days/<date>_<first HHMM>.json
+  with its single news stories in slot order, and days/<date>_roundup_<HHMM>.json for its roundup.
+- Look (since 2026-10-26): "Foodi" palette, set in render3.py (warm_grade + colours). Don't change it per story.
+
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 
 ## Fixed settings
@@ -82,22 +84,21 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
      (for Reels also add "title": the short headline),
      `publicationDate` {dateTime, timezone "Asia/Dhaka"}, plus the other default fields.
    - If it is already past 19:00 when you get here, start 10 minutes from now instead.
-8b. **Roundup Reel ("২৪ ঘণ্টার সেরা ১০") at 16:00** (since 2026-10-24; was 14:00 on 23 Oct). Built in the 11:30 run,
-   after the 12:30-15:00 news Reels. It covers YESTERDAY's news Reels (never a roundup itself).
-   **Pick and order = best performers first (user's rule):** yesterday's Reels sorted by **total views**, top 10 only
-   (if yesterday had more than 10 news Reels, the weakest drop out).
-   - Get views from Metricool (`getAnalyticsDataByMetrics` with FBRE02 date+time (UTC), FBRE03 reel id,
-     FBRE10 views; from/to = yesterday in Asia/Dhaka). Map each reel id to its story with `getScheduledPosts`
-     for yesterday (providers[0].id = reel id; the article link is in firstCommentText).
-   - Write the article URLs, best first, one per line, to `days/<yesterday>_order.txt` (max 10).
-   - If view data can't be read, skip `--order` (time order) and say so in the report.
-   `cd engine && python3 merge_day.py --order ../days/<yesterday>_order.txt ../days/<yesterday>_top10.json ../days/<yesterday>_[0-9][0-9][0-9][0-9].json`
-   (the glob picks up every story file of that date; with --order only the listed stories matter, max 10). Then
-   `python3 -W ignore build_roundup.py ../days/<yesterday>_top10.json ../<today>_roundup/` (music only, ~4 minutes).
-   Check one frame, push `<today>_roundup/roundup_reel.mp4`, check its raw URL returns 200, then schedule ONE
-   Metricool post at `<today>T16:00:00+06:00` using `<today>_roundup/roundup.json`: text = caption,
-   firstCommentText = first_comment (all 10 source links, numbered 1–10 in order), facebookData
-   {"type": "REEL", "title": "২৪ ঘণ্টার সেরা ১০ খবর"}. Metricool allows only one first comment, so all links go in it.
+8b. **Topline roundup "আজকের সেরা ১০" (since 2026-10-26): 14:00 (noon) and 18:00 (evening).** Headlines only.
+   Write days/<date>_roundup_<HHMM>.json: {"date_bn": "...", "edition": "noon" | "evening", "stories": [10 items]}.
+   - noon (10:50 run): the 12:00 and 13:00 single stories (copy them from today's batch file) + 8 more of today's
+     biggest fresh stories up to ~11:30. evening (14:00 run): the 15:00, 16:00, 17:00 single stories + 7 more fresh
+     stories (none already in the noon roundup). Order: biggest first, singles where they fit; never two of the same
+     topic back to back.
+   - A headline-only item needs: cat, scene, short_bn (card headline, max ~30 chars), title_bn (full headline, used
+     in the caption list), title_en, source, url (its own article). Verify each on the article page, own words.
+     Same Bangladesh filter and no-repeat rules as single Reels (EDITORIAL_RULES "Daily schedule").
+   `cd engine && python3 -W ignore build_roundup.py ../days/<date>_roundup_<HHMM>.json ../<date>_roundup_<HHMM>/`
+   (~4 minutes, ~70 s Reel). Check frames at 1 s, ~10 s and the end, push, check the raw URL of
+   <date>_roundup_<HHMM>/roundup_reel.mp4 returns 200, then schedule ONE Metricool REEL at <date>T<HH:MM>:00+06:00
+   from roundup.json: text = caption, firstCommentText = first_comment (all 10 links), facebookData
+   {"type": "REEL", "title": roundup.json "title"}.
+   (Old previous-day "২৪ ঘণ্টার সেরা ১০" with merge_day.py --order is retired; edition "24h" still builds it.)
 9. **Report** with SendUserMessage, in Banglish: the 7 evening headlines with their times, and anything that went wrong.
    End with a "📢 Group-e share korun" section: the 2 posts most likely to spread (big international/quote/protest
    stories first) with their Metricool plannerUrl, and for each the kind of Facebook group to share it in
