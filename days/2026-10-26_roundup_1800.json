@@ -1,0 +1,129 @@
+{
+ "date_bn": "২৬ অক্টোবর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "ট্রাম্পের মিশিগান সভায় বিতর্কিত মন্তব্য",
+   "title_bn": "মিশিগানের সভায় ডেমোক্রেট প্রার্থী আবদুল এল-সাইয়েদকে নিয়ে ট্রাম্পের বিতর্কিত মন্তব্য, আল জাজিরার ভাষ্যে ‘ইসলামোফোবিয়া’",
+   "title_en": "Trump dials up Islamophobia against Abdul El-Sayed at Michigan Senate rally",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/26/trump-dials-up-islamophobia-at-michigan-senate-rally-against-abdul-el-sayed",
+   "format": "video",
+   "mood": "protest",
+   "bg_image": "assets/bg_trump_2.jpg"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "বাংলাদেশে ৪০ মিলিয়ন ডলার ঢালছে টয়োটা সুশো",
+   "title_bn": "বাংলাদেশে বিক্রয়-সেবা কেন্দ্রে ৪ কোটি ডলার বিনিয়োগ করছে টয়োটা সুশো, ২০২৯ সালে হাইব্রিড গাড়ির কারখানার লক্ষ্য",
+   "title_en": "Japan eyes Bangladesh as a place to make cars",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/japan-eyes-bangladesh-place-make-cars-4306476",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "war",
+   "mood": "tense",
+   "bg_image": "assets/bg_iran_hormuz_war.jpg",
+   "quote_by": "বিশ্লেষণ: আরবান কনিংহ্যাম, RUSI",
+   "short_bn": "ইরান যুদ্ধে ৩৮০০ কোটি ডলার খরচ",
+   "points_bn": [
+    "যুদ্ধের খরচ ৩৮০০ কোটি ডলার (সিবিও, ১ আগস্ট পর্যন্ত), মাসে আরও ২-৩ বিলিয়ন",
+    "ট্রাম্পের জনপ্রিয়তা ৪০% থেকে নেমে ৩১% — রয়টার্স/ইপসোসের সবচেয়ে কম",
+    "ইরানের সরকার বদলায়নি; হরমুজ নিয়ে পেন্টাগনের আন্দাজ ভুল ছিল বলে সিএনএনের দাবি",
+    "যুক্তরাষ্ট্রে ডিজেলের দাম প্রায় দ্বিগুণ, ব্রেন্ট ৭২ ডলার থেকে ১১৪ ডলারে"
+   ],
+   "title_bn": "বিশ্লেষণ: ইরান যুদ্ধে যুক্তরাষ্ট্র কী পেল, কী হারাল — সামরিক শক্তি আছে, কৌশলগত ফল নেই?",
+   "title_en": "US-Iran war, then and now: How the landscape has changed since February",
+   "caption_bn": "(এটি বিশ্লেষকদের মতামত ও ব্যাখ্যা, সংবাদ নয়।) আল জাজিরার এক ব্যাখ্যামূলক প্রতিবেদনে রয়্যাল ইউনাইটেড সার্ভিসেস ইনস্টিটিউটের গবেষক আরবান কনিংহ্যাম বলেছেন, ওয়াশিংটনের সমস্যা হলো সামরিক শ্রেষ্ঠত্বকে কৌশলগত ফলাফলে রূপ দেওয়া। প্রতিবেদনে বলা হয়েছে, হামলায় আলি খামেনেই নিহত হলেও ইরানের সরকার বদলায়নি। কংগ্রেসনাল বাজেট অফিসের হিসাবে ১ আগস্ট পর্যন্ত পেন্টাগনের খরচ ৩৮ বিলিয়ন ডলার, আর রয়টার্স/ইপসোসের জরিপে ট্রাম্পের গ্রহণযোগ্যতা ৩১%-এ নেমেছে। ব্রেন্ট তেলের দাম যুদ্ধের আগের ৭২ ডলার থেকে ১১৪ ডলারের ওপরে।",
+   "question_bn": "আপনার মতে এই যুদ্ধে শেষ পর্যন্ত কে এগিয়ে থাকবে?",
+   "source": "Al Jazeera",
+   "url": "https://aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "ড্রিল ছাড়াই দাঁতের ক্ষয় থামাল ‘রঙ’ করার তরল",
+   "title_bn": "ড্রিল ছাড়াই শিশুদের দাঁতের ক্ষয় থামাতে পারে সিলভার ডায়ামাইন ফ্লুরাইড, ৮৩০ শিশুর ট্রায়ালে অর্ধেকের বেশি ক্ষেত্রে সফল",
+   "title_en": "A Simple Liquid Can Stop Cavities Without Drilling, Major Study Confirms",
+   "source": "ScienceDaily",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261025222339.htm",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "ডেটা সেন্টার মাটির নিচে নিচ্ছে রাশিয়া",
+   "title_bn": "ইউক্রেনের ড্রোন হামলার পর ডেটা সেন্টার মাটির নিচে ও আকাশ থেকে আড়াল করে বানানোর পরামর্শ রাশিয়ার ডিজিটাল মন্ত্রণালয়ের",
+   "title_en": "Russian ministry recommends underground data centers following Ukrainian drone strikes",
+   "source": "Kyiv Independent",
+   "url": "https://kyivindependent.com/russian-ministry-recommends-underground-data-centers-following-ukrainian-drone-strikes/",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "এক ব্যক্তির কোম্পানি নিবন্ধন বেড়েছে ২৩৫%",
+   "title_bn": "এক বছরে ২৩৫% বেড়েছে ‘ওয়ান পারসন কোম্পানি’ নিবন্ধন: ২০২৫-২৬ অর্থবছরে ৮১৮টি, চলতি অর্থবছরের তিন মাসেই ৩৭৬টি",
+   "title_en": "One-person company registrations on the rise",
+   "source": "Dhaka Tribune",
+   "url": "https://www.dhakatribune.com/business/422881/one-person-company-registrations-on-the-rise",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_dhaka.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "গাজায় ইসলামিক ইউনিভার্সিটিতে হামলা, নিহত ৮",
+   "title_bn": "গাজায় ইসরায়েলি হামলায় অন্তত ৮ ফিলিস্তিনি নিহত, গাজা সিটির ইসলামিক ইউনিভার্সিটি ক্যাম্পাসে নিহত ৩ নিরাপত্তারক্ষী",
+   "title_en": "Eight killed in Gaza as Israel targets university campus and other sites",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "একই গ্যালাক্সিতে তিনটি দৈত্যাকার ব্ল্যাক হোল",
+   "title_bn": "১২৫০ কোটি আলোকবর্ষ দূরের এক গ্যালাক্সিতে জেমস ওয়েব টেলিস্কোপ খুঁজে পেল একসঙ্গে খাদ্যগ্রহণরত তিনটি ব্ল্যাক হোল",
+   "title_en": "Three Giant Black Holes Discovered in a Galaxy from the Dawn of Time",
+   "source": "ScienceDaily",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261024222000.htm",
+   "format": "video"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "জাপানের কাছে ১৩.৮ বিলিয়ন ডলার চায় ঢাকা",
+   "title_bn": "১২টি অগ্রাধিকার খাতে ২০২৬-৩১ সালের জন্য ১৩.৮ বিলিয়ন ডলারের বিনিয়োগ-সহযোগিতার প্রস্তাব বাংলাদেশের, মাতারবাড়ী ও টয়োটা প্রকল্প আলোচনায়",
+   "title_en": "Bangladesh eyes $13.8bn investment, more jobs",
+   "source": "Dhaka Tribune",
+   "url": "https://www.dhakatribune.com/bangladesh/foreign-affairs/422901/bangladesh-eyes-13.8bn-investment-more-jobs",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "দুই ঝড়ে উত্তর ইউরোপে ১.৫ লাখ ঘর অন্ধকার",
+   "title_bn": "বোয়েলো ও অস্টিন ঝড়ে যুক্তরাজ্য, ফ্রান্স ও জার্মানিতে ১.৫ লাখের বেশি বাড়ির বিদ্যুৎ বিচ্ছিন্ন, শত শত ফ্লাইট বাতিল বা পথ বদল",
+   "title_en": "Two storms slam northern Europe, cut power to 150,000 homes",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/26/two-storms-slam-northern-europe-cut-power-to-150000-homes",
+   "format": "video",
+   "mood": "tense"
+  }
+ ]
+}
