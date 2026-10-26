@@ -27,6 +27,7 @@ r.SRC_BN.update({"ESPNcricinfo": "ইএসপিএনক্রিকইনফ�
 r.SRC_BN.update({"Türkiye Today": "তুরস্ক টুডে", "Manchester City FC": "ম্যানচেস্টার সিটি এফসি", "ScienceDaily": "সায়েন্সডেইলি"})
 r.SRC_BN.update({"The Star": "দ্য স্টার", "SBS News": "এসবিএস নিউজ", "BSS": "বিএসএস"})
 r.SRC_BN.update({"Insurance Journal": "ইনস্যুরেন্স জার্নাল", "Council on Foreign Relations": "কাউন্সিল অন ফরেন রিলেশনস"})
+r.SRC_BN.update({"Textile Today": "টেক্সটাইল টুডে"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
