@@ -16,7 +16,7 @@ Data 19-25 Oct: only about 6 Reels a day get real distribution; the rest get 1-6
 | 18:00 | **roundup "আজকের সেরা ১০" (evening edition)**: the 15:00, 16:00 and 17:00 news + 7 more toplines (no detail videos). |
 - Normal day: 5 single news + 2 roundups. Life-skill day: 4 single news + 1 Life Skill Reel (17:00) + 2 roundups.
   A slot that already has a post within 10 minutes (life skill, a breaking news the user added) is skipped.
-- Nothing before 12:00 or after 18:00.
+- Nothing before 12:00 or after 18:00, except the 10:00 "বাজার দর" Reel (RUNBOOK, since 2026-10-29).
 - Runs: 10:50 → 12:00 + 13:00 news and the 14:00 roundup; 14:00 → 15:00, 16:00, 17:00 news and the 18:00 roundup.
 - Topline items: biggest fresh stories (published in the last ~24 h), each with its own article url, never a story
   already posted as a single Reel in the last 2 days (except the day's own singles that belong in that roundup), and

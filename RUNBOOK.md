@@ -11,6 +11,18 @@ Schedule since 2026-10-26 (user's rule; data 19-25 Oct: only ~6 Reels a day get 
   with its single news stories in slot order, and days/<date>_roundup_<HHMM>.json for its roundup.
 - Look (since 2026-10-26): "Foodi" palette, set in render3.py (warm_grade + colours). Don't change it per story.
 
+**10:00 = "বাজার দর · ঢাকা" Reel (since 2026-10-29, user's request; the only post before 12:00).** Own daily task at
+~09:05. Dhaka kacha bazar prices from the LATEST published market report(s) (no daily official source is reachable;
+newspapers publish 2-4 times a week, so on some days the newest report is a few days old: that is OK, the user
+chose daily posts, but the report date must be shown, never claimed as today's survey). Steps: search for the
+newest Dhaka kacha bazar report (TBS Bangla, Prothom Alo, Dhaka Tribune, bdnews24, Jugantor, Kaler Kantho, Samakal,
+Bangla Tribune, Daily Star Bangla, ITV, Shodesh Bidesh...), read the article page, write days/bazar/<date>.json
+(see engine/bazar_reel.py docstring: hook_bn = the biggest price change, 3-5 boards of max 6 items: সবজি, মাছ,
+মুরগি-মাংস-ডিম, and পেঁয়াজ-আলু-মসলা when reported; prices exactly as reported, chg/note only when the report
+states a change), build `cd engine && python3 -W ignore bazar_reel.py ../days/bazar/<date>.json ../<date>_bazar/`,
+check frames, push, check 200, schedule a REEL at <date>T10:00:00+06:00 from post.json (title = post.json title).
+Never invent or estimate a price; if no report from the last 7 days is found, skip the day and say so.
+
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 
 ## Fixed settings
