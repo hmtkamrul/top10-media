@@ -22,6 +22,10 @@ Bangla Tribune, Daily Star Bangla, ITV, Shodesh Bidesh...), read the article pag
 states a change), build `cd engine && python3 -W ignore bazar_reel.py ../days/bazar/<date>.json ../<date>_bazar/`,
 check frames, push, check 200, schedule a REEL at <date>T10:00:00+06:00 from post.json (title = post.json title).
 Never invent or estimate a price; if no report from the last 7 days is found, skip the day and say so.
+User (2026-10-28): report dates appear ONLY on the end card (তথ্যসূত্র) and the source news links go in the first
+comment. Cover the common items every day when reports have them: কাঁচা মরিচ, ধনিয়া পাতা, লেবু, টমেটো + seasonal
+vegetables; রুই, পাঙাশ, তেলাপিয়া, চিংড়ি; ব্রয়লার, সোনালি, দেশি মুরগি, ডিম, গরু/খাসির মাংস; চাল, ডাল, তেল,
+আটা, ময়দা; পেঁয়াজ, আলু, আদা, রসুন. Combine up to 3 recent reports to cover them (each listed as a source).
 
 Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
 

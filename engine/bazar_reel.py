@@ -4,12 +4,17 @@
 end card with the sources. Prices come from the LATEST published Dhaka market report(s); the report date is
 always shown, never presented as a price survey of our own.
 
+Common items to cover every day when a report has them (user, 2026-10-28): কাঁচা মরিচ, ধনিয়া পাতা, লেবু, টমেটো,
+seasonal vegetables; রুই, পাঙাশ, তেলাপিয়া, চিংড়ি; ব্রয়লার, সোনালি, দেশি মুরগি, ডিম, গরু/খাসির মাংস;
+চাল, ডাল, তেল, আটা, ময়দা; পেঁয়াজ, আলু, আদা, রসুন. Put a unit in the item name when it differs from the board
+unit, e.g. "লেবু (হালি)", "সয়াবিন তেল (লিটার)", "আটা (২ কেজি প্যাকেট)".
+
 Usage: python3 -W ignore bazar_reel.py ../days/bazar/<date>.json ../<date>_bazar/
 Writes bazar_reel.mp4 and post.json (caption + first comment).
 
 JSON:
 {"date_bn": "২৯ অক্টোবর ২০২৬",              post date
- "report_date_bn": "২২ অক্টোবর",           date of the newest report used (shown on every board)
+ "report_date_bn": "২২ অক্টোবর",           date of the newest report used (kept for records; dates show only on the end card)
  "hook_bn": "শিমের দাম কমল ৪০ টাকা",          big hook line (the most surprising change)
  "kicker_bn": "মুরগি-ডিম এখনো চড়া",          optional second line (red)
  "sections": [{"title": "সবজি", "unit": "প্রতি কেজি", "items": [
@@ -84,7 +89,7 @@ def board_sprite(sec, idx, report_date):
     hdd = ImageDraw.Draw(hd)
     hdd.rounded_rectangle([0, 0, hd.width - 1, 139], radius=30, fill=col + (255,))
     r.draw_runs(hdd, 60, 12, t, r.BN_HEAD, r.EN_BLACK, 88, (20, 12, 8, 255) if col != r.RED else (255, 255, 255, 255))
-    ut = k._sp(f"{sec.get('unit', 'প্রতি কেজি')} · টাকায় · {report_date}")
+    ut = k._sp(f"{sec.get('unit', 'প্রতি কেজি')} · টাকায়")       # report date only on the end card (user, 2026-10-28)
     us = 40
     while us > 28 and r.width(d0, ut, r.BN_SUB, r.EN_SEMI, us) > RW - 120:
         us -= 2
@@ -134,9 +139,13 @@ def main(src, out):
         hl = r.wrap_balanced(d0, data["hook_bn"], r.BN_HEAD, r.EN_BLACK, hs, RW - 160)
     hook = k.text_sprite([k._sp(l) for l in hl], r.BN_HEAD, r.EN_BLACK, hs, stops=r.FIRE, first_stops=r.SNOW)
     kick = k.text_sprite([k._sp(data["kicker_bn"])], r.BN_HEAD, r.EN_BLACK, 56, fill=r.RED + (255,)) if data.get("kicker_bn") else None
-    datel = k.text_sprite([k._sp(f"আজকের তারিখ {data['date_bn']}"), k._sp(f"দাম: সর্বশেষ প্রতিবেদন ({data['report_date_bn']})")],
+    datel = k.text_sprite([k._sp(data['date_bn'])],
                           r.BN_SUB, r.EN_SEMI, 42, fill=(255, 225, 200, 255))
-    teaser = k.text_sprite([k._sp(" · ".join(s["title"] for s in secs))], r.BN_SUB, r.EN_SEMI, 44, fill=r.YELLOW + (255,))
+    tl = [k._sp(" · ".join(x["title"] for x in secs))]
+    if r.width(d0, tl[0], r.BN_SUB, r.EN_SEMI, 44) > RW - 100:          # too long: two lines
+        h2 = (len(secs) + 1) // 2
+        tl = [k._sp(" · ".join(x["title"] for x in secs[:h2])), k._sp(" · ".join(x["title"] for x in secs[h2:]))]
+    teaser = k.text_sprite(tl, r.BN_SUB, r.EN_SEMI, 44, fill=r.YELLOW + (255,))
     boards = [board_sprite(s, i, rep) for i, s in enumerate(secs)]
     srcs = "\n".join(f"{s['name']} ({s['date_bn']})" for s in data["sources"])
     end_a = k.text_sprite([k._sp("তথ্যসূত্র")], r.BN_HEAD, r.EN_BLACK, 70, fill=r.YELLOW + (255,))
@@ -219,7 +228,7 @@ def main(src, out):
         lines.append(f"🔸 {s['title']} ({s.get('unit', 'প্রতি কেজি')}): {items}")
     src_names = ", ".join(f"{s['name']} ({s['date_bn']})" for s in data["sources"])
     caption = (f"🛒 ঢাকার বাজার দর | {data['date_bn']}\n{data['hook_bn']}\n\n" + "\n".join(lines) +
-               f"\n\n📌 দাম টাকায়, {data['report_date_bn']}-এর সর্বশেষ বাজার প্রতিবেদন অনুযায়ী। এলাকা ও দোকানভেদে দাম কম-বেশি হতে পারে।\n\n"
+               f"\n\n📌 দাম টাকায়, সর্বশেষ বাজার প্রতিবেদন অনুযায়ী। এলাকা ও দোকানভেদে দাম কম-বেশি হতে পারে।\n\n"
                f"💬 {data.get('question_bn', 'আপনার এলাকায় আজ কোন জিনিসের দাম সবচেয়ে বেশি মনে হচ্ছে?')} কমেন্টে জানান 👇\n\n"
                f"📰 তথ্যসূত্র: {src_names} (লিংক কমেন্টে 👇)\n\n{r.FOLLOW_LINE}\n\n#বাজার_দর #ঢাকা #Top10BreakingNews")
     links = "\n".join(f"{s['name']} ({s['date_bn']}): {s['url']}" for s in data["sources"])
