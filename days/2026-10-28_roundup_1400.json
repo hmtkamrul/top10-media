@@ -1,0 +1,132 @@
+{
+ "date_bn": "২৮ অক্টোবর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "world",
+   "mood": "tense",
+   "short_bn": "ইসরায়েলে ৫১-৫১: সরকার গড়বেন কে?",
+   "kicker_bn": "আরব দলগুলো রেকর্ড ১৮ আসনের পথে!",
+   "points_bn": [
+    "এক্সিট পোলে নেতানিয়াহু ও আইজেনকটের জোট ৫১-৫১ আসনে সমান; সরকার গড়তে লাগে ১২০-এর মধ্যে ৬১",
+    "আরব দলগুলো রেকর্ড ১৮টি আসন পেতে পারে — জোট গড়ার চাবি এখন তাদের হাতে",
+    "ভোটার উপস্থিতি ৭৭.৭%, ১৯৯৯ সালের পর সর্বোচ্চ; ফিলিস্তিনি নাগরিকদের ভোট প্রায় ৮০%",
+    "নেতানিয়াহু চান ‘ডানপন্থী সরকার’, আইজেনকট বললেন ‘পুরোনো যুগ শেষ’; আনুষ্ঠানিক ফল ৪ নভেম্বর"
+   ],
+   "title_bn": "ইসরায়েলের ভোটে নেতানিয়াহু-আইজেনকট জোট সমানে সমান, রেকর্ড আসনের পথে আরব দলগুলো",
+   "title_en": "Arab parties could win 18 seats in Israeli elections, exit polls suggest",
+   "caption_bn": "মঙ্গলবারের ইসরায়েলি সংসদ নির্বাচনের পর এক্সিট পোলে কোনো পক্ষই স্পষ্ট এগিয়ে নেই। হালনাগাদ এক্সিট পোলে নেতানিয়াহুর লিকুদ জোট ও গাদি আইজেনকটের ইয়াশার জোট দুই পক্ষই ৫১ আসনে সমান; সরকার গড়তে লাগে ১২০ আসনের মধ্যে ৬১টি। আরব দলগুলো রেকর্ড ১৮ আসন পেতে পারে বলে ধারণা। ভোটার উপস্থিতি ৭৭.৭ শতাংশ, যা ১৯৯৯ সালের পর সর্বোচ্চ। এক্সিট পোল অনানুষ্ঠানিক; চূড়ান্ত ফলে পার্থক্য হতে পারে।",
+   "question_bn": "ইসরায়েলে শেষ পর্যন্ত কে সরকার গড়বেন বলে মনে হয়?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "ট্রাম্প: ‘চুক্তি, না শেষ করে দেব?’",
+   "title_bn": "‘চুক্তি করব, না শেষ করে দেব?’ — ট্রাম্পের মন্তব্যের পর ইরানের হিসাব: আস্থা, মধ্যবর্তী নির্বাচন ও হরমুজ",
+   "title_en": "Iran's calculations as US escalation looms: Trust, midterms, Hormuz",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/27/irans-calculations-as-us-escalation-looms-trust-midterms-hormuz",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "জাপান আনবে ৬৩০ কোটি ডলার",
+   "title_bn": "পাঁচ বছরে বাংলাদেশে ১ ট্রিলিয়ন ইয়েন (প্রায় ৬.৩ বিলিয়ন ডলার) বেসরকারি বিনিয়োগের লক্ষ্য জাপানের, কর্মসংস্থান হতে পারে ২ লাখ",
+   "title_en": "Japan pledges $6.3b in private investment in Bangladesh over five years",
+   "source": "The Daily Star",
+   "url": "https://thedailystar.net/news/bangladesh/diplomacy/news/japan-eyes-over-6b-investment-bangladesh-over-five-years-4308571",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "ব্রাজিল ছাড়লেন ফ্লাভিও বলসোনারু",
+   "title_bn": "নির্বাচনে হারের পর ব্রাজিল ছাড়লেন ফ্লাভিও বলসোনারু বলে খবর, ভিসা দেবে যুক্তরাষ্ট্র",
+   "title_en": "Flavio Bolsonaro flees Brazil after election loss, US says will grant visa",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/27/flavio-bolsonaro-flees-brazil-after-election-loss-us-says-will-grant-visa",
+   "format": "video"
+  },
+  {
+   "cat": "sports",
+   "scene": "cricket",
+   "mood": "sports",
+   "short_bn": "মুশফিক বাদ, মিরপুরে ব্যাটিংয়ে বাংলাদেশ",
+   "kicker_bn": "টেস্ট চ্যাম্পিয়নশিপে ফাইনালের লড়াই: জিততে হবে ৪টি!",
+   "points_bn": [
+    "ওয়েস্ট ইন্ডিজের বিপক্ষে মিরপুর টেস্টে টস জিতে ব্যাটিংয়ে শান্ত",
+    "মঙ্গলবার অনুশীলনে ডান হাতের তর্জনিতে চোট পেয়ে একাদশের বাইরে মুশফিকুর রহিম",
+    "তাঁর জায়গায় খেলছেন তাওহীদ হৃদয় — দক্ষিণ আফ্রিকায় বাংলাদেশ ‘এ’-র হয়ে অপরাজিত ৩৫০ করেছিলেন",
+    "দলে দুই পেসার (শরিফুল, হাসান মাহমুদ) ও তিন স্পিনার; টেস্ট চ্যাম্পিয়নশিপে এখন চতুর্থ বাংলাদেশ, আর ৬ টেস্টের ৪টি জিততে হবে"
+   ],
+   "title_bn": "মিরপুর টেস্টে টস জিতে ব্যাটিংয়ে বাংলাদেশ, চোটের কারণে একাদশে নেই মুশফিক",
+   "title_en": "Bangladesh bat first in Mirpur Test against West Indies as Mushfiqur out injured",
+   "caption_bn": "মিরপুরে ওয়েস্ট ইন্ডিজের বিপক্ষে টেস্টে টস জিতে ব্যাটিং নিয়েছেন অধিনায়ক নাজমুল হোসেন শান্ত। মঙ্গলবার সকালের অনুশীলনে ডান হাতের তর্জনিতে চোট পাওয়ায় একাদশে নেই মুশফিকুর রহিম; এক্স-রেতে গুরুতর কিছু ধরা পড়েনি। তাঁর জায়গায় খেলছেন তাওহীদ হৃদয়। বাংলাদেশ একাদশে আছেন দুই পেসার ও তিন স্পিনার। টেস্ট চ্যাম্পিয়নশিপে চতুর্থ স্থানে থাকা বাংলাদেশের ফাইনালে যেতে বাকি ছয় টেস্টের অন্তত চারটি জিততে হবে।",
+   "question_bn": "এই টেস্টে বাংলাদেশের জন্য সবচেয়ে বড় ভরসা কে হবেন বলে মনে করেন?",
+   "source": "Prothom Alo",
+   "url": "https://en.prothomalo.com/sports/cricket/eadmfn70us",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "সুদানে ৮০ লাখ শিশু স্কুলের বাইরে",
+   "title_bn": "যুদ্ধে সুদানের ১ কোটি ৭০ লাখ স্কুলপড়ুয়ার প্রায় ৮০ লাখই স্কুলের বাইরে: ইউনিসেফ",
+   "title_en": "Sudan's war steals children's future with school closures and displacement",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/10/27/sudans-war-steals-childrens-futures-with-school-closures-and-displacement",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "পুতিনকে ফোন নরওয়ে-ফিনল্যান্ডের",
+   "title_bn": "আবুধাবি শান্তি আলোচনার আগে পুতিনকে ফোন করলেন নরওয়ের প্রধানমন্ত্রী ও ফিনল্যান্ডের প্রেসিডেন্ট",
+   "title_en": "Norway, Finland call Putin ahead of potential Abu Dhabi peace talks",
+   "source": "Kyiv Independent",
+   "url": "https://kyivindependent.com/norway-finland-call-putin-ahead-of-potential-abu-dhabi-peace-talks-2/",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "অন্ত্রের জীবাণুতে বার্ধক্যের গতি",
+   "title_bn": "অন্ত্রের জীবাণু কীভাবে শরীরের বার্ধক্যের গতির সঙ্গে জড়িত, তা দেখাল হাওয়াই বিশ্ববিদ্যালয়ের গবেষণা",
+   "title_en": "The secret to slower aging may be hiding in your gut",
+   "source": "ScienceDaily",
+   "url": "https://sciencedaily.com/releases/2026/10/261026225620.htm",
+   "format": "video"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "ঢাকা মেট্রোয় ১০০ কোটি ডলারের কাজ",
+   "title_bn": "জাইকার অর্থায়নে ঢাকার প্রথম পাতাল মেট্রো (লাইন-১): ভারতীয় এলঅ্যান্ডটি পেল ১০০ কোটি ডলার পর্যন্ত মূল্যের দুটি সিস্টেম প্যাকেজ",
+   "title_en": "Indian firm L&T wins up to $1b Dhaka Metro Rail contracts",
+   "source": "The Daily Star",
+   "url": "https://thedailystar.net/business/news/indian-firm-lt-wins-1b-dhaka-metro-rail-contracts-4308926",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "ড্রোনে ৩ লাখ রুশ সেনা হতাহত: কিয়েভ",
+   "title_bn": "চলতি বছর ড্রোনে ৩ লাখ ২ হাজার রুশ সেনা নিহত বা গুরুতর আহত হয়েছে, দাবি ইউক্রেনের প্রতিরক্ষা মন্ত্রণালয়ের",
+   "title_en": "302,000 Russian soldiers killed or wounded by Ukrainian drones since January, Defense Ministry says",
+   "source": "Kyiv Independent",
+   "url": "https://kyivindependent.com/302-000-russian-soldiers-killed-or-wounded-by-ukrainian-drones-since-january-defense-ministry-says-2/",
+   "format": "video",
+   "mood": "tense"
+  }
+ ]
+}
