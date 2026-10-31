@@ -1,0 +1,120 @@
+{
+ "date_bn": "৩১ অক্টোবর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "‘যুদ্ধ শেষ হয়নি, শুধু বিরতি’",
+   "title_bn": "বিশ্লেষণ: ‘ইরান যুদ্ধ শেষ হয়নি, বিরতিতে আছে’ — মার্কিন ঘাঁটি নিরাপত্তা আনেনি, বলছেন জেফ্রি স্যাকস",
+   "title_en": "Opinion: How to stop the US-Israel war on Iran (Jeffrey Sachs, Sybil Fares, Al Jazeera)",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/opinions/2026/10/29/how-to-stop-the-us-israel-war-on-iran",
+   "format": "video",
+   "mood": "tense",
+   "bg_image": "assets/bg_iran_leaders.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "ইউক্রেনকে ৫০০ প্যাট্রিয়ট ক্ষেপণাস্ত্র",
+   "title_bn": "যুক্তরাষ্ট্র ইউক্রেনের কাছে ৫০০টি প্যাট্রিয়ট পিএসি-৩ ক্ষেপণাস্ত্র বিক্রির অনুমোদন দিয়েছে, দাম প্রায় ২১০ কোটি ডলার; তবে হাতে পেতে লাগবে ২০৩০-এর দশক",
+   "title_en": "US greenlights $2.1bn Patriot missile sale to Ukraine",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/us-greenlights-2-1bn-patriot-missile-sale-to-ukraine",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "ফিফা অনূর্ধ্ব-১৫: রানার্স-আপ বাংলাদেশ",
+   "title_bn": "ফিফা অনূর্ধ্ব-১৫ বিশ্বকাপ ও ফেস্টিভ্যালের ই-টিয়ারে রানার্স-আপ বাংলাদেশ; ফাইনালে সেন্ট্রাল আফ্রিকান রিপাবলিকের কাছে ১-৪ গোলে হার, আগে কোয়ার্টারে মন্টিনিগ্রোকে ৪-০ ও সেমিতে গ্যাবনকে ১-০ গোলে হারিয়েছিল",
+   "title_en": "Bangladesh finish runners-up in FIFA U-15 World Cup campaign",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/bangladesh-finish-runners-impressive-fifa-u-15-world-cup-campaign-4311286",
+   "format": "video",
+   "mood": "sports",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "ইসরায়েলে কারও হাতেই নেই ৬১ আসন",
+   "title_bn": "ইসরায়েলের চূড়ান্ত ফল: নেতানিয়াহুর জোট ৫৩, গাদি আইজেনকটের নেতৃত্বে বিরোধী জোট ৪৮ ও আরব-নেতৃত্বাধীন দলগুলো ১৯ আসন পেয়েছে; সরকার গড়তে দরকার ৬১, দ্বিতীয় নির্বাচনের সম্ভাবনাও আলোচনায়",
+   "title_en": "How can Israel break its election deadlock",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock",
+   "format": "video",
+   "mood": "calm"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "চাঁদে পরমাণু চুল্লির দৌড়ে তিন মহাশক্তি",
+   "title_bn": "চাঁদে পরমাণু চুল্লি বসানোর দৌড়ে যুক্তরাষ্ট্র, রাশিয়া ও চীন",
+   "title_en": "Why are US, Russia and China racing to put nuclear reactors on the moon",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/why-are-us-russia-and-china-racing-to-put-nuclear-reactors-on-the-moon",
+   "format": "video",
+   "mood": "calm"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "ইতালির শহরে শহরে ছাত্র-শ্রমিক বিক্ষোভ",
+   "title_bn": "জীবনযাত্রার ব্যয় ও শিক্ষায় বিনিয়োগের দাবিতে ইতালির রোম, মিলান, নাপোলিসহ বহু শহরে হাজার হাজার ছাত্র-ইউনিয়নকর্মীর বিক্ষোভ; তুরিনে পুলিশের সঙ্গে সংঘর্ষ, ডাকা হয়েছে সাধারণ ধর্মঘট",
+   "title_en": "Italy tightens security as students, unions launch nationwide protests",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/italy-tightens-security-as-students-unions-launch-nationwide-protests",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "ফেল করা বিষয়ে এক মাসেই ফের পরীক্ষা",
+   "title_bn": "এইচএসসিতে এক-দুই বিষয়ে অকৃতকার্য ৪ লাখ ২২ হাজারের বেশি পরীক্ষার্থী এক মাসের মধ্যে ওই বিষয়গুলোতে আবার পরীক্ষা দিতে পারবেন; আগে অপেক্ষা করতে হতো পুরো এক বছর",
+   "title_en": "HSC examinees failing in one or two subjects can retake exams within a month",
+   "source": "Prothom Alo",
+   "url": "https://en.prothomalo.com/youth/education/0voebzg1hg",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "ইবোলায় কঙ্গোতে মৃত্যু ৫ হাজার ছাড়াল",
+   "title_bn": "ডিআর কঙ্গোয় ইবোলায় মৃতের সংখ্যা ৫ হাজার ছাড়িয়েছে, আক্রান্ত ১০ হাজারের বেশি; ২৬ প্রদেশের ৮টিতে ছড়িয়েছে বান্ডিবুগিও ধরনের এই ভাইরাস, যার অনুমোদিত কোনো টিকা বা চিকিৎসা নেই",
+   "title_en": "Ebola death toll in DR Congo passes 5,000",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/ebola-death-toll-in-dr-congo-passes-5000",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "২২ দিন পর ফিশারি ঘাটে ফিরল ইলিশ",
+   "title_bn": "২২ দিনের নিষেধাজ্ঞা শেষে জেলেরা আবার সাগরে নামায় চট্টগ্রামের ফিশারি ঘাটে প্রথম দিনেই ইলিশ এসেছে; বাছাই ও বরফ দিয়ে সারা দেশে পাঠানোর প্রস্তুতি",
+   "title_en": "Hilsa returns to Fishery Ghat as ban ends",
+   "source": "Prothom Alo",
+   "url": "https://en.prothomalo.com/photo/bangladesh/446ia0npct",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "বলসোনারোর পলায়ন: আর্জেন্টিনার দূত তলব",
+   "title_bn": "ব্রাজিলের নির্বাচনে হেরে ফ্লাভিও বলসোনারো আর্জেন্টিনা হয়ে যুক্তরাষ্ট্রে চলে যাওয়ায় আর্জেন্টিনার দূতাবাসের ভারপ্রাপ্ত কর্মকর্তাকে তলব করেছে ব্রাজিল; মায়ামিতে তিনি নিজেকে ‘বৈধ নির্বাচিত প্রেসিডেন্ট’ বলে দাবি করেছেন",
+   "title_en": "Brazil summons Argentinian diplomat over Bolsonaro's flight to US",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us",
+   "format": "video",
+   "mood": "calm"
+  }
+ ]
+}
