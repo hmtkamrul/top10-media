@@ -1,0 +1,135 @@
+{
+ "date_bn": "৩১ অক্টোবর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "এইচএসসির ফল: জিপিএ-৫ ৪০,০৮৪ জন",
+   "title_bn": "এইচএসসি ও সমমানের ফল প্রকাশ: পাসের হার ৫২.১২%, জিপিএ-৫ পেয়েছেন ৪০,০৮৪ জন; পরীক্ষার্থী ১২ লাখ ৭০ হাজারের বেশি",
+   "title_en": "HSC results published pass rate 52.12 percent 40084 GPA-5",
+   "source": "Prothom Alo",
+   "url": "https://en.prothomalo.com/youth/education/hdjdl19opa",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "ট্রাম্প: ইরান যুদ্ধ শিগগির শেষ হবে",
+   "title_bn": "ট্রাম্প বললেন ইরান যুদ্ধ শিগগির শেষ হবে, চান পারমাণবিক অস্ত্র না বানানোর নিশ্চয়তা; হরমুজে চারটি ট্যাংকারে আগুন, দাবি আইআরজিসির",
+   "title_en": "Trump says Iran war will end soon four tankers hit in Hormuz",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "sports",
+   "scene": "cricket",
+   "mood": "sports",
+   "short_bn": "৭৯/৬! চেজ-ওয়ারিকানের ঘূর্ণিতে ধস বাংলাদেশের",
+   "kicker_bn": "লিড মাত্র ১০৬, আলোকস্বল্পতায় আগেই শেষ দিন",
+   "points_bn": [
+    "দ্বিতীয় ইনিংসে ৭৯ রানে ৬ উইকেট হারিয়েছে বাংলাদেশ; তৃতীয় দিন শেষে লিড ১০৬ রানের",
+    "রস্টন চেজ ৩ উইকেট নিয়েছেন; ১১তম ওভারে তিন বলের মধ্যে দুটি, জোমেল ওয়ারিকান নিয়েছেন ২ উইকেট",
+    "নাঈম হাসান ও জাকের আলী ১৮ রানে অপরাজিত, সপ্তম উইকেটে যোগ করেছেন ২৬ রান",
+    "এর আগে নাঈমের ৩৩ রানে ৪ উইকেটে ওয়েস্ট ইন্ডিজ ২৪৫-এ অলআউট, বাংলাদেশের লিড ছিল ২৭ রানের"
+   ],
+   "title_bn": "মিরপুর টেস্টে ৭৯/৬-এ বাংলাদেশ, চেজের ৩ উইকেট; তৃতীয় দিন শেষে লিড ১০৬ রান",
+   "title_en": "Bangladesh 79-6 Chase Warrican Mirpur Test day 3 lead 106",
+   "caption_bn": "মিরপুরে ওয়েস্ট ইন্ডিজের বিপক্ষে প্রথম টেস্টের তৃতীয় দিনে নাঈম হাসানের ৩৩ রানে ৪ উইকেটে ওয়েস্ট ইন্ডিজ ২৪৫ রানে অলআউট হলে বাংলাদেশ ২৭ রানের লিড পায়। কিন্তু দ্বিতীয় ইনিংসে রস্টন চেজের ৩ ও জোমেল ওয়ারিকানের ২ উইকেটে বাংলাদেশ দিন শেষে ৭৯/৬, লিড ১০৬ রান। আলোকস্বল্পতায় দিনের খেলা ২৯ ওভারেই শেষ হয়। নাঈম ও জাকের ১৮ রানে অপরাজিত।",
+   "question_bn": "চতুর্থ দিনে বাংলাদেশ কত রানের লক্ষ্য দিতে পারবে বলে মনে করেন?",
+   "source": "Prothom Alo",
+   "url": "https://en.prothomalo.com/sports/cricket/6nnhhui86z",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "মিডটার্মের ৪ দিন আগে ডেমোক্র্যাটরা এগিয়ে",
+   "title_bn": "মধ্যবর্তী নির্বাচনের চার দিন আগে জাতীয় জরিপে ডেমোক্র্যাটরা ৮.২ পয়েন্টে এগিয়ে, ট্রাম্পের অনুমোদন ৩৭% (মারকেট জরিপ)",
+   "title_en": "US midterms 4 days to go polls Democrats lead Trump approval 37",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/us-midterms-4-days-to-go-what-the-polls-say-as-trump-cancels-two-rallies",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "mood": "tense",
+   "short_bn": "পোল্যান্ডে সাংবিধানিক আদালতের প্রধান বিচারপতি সাসপেন্ড, আদালতে পুলিশ",
+   "kicker_bn": "সফর অর্ধেক রেখে দেশে ফিরছেন প্রেসিডেন্ট",
+   "points_bn": [
+    "আদালতের প্রধান বগদান শভিয়েৎকভস্কিকে সাসপেন্ড করা হয়েছে; ভবনে ঢুকেছে পুলিশ, আটক ৩ জন",
+    "সেনেগালের পথে থাকা প্রেসিডেন্ট নাভ্রোকি বিমান ঘুরিয়ে দেশে ফিরছেন: ‘এমন মুহূর্তে প্রেসিডেন্টকে দেশে থাকতে হবে’",
+    "বিচারমন্ত্রীর অভিযোগ, ছয় মাস ধরে নতুন বিচারকদের শপথে বাধা দিয়ে আদালতকে অচল করেছেন তিনি",
+    "বিরোধী নেতা জিওব্রো একে ‘সংবিধানের ওপর নগ্ন, অপরাধমূলক আঘাত’ বললেন; প্রধানমন্ত্রী টুস্ক বলছেন, আইনের শাসন ফেরানো সরকারের দায়িত্ব"
+   ],
+   "title_bn": "পোল্যান্ডে সাংবিধানিক আদালতের প্রধান সাসপেন্ড, আদালত ঘিরে পুলিশ; সফর বাতিল করে ফিরছেন প্রেসিডেন্ট",
+   "title_en": "Polish police deployed to top court after head judge suspended",
+   "caption_bn": "পোল্যান্ডে সাংবিধানিক ট্রাইব্যুনালের প্রধান বগদান শভিয়েৎকভস্কিকে সাসপেন্ড করার পর আদালত ভবনে পুলিশ মোতায়েন করা হয়েছে; আদালতের বাইরে বিরোধী দল পিআইএস-এর সমর্থকরা জড়ো হন, পুলিশ ৩ জনকে আটক করেছে বলে আল জাজিরা জানিয়েছে। বিচারমন্ত্রী ভালদেমার জুরেক বলেছেন, তিনি ছয় মাস ধরে সংসদের নির্বাচিত বিচারকদের দায়িত্ব নিতে বাধা দিয়েছেন। প্রেসিডেন্ট কারোল নাভ্রোকি আফ্রিকা সফর থেকে ফিরে আসছেন। বিরোধী পক্ষ একে সংবিধানের ওপর আঘাত বলছে।",
+   "question_bn": "রাজনীতি আর আদালতের এই টানাপোড়েন কোথায় গিয়ে থামবে বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/polish-police-deployed-to-top-court-after-head-judge-suspended",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "নভেম্বরের পর আবুধাবিতে ত্রিপক্ষীয় আলোচনা",
+   "title_bn": "ইউক্রেন-রাশিয়া-যুক্তরাষ্ট্র শান্তি আলোচনা হবে আবুধাবিতে ৪ নভেম্বরের পর; রণক্ষেত্রের পরিস্থিতির ওপর নির্ভর করবে সময়, জানাল ক্রেমলিন",
+   "title_en": "Kremlin says Abu Dhabi peace talks after November 4",
+   "source": "Meduza",
+   "url": "https://meduza.io/en/news/2026/10/29/kremlin-says-u-s-russia-ukraine-peace-talks-will-take-place-in-abu-dhabi-after-november-4-depending-on-battlefield-conditions",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "২০ হাজার ব্যালট: ট্রাম্পের আবেদন ফের খারিজ",
+   "title_bn": "ক্যালিফোর্নিয়ায় ২০ হাজার ডাকভোট বাতিলের ট্রাম্প প্রশাসনের আবেদন আবারও খারিজ করল ৯ম সার্কিট আপিল আদালত",
+   "title_en": "US appeals court rejects Trump bid to set aside California ballots",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/us-appeals-court-again-rejects-trump-bid-to-set-aside-california-ballots",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "জার্মানিতে ১৫০,০০০ জেন-জির বিক্ষোভের প্রস্তুতি",
+   "title_bn": "শনিবার জার্মানির ৩০টি শহরে ‘জেনজি রেগেল্ট!’ বিক্ষোভে নিবন্ধন করেছেন প্রায় ১ লাখ ৫০ হাজার মানুষ; জীবনযাত্রার ব্যয় ও স্কুলের হাল নিয়ে ক্ষোভ",
+   "title_en": "Germany braces for Gen Z protests 150000 registered",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "ভুয়া জরিপে ধোঁকা: স্বীকার করল ওয়েজউড",
+   "title_bn": "যুক্তরাষ্ট্রে ভুয়া ভোট-জরিপ কাণ্ড: ওয়েজউড পোলস স্বীকার করেছে, ব্যাটলগ্রাউন্ড রাজ্যের জরিপ ছিল বানানো; নিউইয়র্ক টাইমসের তালিকায় ছিল ১৫টি",
+   "title_en": "Fake polls expose vulnerabilities in US elections ahead of midterms",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/31/fake-polls-expose-vulnerabilities-in-us-elections-ahead-of-midterms",
+   "format": "video",
+   "mood": "calm"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "ফিলিস্তিন সভার আগে সুইডিশ গবেষককে যুক্তরাজ্যে ঢুকতে বাধা",
+   "title_bn": "ফিলিস্তিন-বিষয়ক সভায় বক্তৃতার আগে সুইডিশ গবেষক আন্দ্রেয়াস মালমের ভ্রমণ অনুমতি বাতিল করল যুক্তরাজ্য; স্বরাষ্ট্র দপ্তরের ভাষ্য, তাঁর উপস্থিতি ‘জনস্বার্থের অনুকূল নয়’",
+   "title_en": "UK denies entry to Swedish academic Andreas Malm over Palestine event",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/swedish-academic-says-denied-entry-to-uk-over-palestine-event",
+   "format": "video",
+   "mood": "calm"
+  }
+ ]
+}
