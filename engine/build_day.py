@@ -31,6 +31,7 @@ r.SRC_BN.update({"Textile Today": "টেক্সটাইল টুডে"})
 r.SRC_BN.update({"Roll Call": "রোল কল"})
 r.SRC_BN.update({"bdnews24": "বিডিনিউজ২৪"})
 r.SRC_BN.update({"Meduza": "মেদুজা", "Daily Waadaa": "ডেইলি ওয়াদা", "Liverpool FC": "লিভারপুল এফসি", "The Standard": "দ্য স্ট্যান্ডার্ড"})
+r.SRC_BN.update({"beIN Sports": "বিইন স্পোর্টস"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
