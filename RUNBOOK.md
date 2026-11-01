@@ -113,7 +113,9 @@ Read `engine/EDITORIAL_RULES.md` first. Every rule there is mandatory.
    (~4 minutes, ~70 s Reel). Check frames at 1 s, ~10 s and the end, push, check the raw URL of
    <date>_roundup_<HHMM>/roundup_reel.mp4 returns 200, then schedule ONE Metricool REEL at <date>T<HH:MM>:00+06:00
    from roundup.json: text = caption, firstCommentText = first_comment (all 10 links), facebookData
-   {"type": "REEL", "title": roundup.json "title"}.
+   {"type": "REEL", "title": roundup.json "title"}, plus "videoCoverMilliseconds": 1000 so the cover is the intro card
+   (2026-11-01: Facebook picked the France single's card as the noon roundup cover and it looked like a repeat).
+   A headline-only item must not be on the same topic as one of today's single Reels.
    (Old previous-day "২৪ ঘণ্টার সেরা ১০" with merge_day.py --order is retired; edition "24h" still builds it.)
 9. **Report** with SendUserMessage, in Banglish: the 7 evening headlines with their times, and anything that went wrong.
    End with a "📢 Group-e share korun" section: the 2 posts most likely to spread (big international/quote/protest
