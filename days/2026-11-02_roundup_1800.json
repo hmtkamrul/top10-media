@@ -1,0 +1,145 @@
+{
+ "date_bn": "২ নভেম্বর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "war",
+   "mood": "tense",
+   "bg_image": "assets/bg_iran_hormuz_war.jpg",
+   "quote_by": "বিশ্লেষণ: জ্যাক হান্টার, রেসপনসিবল স্ট্যাটক্রাফট",
+   "short_bn": "ইরান যুদ্ধের দাম এখন ভোটের মাঠে",
+   "points_bn": [
+    "আট মাসের যুদ্ধের ধাক্কা এবার সরাসরি সেনেট নির্বাচনে, বলছে লেখাটি",
+    "সাউথ ক্যারোলাইনার সেনেট আসনে নিউইয়র্ক টাইমসের জরিপে দুজনই ৪৮%; ফল অনিশ্চিত",
+    "ট্রাম্প সেখানে প্রচারে গেছেন তিনবার, এক সপ্তাহেই দুবার",
+    "ডেমোক্র্যাট প্রার্থীর দাবি, যুদ্ধেই জ্বালানির দাম রেকর্ডে; রিপাবলিকান নেতারাও অস্বস্তিতে"
+   ],
+   "title_bn": "বিশ্লেষণ: ইরান যুদ্ধের দাম এখন মার্কিন ভোটের মাঠে — সেনেট আসনে রিপাবলিকানদের অস্বস্তি",
+   "title_en": "Is Darline Graham the canary in coal mine for midterm war backlash (Jack Hunter, Responsible Statecraft)",
+   "caption_bn": "রেসপনসিবল স্ট্যাটক্রাফটে জ্যাক হান্টারের লেখা বিশ্লেষণ অনুযায়ী, প্রায় আট মাস ধরে চলা ইরান যুদ্ধের প্রভাব এখন মার্কিন মধ্যবর্তী নির্বাচনেও পড়ছে। সাউথ ক্যারোলাইনার সেনেট আসনে নিউইয়র্ক টাইমসের সর্বশেষ জরিপে দুই প্রার্থীই ৪৮% পেয়েছেন। ডেমোক্র্যাট প্রার্থী অ্যানি অ্যান্ড্রুজ দাবি করছেন, যুদ্ধের কারণেই জ্বালানির দাম রেকর্ড ছুঁয়েছে। লেখকের ভাষ্য অনুযায়ী ট্রাম্প সেখানে তিনবার প্রচারে গেছেন, আর দলের ভেতরেও অস্বস্তি আছে। এটি লেখকের মতামত ও বিশ্লেষণ; আমাদের নিজস্ব অবস্থান নয়।",
+   "question_bn": "ইরান যুদ্ধ কি আসলেই মার্কিন ভোটের ফল বদলে দেবে?",
+   "source": "Responsible Statecraft",
+   "url": "https://responsiblestatecraft.org/darline-graham-midterms/",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "নেতানিয়াহুর দাবি ‘ভোট চুরি’, ফল বহাল",
+   "title_bn": "ইসরায়েলে নেতানিয়াহুর দল বলছে আরব দলগুলো ‘ভোট চুরি’ করেছে; নির্বাচন কমিটি জানাল ফল বহাল থাকবে, নেতানিয়াহুর জোট ৫৩, বিরোধী জোট ৪৮ আসনে",
+   "title_en": "Israeli officials say results stand as Netanyahu claims election 'stolen'",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg",
+   "short_bn": "যুক্তরাষ্ট্রে রপ্তানি বেড়েছে ১০%",
+   "kicker_bn": "অক্টোবরে রপ্তানি প্রায় ৪০০ কোটি ডলার",
+   "points_bn": [
+    "অক্টোবরে মোট রপ্তানি ৩৯৯ কোটি ডলার, গত বছরের চেয়ে ৪.৪% বেশি",
+    "যুক্তরাষ্ট্রে রপ্তানি বেড়েছে প্রায় ১০%; জাপানেও ভালো প্রবৃদ্ধি",
+    "পোশাক খাতে আয় ৩১৭ কোটি ডলার, বেড়েছে ৪.৯%; মোট রপ্তানির প্রায় ৮০%",
+    "জুলাই-অক্টোবরে রপ্তানি বেড়েছে ৬%; চামড়া, রাবার ও ওষুধেও প্রবৃদ্ধি"
+   ],
+   "title_bn": "অক্টোবরে রপ্তানি আয় ৪.৪% বেড়ে প্রায় ৪০০ কোটি ডলার, যুক্তরাষ্ট্রে বাজারে প্রবৃদ্ধি ১০%",
+   "title_en": "Exports rise 4.4% to nearly $4b in October",
+   "caption_bn": "ডেইলি স্টারের প্রতিবেদন অনুযায়ী অক্টোবরে বাংলাদেশের পণ্য রপ্তানি ৪.৪% বেড়ে ৩৯৯ কোটি ডলারে পৌঁছেছে। পোশাক খাতে আয় ৪.৯% বেড়ে ৩১৭ কোটি ডলার হয়েছে, যা মোট রপ্তানির প্রায় ৮০%। যুক্তরাষ্ট্রে রপ্তানি প্রায় ১০% বেড়েছে, জাপানেও ভালো প্রবৃদ্ধি দেখা গেছে। চামড়া, রাবার ও ওষুধ রপ্তানিও বেড়েছে। চলতি অর্থবছরের প্রথম চার মাসে মোট রপ্তানি বেড়েছে ৬%।",
+   "question_bn": "রপ্তানি আরও বাড়াতে সবচেয়ে জরুরি কী বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/exports-rise-44-nearly-4b-october-4313131",
+   "format": "video"
+  },
+  {
+   "cat": "sports",
+   "scene": "abstract",
+   "short_bn": "২০ বছরে বিশ্ব চ্যাম্পিয়ন অ্যান্টোনেলি",
+   "title_bn": "মেক্সিকো সিটিতে তৃতীয় হয়ে ২০ বছর ৬৮ দিনে ফর্মুলা ওয়ানের সর্বকনিষ্ঠ বিশ্ব চ্যাম্পিয়ন কিমি অ্যান্টোনেলি; ফেটেলের আগের রেকর্ড ছিল ২৩ বছর ১৩৪ দিন",
+   "title_en": "Kimi Antonelli becomes Formula One's youngest world champion",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/11/2/kimi-antonelli-becomes-formula-ones-youngest-world-champion-in-mexico-city",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "mood": "tense",
+   "short_bn": "কিয়েভে ভুয়া ‘পারমাণবিক’ সতর্কবার্তা",
+   "kicker_bn": "ইউক্রেনের দাবি: হ্যাক করেছে রাশিয়া",
+   "points_bn": [
+    "ইউক্রেনের বিমান হামলার সতর্কতা অ্যাপে কিয়েভ ঘিরে পারমাণবিক ও রাসায়নিক হুমকির ভুয়া বার্তা যায়",
+    "এক বার্তায় দাবি, রাশিয়া ওরেশনিক হাইপারসনিক ক্ষেপণাস্ত্র মোতায়েন করেছে",
+    "বিমানবাহিনীর জবাব: তেজস্ক্রিয়তার হুমকি নেই, শান্ত থাকুন",
+    "রাশিয়াও বলেছে, তাদের জরুরি সেবার অ্যাপে ‘বড় সাইবার হামলা’ হয়েছে"
+   ],
+   "title_bn": "ইউক্রেনের অ্যালার্ট অ্যাপে ভুয়া ‘পারমাণবিক’ সতর্কবার্তা, হ্যাকের দায় রাশিয়াকে দিল কিয়েভ; খেরসনে যুদ্ধবিরতি শেষ হওয়ার পরদিন",
+   "title_en": "Russia, Ukraine air raid alert apps hit by cyberattacks after truce ends",
+   "caption_bn": "আল জাজিরার খবর অনুযায়ী রোববার ইউক্রেনের বিমান হামলার সতর্কতা অ্যাপে কিয়েভ ঘিরে পারমাণবিক ও রাসায়নিক হুমকির ভুয়া বার্তা যায়। ইউক্রেনের বিমানবাহিনী জানায়, তেজস্ক্রিয়তার কোনো হুমকি নেই। ইউক্রেনের কৌশলগত যোগাযোগ কেন্দ্র এর জন্য রাশিয়াকে দায়ী করেছে। সোমবার ভোরে রাশিয়ার জরুরি সেবা মন্ত্রণালয়ও নিজেদের অ্যাপে ‘বড় সাইবার হামলা’র কথা জানিয়েছে। খেরসনে যুদ্ধের দীর্ঘতম স্থানীয় যুদ্ধবিরতি রোববার শেষ হয়েছে।",
+   "question_bn": "সাইবার হামলাকে কি যুদ্ধের অংশ বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/2/ukraine-blames-russia-after-air-alert-app-sends-out-false-warnings",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "বুলগেরিয়ায় প্রথম নারী প্রেসিডেন্টের পথে ইওতোভা",
+   "title_bn": "বুলগেরিয়ার প্রেসিডেন্ট নির্বাচনের রানঅফে এক্সিট পোলে ৫১% নিয়ে এগিয়ে ইলিয়ানা ইওতোভা, প্রতিদ্বন্দ্বী আন্দ্রে গিউরভ প্রায় ৪৪%; জয়ী হলে প্রথম নির্বাচিত নারী প্রেসিডেন্ট",
+   "title_en": "Initial results indicate victory for Iotova in Bulgarian presidential vote",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show",
+   "format": "video"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "দেশের প্রথম সোলার এক্সপো ৩-৪ নভেম্বর",
+   "title_bn": "আগারগাঁওয়ে ৩ ও ৪ নভেম্বর দেশের প্রথম ‘বাংলাদেশ সোলার এক্সপো ২০২৬’; ছাদ-সৌরবিদ্যুৎ, নীতি-সুবিধা ও বিনিয়োগ নিয়ে চারটি সেমিনার",
+   "title_en": "Bangladesh Solar Expo 2026 on 3-4 November (PM expected to open)",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/economy/energy/pm-expected-open-solar-expo-3-november-1589296",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_dhaka.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "ভুটানে ১০৮ স্তূপ গড়লেন ৪০ হাজার স্বেচ্ছাসেবক",
+   "title_bn": "এক দিনে ১২ কিলোমিটার নদীতীরে ১০৮টি বৌদ্ধ স্তূপ গড়লেন ৪০ হাজারের বেশি স্বেচ্ছাসেবক; উদ্বোধনে প্রায় ২ লাখ মানুষ, ভুটানের ‘মাইন্ডফুলনেস সিটি’ প্রকল্পে",
+   "title_en": "Tens of thousands build 108 Buddhist stupas for Bhutan 'mindfulness' city",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/2/tens-of-thousands-build-108-buddhist-stupas-for-bhutan-mindfulness-city",
+   "format": "video",
+   "mood": "calm"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "দেশি স্টার্টআপের ব্যাটারি সোয়াপ এখন দোহায়",
+   "title_bn": "২০০ কাছাকাছি স্টেশন নিয়ে দেশে লাভে ব্যাটারি-সোয়াপ স্টার্টআপ টাইগার নিউ এনার্জি; ২০২৬ সালের জানুয়ারিতে কাতারের দোহায় কার্যক্রম শুরু",
+   "title_en": "Tiger New Energy goes global: What the battery-swapping startup learnt from the Bangladesh market",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/features/panorama/tiger-new-energy-goes-global-what-battery-swapping-startup-learnt-bangladesh",
+   "format": "video",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "১০ দিনের অবরোধ শেষে হেবরন ছাড়ল ইসরায়েলি বাহিনী",
+   "title_bn": "পশ্চিম তীরের হেবরনে ১০ দিনের অবরোধ শেষে ইসরায়েলি বাহিনী সরে গেছে বলে জানালেন গভর্নর; ঘর ছাড়া পরিবারগুলো ফিরতে পারবে",
+   "title_en": "Hebron governor says Israeli forces withdraw from city after 10-day siege",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege",
+   "format": "video"
+  }
+ ]
+}
