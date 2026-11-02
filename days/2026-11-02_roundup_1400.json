@@ -1,0 +1,133 @@
+{
+ "date_bn": "২ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "world",
+   "mood": "tense",
+   "short_bn": "৬.৩ বিলিয়ন ডলারের ক্রিপ্টো চুরি, দায়ী উত্তর কোরিয়া: এফবিআই",
+   "kicker_bn": "বিনান্স থেকে ইতিহাসের সবচেয়ে বড় চুরি",
+   "points_bn": [
+    "বিনান্স থেকে ৬.৩ বিলিয়ন ডলারের ক্রিপ্টো সম্পদ চুরি; এফবিআই বলছে, এটি রেকর্ড পরিমাণ",
+    "এফবিআইয়ের দাবি, ‘ট্রেডারট্রেইটর’ নামে উত্তর কোরিয়ার হ্যাকার গোষ্ঠী এর পেছনে; ২০২৫ সালে বাইবিট থেকে ১.৫ বিলিয়ন ডলার চুরিতেও তারাই",
+    "বিনান্সের ভাষ্য: একটি হ্যাক হওয়া ল্যাপটপ ও প্রমাণ মুছে ফেলার ম্যালওয়্যার ব্যবহার করে ‘জটিল হামলা’ চালানো হয়েছে",
+    "বিনান্স জানাচ্ছে, ক্ষতির প্রায় ৯০% নিজেদের তহবিল থেকে পূরণ করেছে; গ্রাহকের উত্তোলন রোববার আবার চালুর কথা"
+   ],
+   "title_bn": "বিনান্স থেকে রেকর্ড ৬.৩ বিলিয়ন ডলারের ক্রিপ্টো চুরির দায় উত্তর কোরিয়ার ওপর চাপাল এফবিআই",
+   "title_en": "FBI blames North Korea for record 6.3bn crypto heist from Binance",
+   "caption_bn": "যুক্তরাষ্ট্রের এফবিআই বলছে, ক্রিপ্টো এক্সচেঞ্জ বিনান্স থেকে চুরি হওয়া রেকর্ড ৬.৩ বিলিয়ন ডলারের সম্পদের পেছনে উত্তর কোরিয়ার হ্যাকার গোষ্ঠী ‘ট্রেডারট্রেইটর’। সংস্থাটির দাবি, চুরির অর্থ মূলত ইথেরিয়ামে রূপান্তর করা হয়েছে এবং ধাপে ধাপে পাচারের আশঙ্কা আছে। বিনান্সের সহ-প্রধান নির্বাহী রিচার্ড টেং একে ‘জটিল হামলা’ বলেছেন; প্রতিষ্ঠানটি জানায়, ক্ষতির প্রায় ৯০ শতাংশ নিজস্ব তহবিল থেকে পূরণ করা হয়েছে এবং গ্রাহকদের উত্তোলন আবার চালু হওয়ার কথা।",
+   "question_bn": "ক্রিপ্টোতে টাকা রাখা কতটা নিরাপদ বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist",
+   "format": "video"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "মিডটার্মের ২ দিন আগে ডেমোক্র্যাটরা এগিয়ে",
+   "title_bn": "মার্কিন মিডটার্মের আর ২ দিন: জাতীয় গড় জরিপে ডেমোক্র্যাটরা ৫১.৫%-৪৩.১% এগিয়ে, আগাম ভোট দিয়েছেন ৫ কোটির বেশি মানুষ",
+   "title_en": "US midterms 2 days to go what polls say as Trump makes final push",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/1/us-midterms-2-days-to-go-what-polls-say-as-trump-el-sayed-hit-the-trail",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "mood": "sports",
+   "short_bn": "বার্সেলোনার ৬-১ গোল উৎসব, আবার শীর্ষে",
+   "kicker_bn": "ইয়ামাল-রাফিনিয়ার ২টি করে গোল",
+   "points_bn": [
+    "আলাভেসকে ৬-১ গোলে উড়িয়ে লা লিগায় আবার শীর্ষে বার্সেলোনা; আতলেতিকোর চেয়ে ২ পয়েন্ট এগিয়ে",
+    "রাফিনিয়া ও লামিন ইয়ামাল দুজনেই ২টি করে গোল করেন; একটি করে গোল ফের্মিন লোপেস ও বদলি নামা অ্যান্থনি গর্ডনের",
+    "এল ক্লাসিকোতে রিয়ালের কাছে ২-১ এবং চ্যাম্পিয়ন্স লিগে পিএসজির কাছে ৪-২ হারের পর এল এই জয়",
+    "মঙ্গলবার চ্যাম্পিয়ন্স লিগে অ্যাস্টন ভিলার মুখোমুখি; পরের রোববার আতলেতিকোর মাঠে শীর্ষ লড়াই"
+   ],
+   "title_bn": "আলাভেসকে ৬-১ গোলে হারিয়ে লা লিগায় আবার শীর্ষে বার্সেলোনা, জোড়া গোল ইয়ামাল ও রাফিনিয়ার",
+   "title_en": "Lamine Yamal Raphinha help Barcelona hammer Alaves to retain Liga top spot",
+   "caption_bn": "ক্যাম্প ন্যুতে শনিবার আলাভেসকে ৬-১ গোলে হারিয়েছে বার্সেলোনা। রাফিনিয়া ও লামিন ইয়ামাল দুজনেই জোড়া গোল করেছেন, বাকি দুটি গোল ফের্মিন লোপেস ও বদলি খেলোয়াড় অ্যান্থনি গর্ডনের। এই জয়ে আতলেতিকো মাদ্রিদকে পেছনে ফেলে ২ পয়েন্ট এগিয়ে আবার লিগের শীর্ষে ফিরল কাতালানরা; আতলেতিকো টানা সপ্তম লিগ জয় পেয়েছে লেভান্তেকে ২-০ গোলে হারিয়ে। বার্সা এবার চ্যাম্পিয়ন্স লিগে অ্যাস্টন ভিলার মুখোমুখি, তারপর রোববার আতলেতিকোর সঙ্গে শীর্ষ লড়াই।",
+   "question_bn": "বার্সা-আতলেতিকো লড়াইয়ে কে জিতবে বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/11/1/lamine-yamal-raphinha-help-barcelona-hammer-alaves-to-retain-liga-top-spot",
+   "format": "video"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "টানা তৃতীয় মাসে বাড়ল রপ্তানি, অক্টোবরে ৪ বিলিয়ন ডলার",
+   "title_bn": "অক্টোবরে রপ্তানি আয় ৪.৩৯% বেড়ে প্রায় ৪ বিলিয়ন ডলার; টানা তৃতীয় মাসে প্রবৃদ্ধি",
+   "title_en": "Exports grow for third straight month rise 4.39 percent to 4 billion in October",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/economy/bangladeshs-exports-rise-6-17b-jul-oct-fy27-1589526",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "কাতারের এলএনজি জাহাজে অজ্ঞাত বস্তুর আঘাত",
+   "title_bn": "উপসাগরে কাতারের এলএনজি ট্যাংকার ‘আল মায়েদা’য় অজ্ঞাত বস্তুর আঘাত; ক্রুদের কেউ আহত হননি, জাহাজ চলাচলে সক্ষম",
+   "title_en": "Qatar LNG carrier struck by unidentified objects in Gulf",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "বাংলা কিউআরে এবার ব্যক্তি-থেকে-ব্যক্তি লেনদেন",
+   "title_bn": "বাংলাদেশ ব্যাংক চালু করল কিউআর কোডভিত্তিক পি২পি পেমেন্ট সেবা; বাংলা কিউআরে এখন থেকে ব্যক্তি-থেকে-ব্যক্তি লেনদেন",
+   "title_en": "Bangla QR now allows person-to-person transfers",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/bangla-qr-now-allows-person-person-transfers-4312951",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "মেক্সিকোতে প্রথম ফেরারি পোল হ্যামিল্টনের",
+   "title_bn": "মেক্সিকো সিটি গ্র্যান্ড প্রিতে ফেরারির হয়ে প্রথম পোল পেলেন লুইস হ্যামিল্টন; ক্যারিয়ারে ১০৫তম",
+   "title_en": "F1 Hamilton takes first Ferrari pole in Mexico",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/11/1/f1-hamilton-takes-first-ferrari-pole-antonelli-starts-fourth-in-mexico",
+   "format": "video",
+   "mood": "sports"
+  },
+  {
+   "cat": "bd",
+   "scene": "world",
+   "short_bn": "অবকাঠামো-জ্বালানিতে বিনিয়োগ বাড়াতে চায় ডেনমার্ক",
+   "title_bn": "বাংলাদেশের অবকাঠামো ও জ্বালানি খাতে বিনিয়োগ সহযোগিতা বাড়াতে আগ্রহী ডেনমার্ক",
+   "title_en": "Denmark keen to expand investment cooperation in Bangladesh infrastructure energy sectors",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/foreign-policy/denmark-keen-expand-investment-cooperation-bangladeshs-infrastructure-energy-sectors",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "এল নিনোর প্রভাবে বলিভিয়ায় জরুরি অবস্থা",
+   "title_bn": "এল নিনো আবহাওয়ার ধরনের কারণে বলিভিয়ায় জরুরি অবস্থা ঘোষণা",
+   "title_en": "Bolivia declares state of emergency over El Nino weather pattern",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/1/bolivia-declares-state-of-emergency-over-el-nino-weather-pattern",
+   "format": "video"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "৪২ জেলায় ১ লাখ গাছ লাগাল আড়ং",
+   "title_bn": "৪২টি জেলায় ১ লাখ গাছ লাগিয়েছে আড়ং",
+   "title_en": "Aarong plants 100,000 trees across 42 districts",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/organisation-news/news/aarong-plants-100000-trees-across-42-districts-4312846",
+   "format": "video",
+   "mood": "hopeful"
+  }
+ ]
+}
