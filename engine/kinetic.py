@@ -225,7 +225,7 @@ def render(story, out_dir):
         klines = [story["kicker_bn"]]
         if r.width(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks) > MAXW - 20:     # still too wide: 2 lines
             klines = r.wrap_balanced(dk, story["kicker_bn"], r.BN_HEAD, r.EN_BLACK, ks, MAXW - 40)[:2]
-        kc = story.get("kicker_color", r.RED if not story.get("teaser_bn") else r.YELLOW)   # news: bold red line
+        kc = story.get("kicker_color", r.RED if not (story.get("teaser_bn") or story.get("bg_image")) else r.YELLOW)  # yellow on photo/red backgrounds   # news: bold red line
         by = text_sprite([_sp(l) for l in klines], r.BN_HEAD, r.EN_BLACK, ks, fill=tuple(kc) + (255,))
     src = text_sprite([_sp(story.get("source_line_bn") or "সূত্র: " + r.SRC_BN.get(story.get("source", ""), story.get("source", "")))],
                       r.BN_SUB, r.EN_SEMI, 40, fill=(255, 225, 200, 255))
