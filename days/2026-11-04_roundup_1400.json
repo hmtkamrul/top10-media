@@ -1,0 +1,135 @@
+{
+ "date_bn": "৪ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "জর্জিয়ায় সিনেটে জিতলেন ডেমোক্র্যাট অসফ",
+   "title_bn": "জর্জিয়ায় রিপাবলিকান মাইক কলিন্সকে হারিয়ে সিনেট আসন ধরে রাখলেন ডেমোক্র্যাট জন অসফ; ভোটাররা ট্রাম্পকে ‘প্রত্যাখ্যান’ করেছেন বলে মন্তব্য তাঁর",
+   "title_en": "Democrat Jon Ossoff wins Georgia Senate race, defeating Republican Mike Collins",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/4/democrat-jon-ossoff-wins-georgia-us-senate-race",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "হরমুজ পরিকল্পনায় মার্কিন জবাব ‘অসন্তোষজনক’",
+   "title_bn": "ইরান বলছে হরমুজ খোলার পরিকল্পনায় যুক্তরাষ্ট্রের জবাব ‘প্রত্যয়জনক নয়’; ট্রাম্প নিশ্চিত করলেন ইরানি স্থাপনায় ‘ছোট’ হামলা",
+   "title_en": "Iran says US reply to Hormuz plan unconvincing; Trump confirms strikes",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
+   "format": "video",
+   "mood": "tense"
+  },
+  {
+   "cat": "sports",
+   "format": "video",
+   "scene": "football",
+   "mood": "sports",
+   "short_bn": "০-২ পিছিয়ে থেকে ৩-২ জয়, ইউনাইটেডের খরা শেষ",
+   "kicker_bn": "কুনিয়ার ৪ মিনিটে ২ গোল, শেষে লাল কার্ড",
+   "points_bn": [
+    "ম্যাচের শেষ দিকে ৪ মিনিটে দুই গোল করে রোমার বিপক্ষে ম্যাচ ঘুরিয়ে দেন মাথিউস কুনিয়া",
+    "বিরতির সময় রোমা ২-০ এগিয়ে ছিল: গোল করেন মাতিয়াস সোলে ও দনিয়েল মালেন (পেনাল্টি)",
+    "ব্রুনো ফার্নান্দেস পেনাল্টি রিটেকে গোল করে ব্যবধান কমান; যোগ করা সময়ে দ্বিতীয় হলুদ কার্ডে বিদায় কুনিয়ার",
+    "টানা ৯ ম্যাচ জয়হীন থাকার পর এটাই ম্যানচেস্টার ইউনাইটেডের জয়"
+   ],
+   "title_bn": "চ্যাম্পিয়ন্স লিগে দুই গোলে পিছিয়ে থেকেও রোমাকে ৩-২ গোলে হারাল ম্যানচেস্টার ইউনাইটেড, কেটেছে ৯ ম্যাচের জয়খরা",
+   "title_en": "Man United come from two goals down to beat Roma 3-2 in Champions League",
+   "caption_bn": "চ্যাম্পিয়ন্স লিগের ম্যাচে বিরতির সময় ০-২ গোলে পিছিয়ে ছিল ম্যানচেস্টার ইউনাইটেড; গোল করেছিলেন রোমার মাতিয়াস সোলে ও দনিয়েল মালেন (পেনাল্টি থেকে)। দ্বিতীয়ার্ধে পেনাল্টি রিটেকে ব্রুনো ফার্নান্দেস ব্যবধান কমান, এরপর শেষ দিকে চার মিনিটের ব্যবধানে দুই গোল করেন মাথিউস কুনিয়া। যোগ করা সময়ে দ্বিতীয় হলুদ কার্ড দেখে মাঠ ছাড়েন কুনিয়া। এই জয়ে টানা ৯ ম্যাচ জয়হীন থাকার ধারা শেষ হলো ইউনাইটেডের। একই রাতে প্যারিস সেন্ট-জার্মেই ভিয়ারিয়ালকে ৬-০ গোলে হারিয়েছে, বার্সেলোনা ৩-০ গোলে হারিয়েছে অ্যাস্টন ভিলাকে, আর বায়ার্ন মিউনিখ আতলেতিকো মাদ্রিদকে হারিয়েছে ২-০ গোলে।",
+   "question_bn": "ইউনাইটেড কি এবার ফর্মে ফিরল বলে মনে করেন?",
+   "source": "UEFA",
+   "url": "https://uefa.com/uefachampionsleague/news/02ab-21fc4afdbe57-11bbecf54b40-1000--champions-league-round-up-paris-remain-perfect-as-barcelo"
+  },
+  {
+   "cat": "bd",
+   "format": "video",
+   "scene": "economy",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg",
+   "short_bn": "স্যামসাং-এলজির সঙ্গে বৈঠকে সিউলে বাংলাদেশ দল",
+   "kicker_bn": "এআই চিপ স্টার্টআপ আর বুসান বন্দরও দেখবে দলটি",
+   "points_bn": [
+    "ব্যবসা-বিনিয়োগ বাড়াতে দক্ষিণ কোরিয়ায় বাংলাদেশের উচ্চপর্যায়ের প্রতিনিধিদল; সফর চলবে শুক্রবার পর্যন্ত",
+    "বৈঠকের তালিকায় স্যামসাং, এসকে হাইনিক্স, এলজি ইলেকট্রনিক্স, হানওয়া ওশান ও নেইভার",
+    "দেখবে এলজি এআই রিসার্চ, এআই চিপ স্টার্টআপ ফুরিওসাএআই ও বুসান বন্দর",
+    "সিউলে এফকেআই ও ইয়ংওয়ানের আয়োজনে নৈশভোজে ছিলেন কোরিয়ার শীর্ষ ব্যবসায়ী ও এক্সিম ব্যাংকের প্রধান"
+   ],
+   "title_bn": "বিনিয়োগ ও বাণিজ্য বাড়াতে সিউলে বাংলাদেশের প্রতিনিধিদল: স্যামসাং, এলজি, এসকে হাইনিক্সের সঙ্গে বৈঠকের সূচি",
+   "title_en": "FKI, Youngone host Bangladesh delegation to boost trade, investment",
+   "caption_bn": "দক্ষিণ কোরিয়ার শিল্প সংগঠন এফকেআই এবং পোশাক প্রস্তুতকারক ইয়ংওয়ান সিউলে বাংলাদেশের উচ্চপর্যায়ের প্রতিনিধিদলকে নৈশভোজে আপ্যায়ন করেছে। আলোচনার বিষয় ছিল বাংলাদেশের অর্থনৈতিক সম্ভাবনা এবং কোরিয়ান কোম্পানিগুলোর জন্য ব্যবসার সুযোগ। শুক্রবার পর্যন্ত সফরে প্রতিনিধিদল স্যামসাং, এসকে হাইনিক্স, এলজি, হানওয়া ওশান ও নেইভারের নির্বাহীদের সঙ্গে বসবে এবং এলজি এআই রিসার্চ, ফুরিওসাএআই ও বুসান বন্দর ঘুরে দেখবে। ১৯৮০ সালে ইয়ংওয়ানই বাংলাদেশে প্রথম বিদেশি বিনিয়োগের পোশাক কারখানা গড়ে। সফরে কোনো বিনিয়োগ বা চুক্তির অঙ্ক এখনো জানানো হয়নি।",
+   "question_bn": "বাংলাদেশে কোন খাতে কোরিয়ান বিনিয়োগ সবচেয়ে বেশি কাজে লাগবে বলে মনে করেন?",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/bangladesh/fki-youngone-host-bangladesh-delegation-boost-trade-investment-1592046"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "যুক্তরাজ্যে স্থায়ী বসবাসে ১০ বছরের অপেক্ষা",
+   "title_bn": "যুক্তরাজ্যে বেশির ভাগ বিদেশি কর্মীকে স্থায়ী বসবাসের জন্য ১০ বছর অপেক্ষা করতে হবে; কেয়ার ওয়ার্কারদের জন্য ছাড়",
+   "title_en": "UK to double wait for permanent residency, with exemptions for care workers",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/3/uk-to-double-wait-for-permanent-residency-with-exemptions-for-care-workers",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "sports",
+   "scene": "cricket",
+   "short_bn": "কাল সিলেটে দ্বিতীয় টেস্ট, সিরিজে পিছিয়ে বাংলাদেশ",
+   "title_bn": "সিলেটে বৃহস্পতিবার শুরু ওয়েস্ট ইন্ডিজের বিপক্ষে দ্বিতীয় টেস্ট; সিরিজে ১-০ ব্যবধানে এগিয়ে সফরকারীরা, মুমিনুলের জায়গায় দলে আমিত",
+   "title_en": "Bangladesh name Amite Hasan in squad for second Test against West Indies",
+   "source": "Devdiscourse",
+   "url": "https://www.devdiscourse.com/article/sports-games/4000129-bangladesh-name-amite-hasan-in-squad-for-second-test-against-west-indies",
+   "format": "video",
+   "mood": "sports"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "২৮ বছরের হাঁটা শেষে বাড়ি ফিরলেন বুশবি",
+   "title_bn": "২৮ বছর ধরে হেঁটে বিশ্ব ঘুরে ইংল্যান্ডের হালে ফিরলেন ৫৭ বছর বয়সী কার্ল বুশবি",
+   "title_en": "British adventurer Karl Bushby returns home after 28-year walk around world",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/2/british-adventurer-karl-bushby-returns-home-after-28-year-walk-around-world",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "bd",
+   "scene": "world",
+   "short_bn": "মালয়েশিয়ায় কর্মী নিয়োগে যৌথ নজরদারির আলোচনা",
+   "title_bn": "মালয়েশিয়ার শ্রমবাজারে বাংলাদেশি কর্মী নিয়োগ স্বচ্ছ করতে যৌথ পরিদর্শন ও নজরদারির আলোচনা; এফটিএ দ্রুত শেষ করারও আগ্রহ",
+   "title_en": "Bangladesh, Malaysia discuss joint monitoring for fair recruitment",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/foreign-policy/bangladesh-malaysia-discuss-joint-monitoring-fair-recruitment-1591986",
+   "format": "video",
+   "mood": "hopeful"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "আফগানদের ফেরত ঠেকাতে ৬৬ আইনপ্রণেতার চিঠি",
+   "title_bn": "অন্তত ১৫০ আফগানকে পাকিস্তানে পাঠানোর পরিকল্পনা থামাতে ট্রাম্প প্রশাসনকে চিঠি ৬৬ মার্কিন আইনপ্রণেতার",
+   "title_en": "US lawmakers ask Trump administration to stop deportation of Afghans",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/3/us-lawmakers-ask-trump-administration-to-stop-deportation-of-afghans",
+   "format": "video",
+   "mood": "protest"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "কানাডা-বাংলাদেশ বাণিজ্য বাড়াতে সমঝোতা",
+   "title_bn": "বাংলাদেশ-কানাডা বাণিজ্য ও বিনিয়োগ বাড়াতে সমঝোতা স্মারক সই করল ক্যানচেম ও বিবিসিসি",
+   "title_en": "CanCham Bangladesh, BBCC sign MoU to strengthen bilateral trade, investment",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/economy/corporates/cancham-bangladesh-bbcc-sign-mou-strengthen-bilateral-trade-investment-1591256",
+   "format": "video",
+   "mood": "hopeful"
+  }
+ ]
+}
