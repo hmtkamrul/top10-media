@@ -1,5 +1,7 @@
 # Daily run — Top 10 Breaking News (Facebook)
 
+**UPDATE 2026-11-07 (user's request): three more single news Reels every day at 20:00, 21:00 and 22:00 (built in the 13:50 run, not part of any roundup). So: 8 singles + 2 roundups + the 10:00 bazar Reel. Anything below that says "nothing after 18:00" now means nothing after 22:00.**
+
 Schedule since 2026-10-26 (user's rule; data 19-25 Oct: only ~6 Reels a day get real distribution). 7 Reels a day:
 - **12:00, 13:00, 15:00, 16:00, 17:00 = single news Reels** (detail videos, built with build_day.py).
 - **14:00 = roundup "আজকের সেরা ১০" (noon)**: today's top 10 news up to ~11:30 as HEADLINE cards only (the 12:00 and

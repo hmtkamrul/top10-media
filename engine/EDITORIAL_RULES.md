@@ -3,7 +3,8 @@
 Page name: **Top 10 Breaking News**. Logo: "TOP 10" with "BREAKING NEWS BD" underneath.
 Audience: people in Bangladesh. All captions and headlines are in Bangla only.
 
-## Daily schedule (7 Reels, since 2026-10-26, user's rule)
+## Daily schedule (since 2026-11-07 also 20:00, 21:00, 22:00 single news Reels, user's request; the "nothing after 18:00" rule below now reads "nothing after 22:00"; the topic limits apply to all 8 singles)
+## (original) Daily schedule (7 Reels, since 2026-10-26, user's rule)
 Data 19-25 Oct: only about 6 Reels a day get real distribution; the rest get 1-6 views. So: fewer, stronger posts.
 | Time | Post |
 |---|---|
