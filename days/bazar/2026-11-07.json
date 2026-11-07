@@ -1,0 +1,45 @@
+{
+ "date_bn": "৭ নভেম্বর ২০২৬",
+ "report_date_bn": "৬ নভেম্বর",
+ "hook_bn": "কাঁচা মরিচ কেজিতে ৪০ টাকা পর্যন্ত কম",
+ "kicker_bn": "তবে মাছ-মাংস এখনো চড়া",
+ "sections": [
+  {"title": "সবজি", "unit": "প্রতি কেজি", "items": [
+   {"name": "কাঁচা মরিচ", "price": "80-160", "chg": "down", "note": "সর্বোচ্চ দাম ৪০ টাকা কম"},
+   {"name": "টমেটো", "price": "120"},
+   {"name": "শিম", "price": "60-80", "chg": "down", "note": "দাম কমেছে"},
+   {"name": "বেগুন", "price": "60-100", "chg": "down", "note": "আগে ছিল ৭০-১২০"},
+   {"name": "গাজর", "price": "140"},
+   {"name": "ফুলকপি (পিস)", "price": "40-50", "chg": "down", "note": "দাম কমেছে"}
+  ]},
+  {"title": "মাছ", "unit": "প্রতি কেজি", "items": [
+   {"name": "রুই", "price": "280-380"},
+   {"name": "পাঙাশ", "price": "160-250"},
+   {"name": "বড় তেলাপিয়া", "price": "180-200"},
+   {"name": "কাতলা", "price": "350-380"},
+   {"name": "চাষের চিংড়ি", "price": "900"},
+   {"name": "ইলিশ", "price": "800-2300"}
+  ]},
+  {"title": "মুরগি, মাংস ও ডিম", "unit": "প্রতি কেজি", "items": [
+   {"name": "ব্রয়লার মুরগি", "price": "170-190"},
+   {"name": "সোনালি মুরগি", "price": "240-330"},
+   {"name": "ফার্মের ডিম (ডজন)", "price": "130", "chg": "down", "note": "আগে ছিল প্রায় ১৫০"},
+   {"name": "গরুর মাংস", "price": "800-850"},
+   {"name": "খাসির মাংস", "price": "1200-1250"}
+  ]},
+  {"title": "নিত্যপণ্য", "unit": "প্রতি কেজি", "items": [
+   {"name": "মোটা চাল", "price": "50-55"},
+   {"name": "সরু চাল", "price": "70-90"},
+   {"name": "খোলা সয়াবিন (লিটার)", "price": "189-200"},
+   {"name": "দেশি পেঁয়াজ", "price": "40-60", "chg": "down", "note": "আগে ছিল ৫০-৬০"},
+   {"name": "দেশি আদা", "price": "130-160", "chg": "up", "note": "কেজিতে ৫ টাকা বেশি"},
+   {"name": "আলু", "price": "25-30"}
+  ]}
+ ],
+ "sources": [
+  {"name": "চ্যানেল আই অনলাইন", "date_bn": "৬ নভেম্বর", "url": "https://www.channelionline.com/relief-in-winter-vegetables-but-prices-remain-high-in-the-fish-and-meat-market/"},
+  {"name": "সংবাদ পরিক্রমা", "date_bn": "৬ নভেম্বর", "url": "https://www.sangbadporikrama.com/economy/news/22561"},
+  {"name": "দৈনিক নিউ নেশন", "date_bn": "৬ নভেম্বর", "url": "https://bn.dailynewnation.com/news/185692"}
+ ],
+ "question_bn": "আপনার এলাকায় কাঁচা মরিচের কেজি এখন কত?"
+}
