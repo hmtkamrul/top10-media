@@ -34,6 +34,7 @@ r.SRC_BN.update({"Meduza": "মেদুজা", "Daily Waadaa": "ডেইল�
 r.SRC_BN.update({"beIN Sports": "বিইন স্পোর্টস"})
 r.SRC_BN.update({"EA WorldView": "ইএ ওয়ার্ল্ডভিউ"})
 r.SRC_BN.update({"Devdiscourse": "ডেভডিসকোর্স"})
+r.SRC_BN.update({"The Soufan Center": "দ্য সুফান সেন্টার"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
