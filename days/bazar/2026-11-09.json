@@ -1,0 +1,45 @@
+{
+ "date_bn": "৯ নভেম্বর ২০২৬",
+ "report_date_bn": "৬ নভেম্বর",
+ "hook_bn": "ডিমের ডজনে কমল ৫ টাকা",
+ "kicker_bn": "সোনালি মুরগিতে বাড়ল ১০ টাকা",
+ "sections": [
+  {"title": "সবজি", "unit": "প্রতি কেজি", "items": [
+   {"name": "কাঁচা মরিচ", "price": "120"},
+   {"name": "টমেটো", "price": "120"},
+   {"name": "শিম", "price": "60-80"},
+   {"name": "ফুলকপি (পিস)", "price": "40-50"},
+   {"name": "লাউ (পিস)", "price": "40-50"},
+   {"name": "লেবু (পিস)", "price": "10"}
+  ]},
+  {"title": "মাছ", "unit": "প্রতি কেজি", "items": [
+   {"name": "রুই", "price": "320-340"},
+   {"name": "কাতলা (৫ কেজি ওজনের)", "price": "500"},
+   {"name": "পাঙাশ", "price": "160-250"},
+   {"name": "বড় চাষের তেলাপিয়া", "price": "250"},
+   {"name": "পাবদা", "price": "350-400"},
+   {"name": "চিংড়ি", "price": "770"}
+  ]},
+  {"title": "মুরগি, মাংস ও ডিম", "unit": "প্রতি কেজি", "items": [
+   {"name": "ব্রয়লার মুরগি", "price": "180-185"},
+   {"name": "সোনালি মুরগি", "price": "340", "chg": "up", "note": "কেজিতে ১০ টাকা বেশি"},
+   {"name": "ফার্মের ডিম (ডজন)", "price": "135", "chg": "down", "note": "ডজনে ৫ টাকা কম"},
+   {"name": "গরুর মাংস", "price": "780-800"},
+   {"name": "খাসির মাংস", "price": "1200-1250"}
+  ]},
+  {"title": "আলু ও আরও সবজি", "unit": "প্রতি কেজি", "items": [
+   {"name": "আলু", "price": "25-30"},
+   {"name": "গাজর", "price": "120"},
+   {"name": "বাঁধাকপি", "price": "50"},
+   {"name": "করলা", "price": "70"},
+   {"name": "বরবটি", "price": "60"},
+   {"name": "পেঁপে", "price": "20"}
+  ]}
+ ],
+ "sources": [
+  {"name": "বিডিনিউজ টোয়েন্টিফোর ডটকম", "date_bn": "৬ নভেম্বর", "url": "https://bangla.bdnews24.com/business/gxnry8wuwn"},
+  {"name": "চ্যানেল আই অনলাইন", "date_bn": "৬ নভেম্বর", "url": "https://www.channelionline.com/relief-in-winter-vegetables-but-prices-remain-high-in-the-fish-and-meat-market/"},
+  {"name": "ভোরের কাগজ", "date_bn": "৬ নভেম্বর", "url": "https://www.bhorerkagoj.net/economics/803079"}
+ ],
+ "question_bn": "আপনার এলাকায় এক ডজন ডিম এখন কত টাকা?"
+}
