@@ -127,7 +127,7 @@ def main(src, out, speaker="male", voice=False):
             nf = int(dur[f"s{si}"] * FPS)
             for i in range(nf):
                 save(overlay(loop[i % LOOP].copy(), si, n, i / nf))
-        outro = [title_card(i / LOOP, ["প্রতিদিন দুপুর ২টা ও", "সন্ধ্যা ৬টায় সেরা ১০"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
+        outro = [title_card(i / LOOP, ["প্রতিদিন দুপুর ২টা ও", "রাত ৯টায় সেরা ১০"], "ফলো করুন: Top 10 Breaking News") for i in range(LOOP)]
         for i in range(int(dur["outro"] * FPS)):
             save(outro[i % LOOP])
         total = k / FPS
