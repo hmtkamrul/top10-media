@@ -1,0 +1,107 @@
+{
+ "date_bn": "১৫ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "world",
+   "mood": "hopeful",
+   "short_bn": "ইতিহাসে প্রথম: মহাকাশযান স্টারশিপ ‘ধরল’ স্পেসএক্স",
+   "kicker_bn": "২২ ঘণ্টা কক্ষপথে ঘুরে ফিরল, ধরা পড়ল যান্ত্রিক বাহুতে",
+   "points_bn": [
+    "টেক্সাসের স্টারবেসে যান্ত্রিক ‘চপস্টিক’ বাহুতে মহাকাশযান স্টারশিপ ধরল স্পেসএক্স, এটি ১৫তম পরীক্ষামূলক উড়ান",
+    "২২ ঘণ্টার যাত্রায় যানটি পৃথিবীকে ১৪ বার প্রদক্ষিণ করেছে এবং ২৬টি স্টারলিংক স্যাটেলাইট কক্ষপথে ছেড়েছে",
+    "আগে তিনবার বুস্টার ধরা হয়েছিল; এবার যানটি আরও উঁচু থেকে ও আরও দ্রুত গতিতে নেমেছে",
+    "স্পেসএক্স বলছে, প্রতি দুই সপ্তাহে একটি স্টারশিপ বানাতে পারবে কারখানা; তবে কক্ষপথে জ্বালানি স্থানান্তর এখনো অমীমাংসিত"
+   ],
+   "title_bn": "ইতিহাসে প্রথমবার মহাকাশযান স্টারশিপ ‘ধরল’ স্পেসএক্স",
+   "title_en": "SpaceX pulls off first-ever spaceship catch",
+   "caption_bn": "এএফপির প্রতিবেদন অনুযায়ী শনিবার টেক্সাসের স্টারবেসে স্পেসএক্স তাদের স্টারশিপ মহাকাশযান যান্ত্রিক বাহুতে ধরে ফেলেছে। এটি ছিল ১৫তম পরীক্ষামূলক উড়ান। ২২ ঘণ্টার যাত্রায় যানটি পৃথিবীকে ১৪ বার ঘুরে ২৬টি স্টারলিংক স্যাটেলাইট কক্ষপথে ছেড়েছে। তবে সুপার হেভি বুস্টারটি কারিগরি সমস্যায় মেক্সিকো উপসাগরে নামানো হয়েছে, ধরা হয়নি। প্রতিবেদনের তথ্য, কক্ষপথে জ্বালানি স্থানান্তর এখনো সমাধান হয়নি।",
+   "question_bn": "মহাকাশযান এভাবে পুনর্ব্যবহারযোগ্য হলে মহাকাশ ভ্রমণ সহজ হবে বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/spacex-pulls-first-ever-spaceship-catch-4324111"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "এনভিডিয়ার সাবেক সিইও-কে নিয়ে নতুন তথ্য",
+   "title_bn": "এনভিডিয়ার সাবেক সিইও জেনসেন হুয়াং সম্পর্ক নিয়ে কোম্পানির শীর্ষ আইনজীবীকে বিভ্রান্ত করেছিলেন, রয়টার্সের সূত্র",
+   "title_en": "Ex-Nvidia CEO misled top lawyer on affair, sources say",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/ex-nvidia-ceo-misled-top-lawyer-affair-chinese-businesswoman-sources-say-4323386"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "সাফ সেমিতে পাকিস্তানের কাছে ০-১ হার",
+   "title_bn": "সাফ চ্যাম্পিয়নশিপের সেমিফাইনালে ৮৬ মিনিটের গোলে পাকিস্তানের কাছে ০-১ ব্যবধানে হারল বাংলাদেশ",
+   "title_en": "Bangladesh lose 1-0 to Pakistan in SAFF semi-final",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/bangladeshs-long-wait-saff-glory-goes-after-pakistan-heartbreak-4323776"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "গাজায় হামাসের শীর্ষ কমান্ডার নিহত",
+   "title_bn": "ইসরায়েলি হামলায় রাফাহ ব্রিগেডের কমান্ডার সামির আবু ইউনিস নিহত, জানাল হামাস",
+   "title_en": "Hamas says senior commander killed in Israeli strike",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/hamas-says-senior-armed-commander-killed-israeli-strike-4324116"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "পূর্বাচলে শুরু গ্লোবাল সোর্সিং এক্সপো",
+   "title_bn": "পূর্বাচলে শুরু তিন দিনের গ্লোবাল সোর্সিং এক্সপো ঢাকা, অংশ নিচ্ছে ১৬১ প্রতিষ্ঠান",
+   "title_en": "Global Sourcing Expo Dhaka opens in Purbachal",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/sourcing-expo-opens-today-more-exhibitors-no-export-target-4323846"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "ফ্রান্সে জীবনযাত্রার ব্যয়ের বিক্ষোভ",
+   "title_bn": "জীবনযাত্রার ব্যয় ও পুলিশ বিলের প্রতিবাদে ফ্রান্সজুড়ে বিক্ষোভ, আটক ২১৯",
+   "title_en": "French protesters march against inflation and police bill",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/french-protesters-chant-against-inflation-and-police-4324126"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "১৬ ডিসেম্বর চালু তৃতীয় টার্মিনাল",
+   "title_bn": "শাহজালাল বিমানবন্দরের তৃতীয় টার্মিনাল ১৬ ডিসেম্বর আংশিক চালুর প্রস্তুতি",
+   "title_en": "HSIA third terminal to open partially on Dec 16",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/aviation/news/all-agencies-must-complete-preparations-scheduled-dec-16-launch-hsia-3rd-terminal-minister-4323786"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "উত্তর কোরিয়ার হ্যাকারদের ৪০ কোটি ডলার চুরি",
+   "title_bn": "এআই-চালিত ভুয়া ভিডিও কলে ৪০ কোটি ডলারের বেশি চুরি করেছে উত্তর কোরিয়ার হ্যাকাররা, জানাল এফবিআই",
+   "title_en": "North Korean hackers stole $400m using fake calls: FBI",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/north-korean-hackers-stole-400m-using-fake-calls-fbi-4323361"
+  },
+  {
+   "cat": "sports",
+   "scene": "cricket",
+   "short_bn": "আট বছর পর মোসাদ্দেকের সেঞ্চুরি",
+   "title_bn": "জাতীয় ক্রিকেট লিগে আট বছর পর প্রথম শ্রেণির সেঞ্চুরি পেলেন মোসাদ্দেক হোসেন, অপরাজিত ১৩৭",
+   "title_en": "Mosaddek ends eight-year wait for first-class ton",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/cricket/news/mosaddek-ends-eight-year-wait-first-class-ton-4323621"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "মিয়ানমারে বাস্তুচ্যুত শিবিরে বিমান হামলা",
+   "title_bn": "মিয়ানমারের রাখাইনে বাস্তুচ্যুতদের শিবিরে সেনা বিমান হামলায় নিহত ১২",
+   "title_en": "Myanmar airstrike on displaced persons camp kills 12",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/myanmar-airstrike-displaced-persons-camp-kills-12-witnesses-4323581"
+  }
+ ]
+}
