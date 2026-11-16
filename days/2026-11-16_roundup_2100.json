@@ -1,0 +1,117 @@
+{
+ "date_bn": "১৬ নভেম্বর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "sports",
+   "format": "video",
+   "scene": "cricket",
+   "mood": "sports",
+   "short_bn": "২২/৩ থেকে ৩২৭/৬, হৃদয়ের ১৩৭",
+   "kicker_bn": "পঞ্চম উইকেটে ২০৬ রানের জুটি, লিটন অপরাজিত ৯২",
+   "points_bn": [
+    "ওয়ান্ডারার্সে প্রথম টেস্টের প্রথম দিনে রাবাদার আঘাতে ২২/৩ হয়ে পড়েছিল বাংলাদেশ, দিন শেষে ৩২৭/৬",
+    "তাওহিদ হৃদয় করেছেন ১৩৭ রান; দিনের শেষ বলে মার্কো ইয়ানসেনের বলে আউট হন",
+    "দক্ষিণ আফ্রিকায় বাংলাদেশি ব্যাটারের সর্বোচ্চ ব্যক্তিগত স্কোরের সমান, মাহমুদুল হাসান জয়ের সঙ্গে",
+    "লিটন দাস ৯২ রানে অপরাজিত; ২০৬ রানের পঞ্চম উইকেট জুটি আগের ১৩৮ রানের রেকর্ড ছাড়িয়েছে"
+   ],
+   "title_bn": "২২/৩ থেকে ৩২৭/৬: হৃদয়ের ১৩৭ ও লিটনের সঙ্গে ২০৬ রানের জুটিতে ওয়ান্ডারার্সে বাংলাদেশের দিন",
+   "title_en": "Hridoy's discipline ensures Tigers' day at Wanderers",
+   "caption_bn": "জোহানেসবার্গে দক্ষিণ আফ্রিকার বিপক্ষে প্রথম টেস্টের প্রথম দিনে ব্যাট করতে নেমে রাবাদার আঘাতে ২২ রানে ৩ উইকেট হারায় বাংলাদেশ। এরপর তাওহিদ হৃদয়ের ১৩৭ রান এবং লিটন দাসের সঙ্গে ২০৬ রানের পঞ্চম উইকেট জুটিতে দিন শেষে স্কোর ৩২৭/৬। ডেইলি স্টারের প্রতিবেদন অনুযায়ী এটি দক্ষিণ আফ্রিকার বিপক্ষে টেস্টে সর্বোচ্চ জুটি। লিটন অপরাজিত আছেন ৯২ রানে।",
+   "question_bn": "ওয়ান্ডারার্সে প্রথম টেস্ট জিততে পারবে বাংলাদেশ বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/cricket/news/hridoys-discipline-ensures-tigers-day-wanderers-4325081"
+  },
+  {
+   "cat": "intl",
+   "scene": "airport_fire",
+   "short_bn": "মার্কিন বিমান চলাচল স্বাভাবিক হচ্ছে",
+   "title_bn": "তিন দিনের বিপর্যয়ের পর স্বাভাবিক হচ্ছে যুক্তরাষ্ট্রের বিমান চলাচল, রোববার বাতিল ছিল ১,৯৬০-এর বেশি ফ্লাইট",
+   "title_en": "US airports expected to return to normal after three days of disruption",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/us-airports-expected-return-normal-after-three-days-disruption-4325046"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "বেক্সিমকো ফার্মার নতুন সাবসিডিয়ারি",
+   "title_bn": "ভেষজ ওষুধ তৈরিতে ১০ কোটি টাকা পরিশোধিত মূলধনে নতুন সাবসিডিয়ারি গড়ছে বেক্সিমকো ফার্মা",
+   "title_en": "Beximco Pharma plans subsidiary to diversify products",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/beximco-pharma-plans-subsidiary-diversify-products-4324771"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "হামাসের রাফাহ ব্রিগেড কমান্ডার নিহত",
+   "title_bn": "খান ইউনিসে ইসরায়েলি বিমান হামলায় হামাসের রাফাহ ব্রিগেড কমান্ডার সামির আবু ইউনিস নিহত, জানাল সংগঠনটি",
+   "title_en": "Hamas says senior armed commander killed",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/hamas-says-senior-armed-commander-killed-4324906"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "২০৫০ সালে ভুট্টার চাহিদা ১.৭ কোটি টন",
+   "title_bn": "বাংলাদেশে ভুট্টার বার্ষিক চাহিদা ২০৫০ সালে ৭০ লাখ থেকে বেড়ে ১ কোটি ৭০ লাখ টনে পৌঁছাতে পারে, বলল সিমিট",
+   "title_en": "Maize demand may hit 1.7cr tonnes by 2050",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/maize-demand-may-hit-17cr-tonnes-2050-4324766"
+  },
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "protest",
+   "short_bn": "প্যারিসে স্কুল-কলেজের কাছে বিক্ষোভ নিষিদ্ধ",
+   "kicker_bn": "বিক্ষোভ শুরুর পর গ্রেপ্তার ১,৫৪৮ জন",
+   "points_bn": [
+    "বিক্ষোভ শুরুর পর থেকে এ পর্যন্ত ১,৫৪৮ জনকে গ্রেপ্তার করা হয়েছে, জানাল প্যারিস পুলিশের আদেশ",
+    "১০টি হাইস্কুল ও ৫টি বিশ্ববিদ্যালয়ের (সরবোনের কয়েকটি অনুষদসহ) ১০০ মিটারের মধ্যে অনুমতিহীন জমায়েত নিষিদ্ধ, সোম থেকে শুক্র",
+    "পুলিশপ্রধান প্যাট্রিস ফোর বলেছেন, আন্দোলন ‘ক্রমাগত বিশাল আকারে ও সহিংসভাবে’ ব্যাঘাত ও অবরোধ ঘটাচ্ছে",
+    "রোববারের বিক্ষোভে সারা দেশে আটক ২১৯ জন; ইউনিয়নগুলো মঙ্গলবার নতুন ধর্মঘটের ডাক দিয়েছে"
+   ],
+   "title_bn": "প্যারিসে ১০ হাইস্কুল ও ৫ বিশ্ববিদ্যালয়ের কাছে বিক্ষোভ নিষিদ্ধ করল পুলিশ, আন্দোলনে গ্রেপ্তার ১,৫৪৮",
+   "title_en": "Police ban protests near some Paris schools and universities",
+   "caption_bn": "এএফপির প্রতিবেদন অনুযায়ী প্যারিস পুলিশ রোববার এক আদেশে ১০টি হাইস্কুল ও পাঁচটি বিশ্ববিদ্যালয়ের ১০০ মিটারের মধ্যে অনুমতিহীন জমায়েত নিষিদ্ধ করেছে, সোমবার থেকে শুক্রবার পর্যন্ত। আদেশে বলা হয়েছে, আন্দোলন শুরুর পর ১,৫৪৮ জনকে গ্রেপ্তার করা হয়েছে। জীবনযাত্রার ব্যয় ও পুলিশের জন্য নতুন আইনের প্রতিবাদে রোববারের বিক্ষোভে সারা ফ্রান্সে আটক হয়েছে ২১৯ জন।",
+   "question_bn": "বিক্ষোভ ঠেকাতে এমন নিষেধাজ্ঞা কি যুক্তিসংগত বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/police-ban-protests-near-some-paris-schools-and-universities-4325061"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "এআই ‘ন্যাশনাল চ্যাম্পিয়ন’ তালিকা",
+   "title_bn": "এনভিডিয়া, অ্যামাজন, মাইক্রোসফট, ওপেনএআই ও অ্যানথ্রপিকসহ দুই ডজনের বেশি এআই প্রতিষ্ঠানকে ‘ন্যাশনাল চ্যাম্পিয়ন’ ঘোষণার পরিকল্পনা ট্রাম্প প্রশাসনের, দাবি ডব্লিউএসজের",
+   "title_en": "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/trump-administration-name-nvidia-other-ai-firms-us-national-champions-wsj-reports-4325141"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "এনসিসি ব্যাংক ফেনীতে শীর্ষে",
+   "title_bn": "ফেনীতে চলতি বছর শিক্ষার্থীদের হিসাব খোলায় সবচেয়ে এগিয়ে এনসিসি ব্যাংক, ৩৮টি ব্যাংকের অংশগ্রহণে স্টুডেন্ট ব্যাংকিং সম্মেলন",
+   "title_en": "NCC Bank tops student account opening in Feni",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/organisation-news/news/ncc-bank-tops-student-account-opening-feni-4324711"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "মিয়ানমার-সম্পৃক্ততায় আসিয়ান",
+   "title_bn": "মিয়ানমারের সঙ্গে ‘গঠনমূলক ও নীতিনিষ্ঠ সম্পৃক্ততা’ বজায় রাখা এবং পাঁচ দফা শান্তি পরিকল্পনা মেনে চলার অঙ্গীকার আসিয়ান নেতাদের",
+   "title_en": "Asean reaffirms Myanmar engagement",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/asean-reaffirms-myanmar-engagement-4324896"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "তরুণ পুরুষ ভোটারের লড়াই",
+   "title_bn": "মধ্যবর্তী নির্বাচনের এক সপ্তাহ পর তরুণ পুরুষ ভোটারদের টানতে ডেমোক্র্যাট ও রিপাবলিকানদের লড়াই তীব্র, ১৮-২৯ বছরের ৫৯ শতাংশ পুরুষ ভোট দিয়েছেন ডেমোক্র্যাটদের",
+   "title_en": "Battle for young male voters intensifies in US",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/battle-young-male-voters-intensifies-us-4324901"
+  }
+ ]
+}
