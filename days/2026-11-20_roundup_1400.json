@@ -1,0 +1,107 @@
+{
+ "date_bn": "২০ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "পুতিন: ক্রিমিয়া সেতু হামলার ‘আরও যন্ত্রণাদায়ক’ জবাব",
+   "title_bn": "ক্রিমিয়া সেতুতে হামলার ‘আরও যন্ত্রণাদায়ক’ জবাব দেওয়ার হুঁশিয়ারি পুতিনের",
+   "title_en": "Putin vows 'more painful' response to Ukraine",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/putin-vows-more-painful-response-ukraine-4328581"
+  },
+  {
+   "cat": "econ",
+   "scene": "economy",
+   "short_bn": "বিশ্ব জ্বালানি নিরাপত্তায় ‘ইতিহাসের সবচেয়ে বড় হুমকি’",
+   "title_bn": "মধ্যপ্রাচ্য সংকট জ্বালানি নিরাপত্তার ইতিহাসে ‘সবচেয়ে বড় হুমকি’, বলছে আইইএ",
+   "title_en": "Mideast crisis 'largest threat' to energy security ever: IEA",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/mideast-crisis-largest-threat-energy-security-ever-iea-4327951"
+  },
+  {
+   "cat": "sports",
+   "format": "video",
+   "scene": "cricket",
+   "mood": "sports",
+   "short_bn": "লর্ডসে প্রথম টি-টোয়েন্টি বাংলাদেশের",
+   "kicker_bn": "প্রতিপক্ষ নেপাল, ম্যাচ ৩ জুন ২০২৭",
+   "points_bn": [
+    "ক্রিকেটের ‘হোম’ লর্ডসে প্রথমবার পুরুষ টি-টোয়েন্টি আন্তর্জাতিক খেলবে বাংলাদেশ; প্রতিপক্ষ নেপাল",
+    "মে মাসের শেষে ইংল্যান্ডের বিপক্ষে টেস্ট খেলতে লর্ডসে ফিরছে বাংলাদেশ, ১৭ বছর পর সেখানে প্রথম টেস্ট",
+    "এর আগে ২০১৪ ও ২০২৪ বিশ্বকাপে দুই দলের দুই টি-টোয়েন্টিতেই জিতেছে বাংলাদেশ",
+    "২০২৭ সালের মার্চে নেপালে তিন ম্যাচের টি-টোয়েন্টি সিরিজও খেলবে বাংলাদেশ"
+   ],
+   "title_bn": "লর্ডসে প্রথমবার টি-টোয়েন্টি খেলবে বাংলাদেশ, প্রতিপক্ষ নেপাল",
+   "title_en": "Bangladesh to make historic Lord's T20I debut against Nepal",
+   "caption_bn": "ডেইলি স্টার জানিয়েছে, ২০২৭ সালের ৩ জুন লর্ডসে নেপালের বিপক্ষে নিজেদের প্রথম পুরুষ টি-টোয়েন্টি আন্তর্জাতিক খেলবে বাংলাদেশ। মেরিলিবোন ক্রিকেট ক্লাব (এমসিসি) বৃহস্পতিবার এ ঘোষণা দিয়েছে। ম্যাচটি নেপালের ইংল্যান্ড সফরের অংশ। মে মাসের শেষে ইংল্যান্ডের বিপক্ষে টেস্ট খেলতে লর্ডসে যাবে বাংলাদেশ, ১৭ বছরের মধ্যে সেখানে যা তাদের প্রথম টেস্ট। বিসিবি সভাপতি তামিম ইকবাল বলেছেন, ‘হোম অব ক্রিকেট’-এ খেলা বাংলাদেশ দলের জন্য বিশেষ উপলক্ষ।",
+   "question_bn": "লর্ডসে এই ম্যাচে বাংলাদেশ জিতবে বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/cricket/news/bangladesh-make-historic-lords-t20i-debut-against-nepal-4328271"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "স্পিকার পদে জেফ্রিস: ‘দুর্নীতিবাজদের জবাবদিহি করাব’",
+   "title_bn": "স্পিকার পদে মনোনীত হাকিম জেফ্রিস বললেন, ট্রাম্পের দুর্নীতির জবাবদিহি চান",
+   "title_en": "Hakeem Jeffries pledges to target Trump corruption",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/hakeem-jeffries-pledges-target-trump-corruption-4328611"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "কৃষিঋণের লক্ষ্য ৬০ হাজার কোটি টাকা",
+   "title_bn": "কৃষিঋণ বিতরণের লক্ষ্য বাড়িয়ে ৬০ হাজার কোটি টাকা করল বাংলাদেশ ব্যাংক",
+   "title_en": "BB expands farm credit to climate-smart agriculture",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/bb-expands-farm-credit-climate-smart-agriculture-4328486"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "জিটিএ ৬ পেল মেটাক্রিটিকে ৯৯",
+   "title_bn": "জিটিএ ৬ নিয়ে প্রশংসার ঢল, মেটাক্রিটিক স্কোর ৯৯",
+   "title_en": "GTA VI draws rave reviews as gamers enter Vice City",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/technology/news/gta-vi-draws-rave-reviews-gamers-enter-vice-city-4327911"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "‘সিলেট টি’ ব্র্যান্ডের পাশে পর্তুগালের রাজপরিবার",
+   "title_bn": "‘সিলেট টি’ ব্র্যান্ড প্রচারে পাশে পর্তুগালের রাজপরিবারের সদস্য",
+   "title_en": "Portugal's royal family backs efforts to promote 'Sylhet Tea'",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/portugals-royal-family-backs-efforts-promote-sylhet-tea-4328006"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "ট্রাম্পের বিমানে সাংবাদিকদের ফোন জমা",
+   "title_bn": "চীন ছাড়ার সময় এয়ার ফোর্স ওয়ানে সাংবাদিকদের ফোন জমা নিল হোয়াইট হাউস",
+   "title_en": "Reporters' phones taken on Air Force One",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/reporters-phones-taken-air-force-one-4328586"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "ফটিকছড়িতে ৪৫ মেগাওয়াটের সৌর বিদ্যুৎকেন্দ্র",
+   "title_bn": "চট্টগ্রামের ফটিকছড়িতে ৪৫ মেগাওয়াটের সৌর বিদ্যুৎকেন্দ্র গড়বে বারাকা ও পিআইডিজি",
+   "title_en": "Baraka Group, PIDG join hands to develop 45MW solar power plant",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/baraka-group-pidg-join-hands-develop-45mw-solar-power-plant-4328381"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "নাসা স্পেস অ্যাপস: ঢাকায় চ্যাম্পিয়ন ‘পেনামব্রা’",
+   "title_bn": "নাসা স্পেস অ্যাপস চ্যালেঞ্জের বাংলাদেশ পর্ব শেষ, ঢাকার চ্যাম্পিয়ন ‘পেনামব্রা’",
+   "title_en": "Bangladesh edition of NASA Space Apps Challenge 2026 concludes",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/technology/news/bangladesh-edition-nasa-space-apps-challenge-2026-concludes-4327726"
+  }
+ ]
+}
