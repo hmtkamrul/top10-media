@@ -1,0 +1,107 @@
+{
+ "date_bn": "২১ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "world",
+   "mood": "tense",
+   "short_bn": "রোহিঙ্গা গণহত্যায় মিয়ানমার দোষী: আইসিজে",
+   "kicker_bn": "১৫ বিচারকের ৯ জনের রায়: ‘গণহত্যা’",
+   "points_bn": [
+    "হেগের আন্তর্জাতিক বিচারিক আদালত (আইসিজে) রায় দিয়েছে, ২০১৭ সালে রোহিঙ্গাদের ওপর গণহত্যা চালিয়েছে মিয়ানমার",
+    "১৫ বিচারকের মধ্যে ৯ জন গণহত্যার পক্ষে, ৬ জন বিপক্ষে রায় দেন",
+    "ক্ষতিপূরণ দিতে হবে মিয়ানমারকে, অঙ্কের হিসাব পরে; উচ্ছেদ হওয়া রোহিঙ্গাদের নিরাপদ ও মর্যাদাপূর্ণ প্রত্যাবাসনেরও নির্দেশ",
+    "মিয়ানমার সরকার রায়কে ‘অন্যায্য’ বলেছে; চীন বলেছে, এমন রায় বিরোধ নিষ্পত্তিতে সহায়ক নয়"
+   ],
+   "title_bn": "রোহিঙ্গাদের ওপর গণহত্যা চালিয়েছে মিয়ানমার, রায় দিল আইসিজে",
+   "title_en": "ICJ rules Myanmar committed genocide against the Rohingya",
+   "caption_bn": "আল জাজিরা জানিয়েছে, বৃহস্পতিবার (১৯ নভেম্বর) আন্তর্জাতিক বিচারিক আদালত রায় দিয়েছে যে ২০১৭ সালে রোহিঙ্গাদের ওপর গণহত্যা চালিয়েছে মিয়ানমার। আদালত ৯-৬ ভোটে এ রায় দেয়। মামলাটি করেছিল গাম্বিয়া। আদালত রোহিঙ্গাদের ক্ষতিপূরণ ও নিরাপদ প্রত্যাবাসনের নির্দেশ দিয়েছে; ক্ষতিপূরণের অঙ্ক পরে ঠিক হবে। মিয়ানমারের সরকারি মুখপাত্র রায়কে ‘অন্যায্য’ বলেছেন। সাত লাখের মতো রোহিঙ্গা বাংলাদেশে আশ্রয় নিয়েছে।",
+   "question_bn": "এই রায়ের পর রোহিঙ্গা প্রত্যাবাসন দ্রুত হবে বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/20/myanmar-china-object-to-unfair-icj-genocide-ruling"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "পোল্যান্ডে পড়ল রুশ ক্ষেপণাস্ত্র, কিয়েভে নিহত ৬",
+   "title_bn": "ইউক্রেনে রাতভর ৮০ ক্ষেপণাস্ত্র-৪০০ ড্রোন হামলা, পোল্যান্ডে আঘাত হানল একটি রুশ ক্ষেপণাস্ত্র",
+   "title_en": "Russia pummels Ukraine, missile hits Poland",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/russia-pummels-ukraine-missile-hits-poland-after-putin-threat-4329216"
+  },
+  {
+   "cat": "econ",
+   "scene": "economy",
+   "short_bn": "অ্যানথ্রপিকের শেয়ার প্রথম দিনেই ১৭% বেশি",
+   "title_bn": "আইপিওর প্রথম দিনেই অ্যানথ্রপিকের শেয়ার ১৭ শতাংশ বেশি দামে বন্ধ, মূল্যমান প্রায় ১.৫ ট্রিলিয়ন ডলার",
+   "title_en": "Anthropic emerges as one of world's most valuable companies after stock market debut",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/world/anthropic-emerges-one-worlds-most-valuable-companies-after-stock-market-debut-1608441"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "বাংলাদেশে ৩০২টি লিড-সনদপ্রাপ্ত সবুজ কারখানা",
+   "title_bn": "বিশ্বে সর্বোচ্চ: বাংলাদেশে লিড-সনদপ্রাপ্ত সবুজ কারখানা ৩০০ ছাড়াল",
+   "title_en": "Bangladesh crosses 300 LEED-certified green factory milestone",
+   "source": "The Business Standard",
+   "url": "https://www.tbsnews.net/economy/rmg/bangladesh-crosses-300-leed-certified-green-factory-milestone-1608756"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "২৫ দেশে রাস্তায় তরুণেরা, মিলানে হাজার হাজার",
+   "title_bn": "মজুরি, জীবনযাত্রার ব্যয় ও সরকারি সেবা নিয়ে ইউরোপজুড়ে বিক্ষোভ, মিলানে হাজার হাজার মানুষ",
+   "title_en": "Young protesters hit the streets across Europe",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/young-protesters-hit-the-streets-across-europe-4329296"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "এএফসি পুরস্কারে দুটি সম্মান পেল বাফুফে",
+   "title_bn": "এএফসি অ্যাওয়ার্ডসে দুটি পুরস্কার জিতল বাংলাদেশ ফুটবল ফেডারেশন",
+   "title_en": "BFF clinch two honours at AFC Awards",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/bff-clinch-two-honours-afc-awards-4328651"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "এনভিডিয়ায় ফিরতে চান হুয়াং, ট্রাম্প চান ‘দ্বিতীয় সুযোগ’",
+   "title_bn": "এনভিডিয়ার সিইও পদে জেনসেন হুয়াংকে ফেরানোর আহ্বান ট্রাম্পের",
+   "title_en": "Trump calls for Nvidia to reinstate Jensen Huang",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "বাংলাদেশের জন্য মার্কিন ডিএফসির ঋণের দরজা খুলল",
+   "title_bn": "মার্কিন উন্নয়ন অর্থায়ন সংস্থা ডিএফসির ঋণ পাওয়ার যোগ্যতা পেল বাংলাদেশ, বললেন মার্কিন রাষ্ট্রদূত",
+   "title_en": "DFC opens access to loans for Bangladesh, says US envoy",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/dfc-opens-access-loans-bangladesh-says-us-envoy-4328421"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "জলবায়ু সম্মেলন কপ৩১ গড়াল অতিরিক্ত সময়ে",
+   "title_bn": "জীবাশ্ম জ্বালানি নিয়ে অচলাবস্থায় কপ৩১ অতিরিক্ত সময়ে গড়াল",
+   "title_en": "COP31 deal elusive as fossil fuel fight deepens",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/cop31-deal-elusive-fossil-fuel-fight-deepens-4329211"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "পেরুতে ৬.৭ মাত্রার ভূমিকম্প, প্রাথমিকভাবে হতাহত নেই",
+   "title_bn": "মধ্য পেরুতে ৬.৭ মাত্রার ভূমিকম্প, প্রাথমিকভাবে প্রাণহানির খবর নেই",
+   "title_en": "6.7 magnitude earthquake hits central Peru",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/67-magnitude-earthquake-hits-central-peru-4329311"
+  }
+ ]
+}
