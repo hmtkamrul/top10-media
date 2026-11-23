@@ -37,6 +37,7 @@ r.SRC_BN.update({"Devdiscourse": "ডেভডিসকোর্স"})
 r.SRC_BN.update({"The Soufan Center": "দ্য সুফান সেন্টার"})
 r.SRC_BN.update({"Al Jazeera Centre for Studies": "আল জাজিরা সেন্টার ফর স্টাডিজ"})
 r.SRC_BN.update({"ICC": "আইসিসি"})
+r.SRC_BN.update({"Newsweek": "নিউজউইক"})
 PAGE = "Top 10 Breaking News"
 FRAMES, FPS, LOOPS = 36, 12, 3        # 3 s loop x 3 = 9 s video
 
