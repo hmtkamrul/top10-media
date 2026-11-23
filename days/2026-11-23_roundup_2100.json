@@ -1,0 +1,131 @@
+{
+ "date_bn": "২৩ নভেম্বর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "econ",
+   "scene": "economy",
+   "short_bn": "এআই বুদবুদের ভয়ে ধস এশিয়ার শেয়ারবাজারে",
+   "title_bn": "এআই বুদবুদের আশঙ্কায় ধস এশিয়ার শেয়ারবাজারে, কোস্পি নেমেছিল ৫.৮ শতাংশ পর্যন্ত",
+   "title_en": "Asian stock markets tumble as AI bubble fears mount",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount"
+  },
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "world",
+   "mood": "tense",
+   "short_bn": "র‍্যাপারকে দুবার খুনের চেষ্টা, রাশিয়ার দিকে আঙুল",
+   "kicker_bn": "রুশ কূটনীতিককে বহিষ্কার করল ডেনমার্ক",
+   "points_bn": [
+    "পোল্যান্ড জানাল, একই ব্যক্তির ওপর এটি দ্বিতীয় হত্যাচেষ্টা; প্রথমটি আগস্টে পোল্যান্ডেই ঠেকানো হয়",
+    "লক্ষ্য ‘কিয়েভস্টোনার’ নামে পরিচিত র‍্যাপার আলবার্ট ভাসিলিয়েভ; ডেনমার্কের গণমাধ্যম বলছে, তাঁর ইউক্রেনীয় ও মার্কিন নাগরিকত্ব আছে",
+    "সেপ্টেম্বরে কনসার্টে হামলার ছকের অভিযোগে এক রুশ কূটনীতিককে বহিষ্কার করেছে ডেনমার্ক",
+    "ডেনমার্কে দুজন আদালতে; অভিযোগ বিদেশি গোয়েন্দা সংস্থাকে সহায়তা ও হত্যাচেষ্টা। রুশ দূতাবাস বলছে, অভিযোগের প্রমাণ নেই"
+   ],
+   "title_bn": "ইউক্রেনীয় র‍্যাপারকে দুবার হত্যাচেষ্টার অভিযোগ, রাশিয়াকে দায়ী করল পোল্যান্ড",
+   "title_en": "Poland says Russia tried to assassinate Ukrainian rapper twice",
+   "caption_bn": "আল জাজিরা জানিয়েছে, পোল্যান্ডের পররাষ্ট্র মন্ত্রণালয় বলেছে, ‘কিয়েভস্টোনার’ নামে পরিচিত ইউক্রেনীয় র‍্যাপার আলবার্ট ভাসিলিয়েভের ওপর এটি দ্বিতীয় হত্যাচেষ্টা। প্রথমটি আগস্টে পোল্যান্ডে ঠেকানো হয়েছিল। ডেনমার্ক সেপ্টেম্বরের একটি কনসার্টে হামলার ছকের অভিযোগে এক রুশ কূটনীতিককে বহিষ্কার করেছে এবং দুজনের বিচার শুরু হয়েছে। কোপেনহেগেনে রুশ দূতাবাস অভিযোগকে ভিত্তিহীন বলেছে।",
+   "question_bn": "ইউরোপে এ ধরনের গোপন অভিযান নিয়ে আপনার কী মনে হয়?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/23/poland-says-russia-tried-to-assassinate-ukrainian-rapper-twice"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "জলবায়ু সম্মেলন কপ৩১ ভেঙে গেল, কোনো চুক্তি নেই",
+   "title_bn": "চুক্তি ছাড়াই শেষ কপ৩১ জলবায়ু আলোচনা, ২০০৯ সালের পর প্রথম ব্যর্থতা",
+   "title_en": "COP31 climate talks end without deal",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/22/countries-react-after-cop31-climate-talks-end-in-collapse"
+  },
+  {
+   "cat": "bd",
+   "format": "video",
+   "scene": "world",
+   "mood": "hopeful",
+   "bg_image": "assets/bg_bangladesh.jpg",
+   "short_bn": "আসিয়ান, আরসিইপিতে বাংলাদেশের পাশে থাইল্যান্ড",
+   "kicker_bn": "রোহিঙ্গা প্রত্যাবাসনেও সমর্থনের আশ্বাস",
+   "points_bn": [
+    "ঢাকায় থাই রাষ্ট্রদূত জানালেন, আসিয়ান সেক্টরাল ডায়ালগ পার্টনারশিপ ও আরসিইপিতে যোগ দেওয়ার উদ্যোগে বাংলাদেশকে সমর্থন করবে থাইল্যান্ড",
+    "আলোচনায় ছিল বাণিজ্য, বিনিয়োগ, জ্বালানি ও যোগাযোগ",
+    "২০২৭ সালে দুই দেশের উচ্চপর্যায়ের সফরের প্রস্তাবে সম্মতি জানিয়েছেন থাই রাষ্ট্রদূত",
+    "চিকিৎসার জন্য বারবার থাইল্যান্ডে যেতে হয় এমন রোগীদের মাল্টিপল-এন্ট্রি ভিসা দেওয়ার আশ্বাসও মিলেছে"
+   ],
+   "title_bn": "আসিয়ান ও আরসিইপিতে বাংলাদেশের অন্তর্ভুক্তির উদ্যোগে সমর্থন থাইল্যান্ডের",
+   "title_en": "Thailand backs Bangladesh's ASEAN, RCEP bids",
+   "caption_bn": "দ্য ডেইলি স্টারের খবর অনুযায়ী, ঢাকায় থাইল্যান্ডের রাষ্ট্রদূত আসিয়ান সেক্টরাল ডায়ালগ পার্টনারশিপ ও আরসিইপিতে যোগ দেওয়ার বাংলাদেশের উদ্যোগে সমর্থনের কথা আবার জানিয়েছেন। বাণিজ্য, বিনিয়োগ, জ্বালানি ও যোগাযোগ নিয়েও আলোচনা হয়েছে। রোহিঙ্গাদের নিরাপদ প্রত্যাবাসনে সমর্থন এবং চিকিৎসার জন্য মাল্টিপল-এন্ট্রি ভিসার আশ্বাসও পাওয়া গেছে।",
+   "question_bn": "আসিয়ানে যোগ দিলে বাংলাদেশের কী লাভ হবে বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/diplomacy/news/thailand-backs-bangladeshs-asean-rcep-bids-4330326"
+  },
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "war",
+   "mood": "tense",
+   "bg_image": "assets/bg_iran_hormuz_war.jpg",
+   "short_bn": "‘স্ট্যাটাস কো’ মানে ইরান যুদ্ধে পরাজয় মেনে নেওয়া",
+   "quote_by": "বিশ্লেষণ: নিউজউইক",
+   "points_bn": [
+    "ট্রাম্প বলেছেন ইরানের সঙ্গে ‘স্ট্যাটাস কো’ রাখা হচ্ছে, যুদ্ধ ‘কার্যত শেষ’; নিউজউইকের ভাষ্যে এটি পরাজয় মেনে নেওয়ারই শামিল",
+    "নিউজউইক: হরমুজ প্রণালীতে বাণিজ্যিক চলাচল যুদ্ধের আগের চেয়ে প্রায় ৬৫ শতাংশ কম (ইউকেএমটিও)",
+    "যুদ্ধের খরচ: জুলাইয়ে হেগসেথের হিসাব ৩৭৫০ কোটি ডলার; সিবিএসের খবরে সেন্টকমের হিসাবে অক্টোবরের মাঝামাঝি ৪ হাজার ৭১০ কোটি ডলার",
+    "মধ্যবর্তী নির্বাচনে ট্রাম্পের দল কংগ্রেসের দুই কক্ষেই হেরেছে; ভাইস প্রেসিডেন্ট ভ্যান্স এর জন্য ইরান যুদ্ধকে দায়ী করেছেন বলে লিখেছে নিউজউইক"
+   ],
+   "title_bn": "বিশ্লেষণ: ইরানে ট্রাম্পের ‘স্ট্যাটাস কো’ আসলে পরাজয়ের স্বীকারোক্তি, লিখেছে নিউজউইক",
+   "title_en": "Trump's status quo with Iran is an admission of defeat",
+   "caption_bn": "এটি নিউজউইকের ১০ নভেম্বরের একটি বিশ্লেষণ, অর্থাৎ মতামত। এতে বলা হয়েছে, ইরানের সঙ্গে ‘স্ট্যাটাস কো’ রাখার ট্রাম্পের কথা কার্যত পরাজয় মেনে নেওয়া। প্রতিবেদনে উল্লেখ আছে, হরমুজে চলাচল যুদ্ধের আগের তুলনায় প্রায় ৬৫ শতাংশ কম, যুদ্ধের খরচ ৩৭৫০ কোটি থেকে ৪৭১০ কোটি ডলারের মধ্যে এবং মধ্যবর্তী নির্বাচনে ট্রাম্পের দল দুই কক্ষেই হেরেছে।",
+   "question_bn": "আপনার মতে এই যুদ্ধের শেষ কীভাবে হবে?",
+   "source": "Newsweek",
+   "url": "https://newsweek.com/trump-iran-status-quo-admission-defeat-12694638"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "বেলজিয়ামের সব বিমানবন্দর বন্ধ, ধর্মঘট",
+   "title_bn": "কঠোর ব্যয়সংকোচনবিরোধী ধর্মঘটে বন্ধ হচ্ছে বেলজিয়ামের বিমানবন্দর",
+   "title_en": "Belgium's airports set to shut down due to anti-austerity strike",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/23/belgiums-airports-set-to-shut-down-due-to-anti-austerity-strike"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "জাবিতে জাতীয় বিতর্ক উৎসব, ৯৬ প্রতিষ্ঠানের অংশ",
+   "title_bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ে শেষ হলো চার দিনের জাতীয় বিতর্ক উৎসব, অংশ নিল ৯৬ প্রতিষ্ঠান",
+   "title_en": "Four-day national debate festival ends at JU",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/education/news/four-day-national-debate-festival-ends-ju-4329931"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "রিয়ালের নাটকীয় জয়, এমবাপের পেনাল্টি মিস",
+   "title_bn": "এসপির শেষ দিকের গোলে সেলতা ভিগোকে ২-১ গোলে হারাল রিয়াল মাদ্রিদ",
+   "title_en": "Real Madrid beat Celta Vigo 2-1",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/espi-spares-mbappes-blushes-real-madrid-beat-celta-vigo-2-1-4330056"
+  },
+  {
+   "cat": "intl",
+   "scene": "economy",
+   "short_bn": "রাউন্ডআপ ক্যান্সার মামলায় ৭২৫ কোটি ডলারের নিষ্পত্তি",
+   "title_bn": "রাউন্ডআপ ক্যান্সার মামলায় বায়ারের ৭২৫ কোটি ডলারের নিষ্পত্তি অনুমোদন মার্কিন বিচারকের",
+   "title_en": "US judge approves $7.25b Roundup cancer settlement",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/united-states/news/us-judge-approves-725b-roundup-cancer-settlement-4329976"
+  },
+  {
+   "cat": "bd",
+   "scene": "world",
+   "short_bn": "ডিসেম্বরে ঢাকায় আসছেন মালয়েশিয়া-মালদ্বীপের নেতারা",
+   "title_bn": "ডিসেম্বরে ঢাকা সফরে আসছেন মালয়েশিয়া ও মালদ্বীপের নেতারা",
+   "title_en": "Malaysia, Maldives leaders expected in Dhaka next month",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/diplomacy/news/malaysia-maldives-leaders-expected-dhaka-next-month-4329996"
+  }
+ ]
+}
