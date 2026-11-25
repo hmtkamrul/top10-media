@@ -1,0 +1,96 @@
+{
+ "date_bn": "২৫ নভেম্বর ২০২৬",
+ "edition": "evening",
+ "stories": [
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "রাশিয়ার পরমাণু উপগ্রহ নিয়ে সতর্ক ন্যাটো",
+   "title_bn": "রাশিয়া পরমাণু অস্ত্রবাহী উপগ্রহ ছুড়তে পারে, জার্মান গণমাধ্যমের খবরের পর মহাকাশ প্রতিরক্ষার অঙ্গীকার ন্যাটোর",
+   "title_en": "Nato vows space defence after Russia nuclear satellite report",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/europe/news/nato-vows-space-defence-after-russia-nuclear-satellite-report-4332666"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "গার্মেন্টকর্মীর ন্যূনতম মজুরি বেড়ে ১৭ হাজার টাকা",
+   "title_bn": "পোশাকশ্রমিকের ন্যূনতম মজুরি ১২,৫০০ থেকে বাড়িয়ে ১৭,০০০ টাকা করল মজুরি বোর্ড",
+   "title_en": "Wage board sets garment workers' minimum wage at Tk 17,000",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/rmg/news/wage-board-sets-garment-workers-minimum-wage-tk-17000-4332716"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "বেলিংহ্যাম-এমবাপ্পের গোলে পিএসভিকে ৫-১ উড়িয়ে দিল রিয়াল",
+   "title_bn": "চ্যাম্পিয়নস লিগে পিএসভিকে ৫-১ গোলে হারাল রিয়াল মাদ্রিদ, ইউরোপে টানা পাঁচ জয়",
+   "title_en": "Bellingham stunner, Mbappe brace help Real Madrid rout PSV",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/bellingham-stunner-mbappe-brace-help-real-madrid-rout-psv-4332766"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "রোহিঙ্গা গণহত্যার রায়কে স্বীকৃতি ১৪ দেশের",
+   "title_bn": "আইসিজের রোহিঙ্গা গণহত্যার রায়কে স্বীকৃতি দিল যুক্তরাজ্য, কানাডা, অস্ট্রেলিয়াসহ ১৪ দেশ",
+   "title_en": "14 countries acknowledge ICJ ruling on Rohingya genocide",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/14-countries-acknowledge-icj-ruling-rohingya-genocide-4331791"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "ইসরায়েলে সরকার গঠনের পথে প্রথম জোটসঙ্গী পেলেন আইজেনকোট",
+   "title_bn": "সরকার গঠনের চেষ্টায় প্রথম জোটসঙ্গী পেলেন গাদি আইজেনকোট",
+   "title_en": "Israel's Eisenkot secures first coalition partner",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/25/israels-eisenkot-secures-first-coalition-partner-in-bid-to-form-government"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "বিমানবন্দরের টার্মিনাল-৩ থেকে রাজস্ব পাবে বাংলাদেশ ২৭%",
+   "title_bn": "শাহজালাল বিমানবন্দরের তৃতীয় টার্মিনালে যাত্রী ও কার্গো সেবার রাজস্বের ২৭ শতাংশ পাবে সরকার",
+   "title_en": "Govt to get 27% revenue from Terminal-3",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/news/govt-get-27-revenue-passenger-cargo-handling-terminal-3-4331766"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "রুশ নাশকতার ঝুঁকি নিয়ে কোম্পানিগুলোকে সতর্ক করল যুক্তরাজ্য",
+   "title_bn": "ইউক্রেনকে সহায়তাকারী ব্রিটিশ কোম্পানিগুলোকে রুশ নাশকতার সম্ভাব্য হুমকি নিয়ে সতর্কতা",
+   "title_en": "UK warns companies of potential Russian sabotage threat",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/25/uk-warns-companies-of-potential-russian-sabotage-threat"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "রোনালদোর পেনাল্টিতে জিতল আল নাসর, ১০০০ গোলের আর ১৩ বাকি",
+   "title_bn": "এএফসি চ্যাম্পিয়নস লিগে আল সাদকে ২-১ গোলে হারাল আল নাসর, রোনালদোর গোল ৯৮৭",
+   "title_en": "Ronaldo breaks penalty hoodoo, moves 13 shy of 1,000",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/ronaldo-breaks-penalty-hoodoo-moves-13-shy-1000-4332731"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "প্রাণিসম্পদে অবদানের জন্য ২৩ জন-প্রতিষ্ঠান পাচ্ছে সম্মাননা",
+   "title_bn": "প্রাণিসম্পদ খাতে অবদানের জন্য আট ক্যাটাগরিতে ২৩ ব্যক্তি ও প্রতিষ্ঠানকে সম্মাননা",
+   "title_en": "23 individuals, organisations to be honoured for contribution to livestock",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/economy/news/23-individuals-organisations-be-honoured-contribution-livestock-4332371"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "স্পেনে স্বেচ্ছা-নির্বাসনে গেলেন কিলমার আব্রেগো গার্সিয়া",
+   "title_bn": "দীর্ঘ আইনি লড়াইয়ের পর স্বেচ্ছায় স্পেনে চলে গেলেন কিলমার আব্রেগো গার্সিয়া",
+   "title_en": "Kilmar Abrego Garcia self-deports to Spain",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/25/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us-legal-battle"
+  }
+ ]
+}
