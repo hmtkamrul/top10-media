@@ -1,0 +1,107 @@
+{
+ "date_bn": "২৫ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "world",
+   "mood": "hopeful",
+   "short_bn": "চীনের মহাকাশ স্টেশনে প্রথম পাকিস্তানি নভোচারী",
+   "kicker_bn": "চীনের ক্রু-মিশনে প্রথম যৌথ বিদেশি উড়ান",
+   "points_bn": [
+    "মুহাম্মদ জিশান আলী (৪০) যাচ্ছেন শেনঝৌ-২৪ মিশনে, পেলোড বিশেষজ্ঞ হিসেবে",
+    "চীনের ক্রুড মিশনে এটাই বিদেশি নভোচারীর সঙ্গে প্রথম যৌথ উড়ান, জানাল চীনের মহাকাশ সংস্থা",
+    "স্টেশনে প্রায় এক সপ্তাহ থাকবেন; জীবপ্রযুক্তি ও উপকরণবিজ্ঞানে চারটি যৌথ বিজ্ঞান প্রকল্প হবে",
+    "জিশান: ‘২৫ কোটি পাকিস্তানির আশা আমার কাঁধে’; ২০২৮ সালে চীনের সঙ্গে চন্দ্রাভিযানের পরিকল্পনা"
+   ],
+   "title_bn": "চীনের মহাকাশ স্টেশনে ঐতিহাসিক উড়ানে পাকিস্তানের জিশান আলী",
+   "title_en": "Pakistan's Zeeshan Ali set for historic flight to China's space station",
+   "caption_bn": "আল জাজিরার খবর অনুযায়ী, পাকিস্তানের মুহাম্মদ জিশান আলী শেনঝৌ-২৪ মিশনে চীনের মহাকাশ স্টেশনে যাচ্ছেন। চীনা মহাকাশ সংস্থার ভাষ্য, চীনের ক্রুড কর্মসূচিতে এটি বিদেশি নভোচারীর সঙ্গে প্রথম যৌথ উড়ান। তিনি প্রায় এক সপ্তাহ স্টেশনে থাকবেন এবং জীবপ্রযুক্তি ও উপকরণবিজ্ঞানে চারটি যৌথ প্রকল্পে কাজ করবেন।",
+   "question_bn": "বাংলাদেশেরও কি এমন মহাকাশ কর্মসূচিতে যুক্ত হওয়া উচিত বলে মনে করেন?",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/24/pakistans-zeeshan-ali-set-for-historic-flight-to-chinas-space-station"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "নেপালকে ১৬০ কোটি ডলারের প্যাকেজ ভারতের",
+   "title_bn": "বন্যায় বিধ্বস্ত নেপালকে ১৬০ কোটি ডলারের উন্নয়ন সহায়তা দেওয়ার ঘোষণা মোদির",
+   "title_en": "India offers flood-hit Nepal $1.6b",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/india/news/india-offers-flood-hit-nepal-16b-4331711"
+  },
+  {
+   "cat": "bd",
+   "scene": "world",
+   "short_bn": "২০৩২ পর্যন্ত বাংলাদেশি পণ্যে শুল্কসুবিধা রাখতে চায় কানাডা",
+   "title_bn": "এলডিসি উত্তরণের পরও ২০৩২ সাল পর্যন্ত বাংলাদেশি পণ্যের বাজারসুবিধা রাখার ইঙ্গিত কানাডার",
+   "title_en": "Canada signals preferential market access for Bangladesh until 2032",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/diplomacy/news/canada-signals-continued-preferential-market-access-bangladesh-until-2032-4332181"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "এনভিডিয়ায় সিইও পদে ফিরলেন জেনসেন হুয়াং",
+   "title_bn": "সর্বসম্মত ভোটে এনভিডিয়ার সিইও পদে হুয়াংকে ফিরিয়ে আনল পর্ষদ",
+   "title_en": "Nvidia reinstates Huang as CEO",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/nvidia-reinstates-huang-ceo-4331726"
+  },
+  {
+   "cat": "bd",
+   "scene": "bridge",
+   "short_bn": "রূপপুরে গ্রিডে সংযোগের দ্বিতীয় পরীক্ষা শুরু",
+   "title_bn": "রূপপুর পারমাণবিক কেন্দ্রে জাতীয় গ্রিডে সংযোগের দ্বিতীয় পরীক্ষা শুরু",
+   "title_en": "Rooppur plant begins 2nd grid connection test",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/news/rooppur-plant-begins-2nd-grid-connection-test-4331736"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "এক বছরের মধ্যে এআই নীতিকাঠামো চান গুতেরেস",
+   "title_bn": "এক বছরের মধ্যে এআই ঝুঁকি ব্যবস্থাপনার বৈশ্বিক কাঠামো গড়তে বললেন জাতিসংঘ মহাসচিব",
+   "title_en": "UN chief calls for world to agree on AI oversight within a year",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/24/un-chief-calls-for-world-to-agree-on-ai-oversight-within-a-year"
+  },
+  {
+   "cat": "bd",
+   "scene": "football",
+   "short_bn": "পাঁচ বছর পর জাতীয় স্টেডিয়ামে ফিরল ঘরোয়া ফুটবল",
+   "title_bn": "পাঁচ বছর পর জাতীয় স্টেডিয়ামে ফিরল ঘরোয়া ফুটবল, খেলছে ফর্টিস ও রহমতগঞ্জ",
+   "title_en": "Domestic football returns to National Stadium after five years",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/domestic-football-returns-national-stadium-after-five-years-4331671"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "মালয়েশিয়া ফেরত পাঠাচ্ছে ৬,৫০০ রোহিঙ্গাকে",
+   "title_bn": "মিয়ানমারে ৬,৫০০-র বেশি রোহিঙ্গা শরণার্থী ফেরত পাঠানোর ঘোষণা মালয়েশিয়ার",
+   "title_en": "Malaysia set to return thousands of Rohingya refugees to Myanmar",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/24/malaysia-set-to-return-thousands-of-rohingya-refugees-to-myanmar-2"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "ঢাবিতে নতুন রূপে আঁন্দ্রে মালরোর স্মৃতিফলক",
+   "title_bn": "মালরোর মৃত্যুর ৫০ বছরে ঢাকা বিশ্ববিদ্যালয়ে সংস্কার করা স্মৃতিফলকের উন্মোচন",
+   "title_en": "DU unveils restored Andre Malraux memorial",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/news/du-unveils-restored-andre-malraux-memorial-4331591"
+  },
+  {
+   "cat": "intl",
+   "scene": "world",
+   "short_bn": "অনলাইন ক্ষতিতে টেক জায়ান্টদের বড় জরিমানার হুঁশিয়ারি অস্ট্রেলিয়ার",
+   "title_bn": "বৈশ্বিক আয়ের ৫ শতাংশ পর্যন্ত জরিমানার আইন আনছে অস্ট্রেলিয়া",
+   "title_en": "Australia warns tech giants of multibillion-dollar fines for online harm",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/24/australia-warns-tech-giants-of-multibillion-dollar-fines-for-online-harm"
+  }
+ ]
+}
