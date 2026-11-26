@@ -1,0 +1,107 @@
+{
+ "date_bn": "২৬ নভেম্বর ২০২৬",
+ "edition": "noon",
+ "stories": [
+  {
+   "cat": "intl",
+   "format": "video",
+   "scene": "war",
+   "mood": "tense",
+   "short_bn": "রুশ সেনা নিহত ৭ লাখ পর্যন্ত, ফাঁস তথ্যে দাবি",
+   "kicker_bn": "ফাঁস হওয়া রুশ সরকারি তথ্যের ভিত্তিতে প্রতিবেদন",
+   "points_bn": [
+    "ফাঁস হওয়া রসস্ট্যাট তথ্যের ভিত্তিতে প্রতিবেদনে বলা হয়েছে, ইউক্রেন যুদ্ধে ৪ লাখ ৭০ হাজার থেকে ৭ লাখ রুশ সেনা নিহত",
+    "রাশিয়া ২০২২ সালের সেপ্টেম্বরের পর সেনা হতাহতের সরকারি হিসাব দেয়নি; তখন প্রথম ছয় মাসে প্রায় ৬ হাজার নিহতের কথা বলেছিল",
+    "ক্রেমলিনের মুখপাত্র পেসকভ: হতাহতের সংখ্যা জানাতে পারে শুধু প্রতিরক্ষা মন্ত্রণালয়",
+    "একই সময়ে সিজরানের শিল্পকেন্দ্রে ইউক্রেনীয় ড্রোন হামলা; সামারায় ড্রোন হামলায় একজন নিহত"
+   ],
+   "title_bn": "ইউক্রেন যুদ্ধে ৭ লাখ পর্যন্ত রুশ সেনা নিহত, ফাঁস হওয়া তথ্যের ভিত্তিতে দাবি",
+   "title_en": "Up to 700,000 Russian soldiers killed in Ukraine war: leaked data",
+   "caption_bn": "দ্য ডেইলি স্টারের খবর অনুযায়ী, ফাঁস হওয়া রুশ পরিসংখ্যান সংস্থা রসস্ট্যাটের তথ্যের ভিত্তিতে প্রতিবেদনে দাবি করা হয়েছে, ইউক্রেন যুদ্ধে ৪ লাখ ৭০ হাজার থেকে ৭ লাখ রুশ সেনা নিহত হয়েছেন। রাশিয়া ২০২২ সালের সেপ্টেম্বরের পর আর সরকারি হিসাব দেয়নি। ক্রেমলিনের মুখপাত্র দিমিত্রি পেসকভ বলেছেন, এই সংখ্যা জানানোর এখতিয়ার শুধু প্রতিরক্ষা মন্ত্রণালয়ের। তথ্যটি স্বাধীনভাবে যাচাই করা যায়নি।",
+   "question_bn": "এই যুদ্ধ কবে থামবে বলে মনে করেন?",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/700000-russian-soldiers-killed-ukraine-war-leaked-data-4333476"
+  },
+  {
+   "cat": "intl",
+   "scene": "usa",
+   "short_bn": "১৪ দেশের ওপর নতুন শুল্ক ট্রাম্পের",
+   "title_bn": "মধ্যবর্তী নির্বাচনে ধাক্কার পরও ১৪ বাণিজ্যসঙ্গীর ওপর নতুন শুল্ক প্রস্তাব ট্রাম্প প্রশাসনের, চীনের ওপর সর্বোচ্চ ২০%",
+   "title_en": "Trump announces new tariffs, undeterred by midterms defeat",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/trump-announces-new-tariffs-undeterred-midterms-defeat-4333101"
+  },
+  {
+   "cat": "intl",
+   "scene": "war",
+   "short_bn": "রিয়াদের সবচেয়ে উঁচু ভবনে আবার আঘাত",
+   "title_bn": "এক সপ্তাহেরও কম সময়ে দ্বিতীয়বার আঘাত রিয়াদের সর্বোচ্চ আকাশচুম্বী ভবনে",
+   "title_en": "Riyadh's tallest skyscraper hit for second time in less than a week",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/riyadhs-tallest-skyscraper-hit-second-time-less-week-4332546"
+  },
+  {
+   "cat": "sports",
+   "scene": "football",
+   "short_bn": "রোমার সঙ্গে ড্র পিএসজির, লিলের কাছে হার বায়ার্নের",
+   "title_bn": "চ্যাম্পিয়নস লিগে রোমার সঙ্গে ২-২ ড্র পিএসজির, লিলের কাছে ২-১ গোলে হারল বায়ার্ন",
+   "title_en": "Champions League: PSG held by Roma, Bayern stunned by Lille",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/sports/football/news/champions-league-psg-held-roma-bayern-stunned-lille-4333551"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "নারায়ণগঞ্জে জাপানি মারুহিসার দ্বিতীয় কারখানা",
+   "title_bn": "নারায়ণগঞ্জে ১০০ কোটি টাকার বিনিয়োগে দ্বিতীয় কারখানা চালু করল জাপানের মারুহিসা গ্রুপ",
+   "title_en": "Japan's Maruhisa opens second factory",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/global-economy/news/japans-maruhisa-opens-second-factory-4333316"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "কলম্বিয়ায় সুপারমার্কেটে জিম্মি ২০ জন উদ্ধার",
+   "title_bn": "কার্তাহেনায় সুপারমার্কেটে দিনভর অবরোধের পর ২০ জিম্মিকে উদ্ধার কলম্বিয়ার বাহিনীর",
+   "title_en": "Colombia rescues 20 hostages",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/colombia-rescues-20-hostages-4333471"
+  },
+  {
+   "cat": "bd",
+   "scene": "economy",
+   "short_bn": "মৌলভীবাজারে ৩০ কোটি ডলারের ডেনিম কারখানা",
+   "title_bn": "মৌলভীবাজারে ৩০ কোটি ডলারের ডেনিম কারখানা করতে চায় তুরস্কের স্যাংকো গ্রুপ, কর্মসংস্থান ৪,৪০০",
+   "title_en": "Turkish group Sanko plans $300m denim factory in Bangladesh",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/business/news/turkish-group-sanko-plans-300m-denim-factory-bangladesh-4333031"
+  },
+  {
+   "cat": "intl",
+   "scene": "protest",
+   "short_bn": "গ্রিসে জীবনযাত্রার ব্যয়ের প্রতিবাদে ধর্মঘট",
+   "title_bn": "জীবনযাত্রার ব্যয়ের প্রতিবাদে গ্রিসে ২৪ ঘণ্টার ধর্মঘট, এথেন্সে থমকে গেল মেট্রো",
+   "title_en": "Greece cost-of-living strike hits trains and planes",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/greece-cost-living-strike-hits-trains-and-planes-4333456"
+  },
+  {
+   "cat": "bd",
+   "scene": "abstract",
+   "short_bn": "দেশের প্রথম নিজে নেওয়ার জন্ম-নিয়ন্ত্রণ ইনজেকশন",
+   "title_bn": "ইনসেপ্টা বাজারে আনল দেশের প্রথম নিজে নেওয়ার উপযোগী তিন মাসের জন্মনিয়ন্ত্রণ ইনজেকশন 'মেডোজেন সাবকিউ'",
+   "title_en": "Country's first self-injectable contraceptive launched",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/bangladesh/news/countrys-first-self-injectable-contraceptive-launched-4332671"
+  },
+  {
+   "cat": "intl",
+   "scene": "abstract",
+   "short_bn": "মহাবিশ্বের সবচেয়ে দূরের কোয়াসার শনাক্ত",
+   "title_bn": "মহাবিস্ফোরণের ৬৩ কোটি বছর পর গঠিত সবচেয়ে দূরের কোয়াসার শনাক্ত করলেন বিজ্ঞানীরা",
+   "title_en": "Scientists discover quasar formed 630 million years after the Big Bang",
+   "source": "The Daily Star",
+   "url": "https://www.thedailystar.net/news/world/news/scientists-discover-quasar-formed-630-million-years-after-the-big-bang-4332791"
+  }
+ ]
+}
